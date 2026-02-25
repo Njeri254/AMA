@@ -5,34 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Missions Anglicanes Afrique</title>
 <script src="https://cdn.tailwindcss.com"></script>
-<!-- Font Awesome Free CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-papz4e5r3p8j+eYYi8wLqmvfZ4s4FvEV6G41U/qYFq+0f36J2fDnT6vUoR7XhT5FqC1a9+2vc7tltl6Xaq3xkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<style>
+
+  /* ===== Clean Ken Burns Zoom ===== */
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 6s ease-in-out;
+  z-index: -1;
+}
+
+.swiper-slide-active::before {
+  transform: scale(1.12);
+}
+</style>
 </head>
-<body class="font-sans text-gray-800 bg-gray-50 pt-20 md:pt-24">
+
+<body class="font-sans text-gray-800 bg-gray-50">
 
 <!-- ================= TOP CONTACT BAR ================= -->
-<div class="fixed top-0 w-full z-50 bg-black bg-opacity-80 text-sm text-white">
-  <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end items-center space-x-6">
-    <a href="https://www.google.com/maps/place/Nairobi,+Kenya" target="_blank" class="hover:text-blue-400">
-      <i class="fas fa-map-marker-alt text-lg"></i>
+<div class="fixed top-0 w-full z-50 bg-black/80 text-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 flex justify-end items-center gap-4 md:gap-6 text-sm">
+    <a href="https://share.google/04hqO7TyZEFwijACO" target="_blank" class="hover:text-[#C8A437] transition">
+      <i class="fas fa-map-marker-alt"></i>
     </a>
-    <a href="tel:+254700000000" class="hover:text-blue-400">
-      <i class="fas fa-phone-alt text-lg"></i>
+    <a href="tel:+254745633976" class="hover:text-[#C8A437] transition">
+      <i class="fas fa-phone-alt"></i>
     </a>
-    <a href="mailto:info@missionsanglicanesafrique.org" class="hover:text-blue-400">
-      <i class="fas fa-envelope text-lg"></i>
+    <a href="mailto:info@missionsanglicanesafrique.org" class="hover:text-[#C8A437] transition">
+      <i class="fas fa-envelope"></i>
     </a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f text-lg"></i></a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter text-lg"></i></a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram text-lg"></i></a>
-    <a href="#" class="hover:text-blue-400"><i class="fab fa-youtube text-lg"></i></a>
+    <a href="https://facebook.com/MissionsAnglicanesAfrique" target="_blank" class="hover:text-[#C8A437] transition">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/Anglican_Africa" target="_blank" class="hover:text-[#C8A437] transition">
+      <i class="fab fa-x"></i>
+    </a>
+    <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank" class="hover:text-[#C8A437] transition">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank" class="hover:text-[#C8A437] transition">
+      <i class="fab fa-youtube"></i>
+    </a>
   </div>
 </div>
 
 
 
 <!-- ================= NAVIGATION ================= -->
-<header id="navbar" class="fixed top-10 w-full z-40 transition-all duration-300 bg-white shadow-md">
+<header class="fixed top-[42px] md:top-[40px] w-full z-40 bg-white shadow-md">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
     
     <!-- Logo -->
@@ -191,11 +229,11 @@
     </div>
 
     <div>
-      <button id="mobileResourcesBtn" class="w-full flex justify-between items-center">
+      <button id="mobileWhatBtn" class="w-full flex justify-between items-center">
         What We Do
-        <span id="mobileResourcesIcon">+</span>
+        <span id="mobileWhatIcon">+</span>
       </button>
-      <div id="mobileResourcesMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
+      <div id="mobileWhatMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
         <a href="#planting" class="block">Church Planting</a>
         <a href="#training" class="block">Training</a>  
         <a href="#mobilization" class="block">Resource Mobilization</a>
@@ -208,26 +246,60 @@
   </div>
 </header>
 
-<!-- ================= HERO SECTION ================= -->
-<section id="home" class="pt-44 md:pt-48 lg:pt-52 h-screen bg-cover"
-         style="background-image: url('Images/Container.jpg');">
-  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-  <div class="relative text-center max-w-3xl px-6 text-white">
-    <h1 class="text-4xl md:text-6xl font-bold mb-6">
-      Equipping, Empowering & Releasing Mission Leaders Across Africa
-    </h1>
-    <p class="mb-8 text-lg md:text-xl">
-      Mobilizing churches. Training leaders. Transforming communities.
-    </p>
-    <div class="space-x-4">
-      <a href="#programs" class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-700">Explore Programs</a>
-      <a href="#partner" class="border border-white px-6 py-3 rounded hover:bg-white hover:text-black">Partner With Us</a>
+<!-- ================= HERO SLIDER SECTION ================= -->
+ <section class="relative h-screen pt-20">
+  <!-- Slider Wrapper -->
+  <div class="absolute inset-0">
+    <div class="swiper-container h-full">
+      <div class="swiper-wrapper h-full">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide relative h-full slide-zoom"
+             style="background-image: url('Images/ilwana.JPG');">
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide relative h-full slide-zoom"
+             style="background-image: url('Images/Nakuru.jpg');">
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide relative h-full slide-zoom"
+             style="background-image: url('Images/Container.jpg');">
+          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"></div>
+
+      <!-- Navigation Arrows -->
+      <div class="swiper-button-next text-white"></div>
+      <div class="swiper-button-prev text-white"></div>
+    </div>
+  </div>
+
+  
+  <!-- Hero Content -->
+  <div class="relative z-10 flex items-center justify-center h-full">
+    <div class="backdrop-blur-md rounded-lg w-full max-w-3xl px-4 sm:px-6 md:px-8 py-8 sm:py-12 text-center"
+         style="background: rgba(255,255,255,0.05);">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-black">
+        Equipping, Empowering & Releasing Mission Leaders Across Africa
+      </h1>
+      <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-black">
+        Mobilizing churches. Training leaders. Transforming communities. Partner with us to make a difference today.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#programs" class="bg-[#C8A437] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition">Explore Programs</a>
+        <a href="#partner" class="border border-black text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition">Partner With Us</a>
+      </div>
     </div>
   </div>
 </section>
-
-
-
 
 <!-- ================= HARVEST FIELD MAP SECTION ================= -->
 <section id="harvest-map" class="py-24 bg-white">
@@ -255,15 +327,48 @@
     </div>
 
     <!-- Right Map Image -->
-    <div class="relative">
-      <img src="Images/MAP.png" alt="Africa Mission Map"
-           class="rounded-xl shadow-2xl w-full">
+<div class="relative mt-16 flex justify-center">
 
-      <!-- Optional overlay badge -->
-      <div class="absolute bottom-6 left-6 bg-blue-900 text-white px-6 py-3 rounded-lg shadow-lg">
-        <p class="font-semibold">Multiple Nations Reached</p>
+  <!-- MAP IMAGE -->
+  <img src="Images/MAP.png"
+       alt="Africa Mission Map"
+       class="rounded-3xl shadow-2xl w-full max-w-5xl">
+
+  <!-- ANIMATED GLOW BADGE -->
+  <div class="absolute -bottom-6 md:-bottom-10 left-1/2 -translate-x-1/2">
+
+    <div class="relative bg-gradient-to-br from-[#0B2A4A] to-[#123E6B]
+                text-white px-12 py-6 rounded-full
+                shadow-2xl border border-[#C8A437]
+                animate-fadeUp">
+
+      <!-- Glowing border -->
+      <div class="absolute inset-0 rounded-full border-2 border-[#C8A437]
+                  animate-pulseGlow pointer-events-none"></div>
+
+      <div class="flex items-center gap-4 relative z-10">
+
+        <!-- Counter -->
+        <div class="text-4xl font-extrabold text-[#C8A437]">
+          <span id="countryCounter">14</span>
+        </div>
+
+        <div class="text-left">
+          <p class="font-semibold text-lg tracking-wide">
+            Nations Reached
+          </p>
+          <p class="text-sm text-gray-300">
+            Across Africa
+          </p>
+        </div>
+
       </div>
+
     </div>
+
+  </div>
+
+</div>
 
   </div>
 </section>
@@ -340,7 +445,7 @@
 <!-- ================= CTA ================= -->
 <section class="py-20 bg-gray-100 text-center">
   <h2 class="text-3xl font-bold mb-6">Join the Mission</h2>
-  <div class="space-x-4">
+  <div class="flex flex-col sm:flex-row justify-center gap-4">
     <a href="#partner" class="bg-blue-800 text-white px-8 py-4 rounded hover:bg-blue-900">
       Partner With Us
     </a>
@@ -351,7 +456,7 @@
 </section>
 
 <!-- ================= FOOTER ================= -->
-<!-- ================= BEAUTIFUL BRAND FOOTER ================= -->
+
 <footer class="bg-[#0B2A4A] text-white pt-20 pb-8">
 
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
@@ -363,22 +468,46 @@
         Equipping, empowering and releasing mission leaders across Africa through evangelism,
         discipleship, leadership development and church partnerships.
       </p>
+      <!-- SOCIAL ICONS -->
+<div class="flex space-x-4 mt-6">
 
-      <!-- Social Icons -->
-      <div class="flex space-x-4">
-        <a href="#" class="bg-[#C8A437] p-3 rounded-full text-[#0B2A4A] hover:bg-white transition">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="bg-[#C8A437] p-3 rounded-full text-[#0B2A4A] hover:bg-white transition">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="bg-[#C8A437] p-3 rounded-full text-[#0B2A4A] hover:bg-white transition">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" class="bg-[#C8A437] p-3 rounded-full text-[#0B2A4A] hover:bg-white transition">
-          <i class="fab fa-youtube"></i>
-        </a>
-      </div>
+  <a href="https://www.facebook.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://x.com/Anglican_Africa" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+</div>
     </div>
 
     <!-- Column 2: Quick Links -->
@@ -408,29 +537,49 @@
     </div>
 
     <!-- Column 4: Contact Info -->
-    <div>
-      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Contact Us</h3>
+<div class="max-w-md">
+  <h3 class="text-2xl font-semibold text-[#C8A437] mb-6">
+    Contact Us
+  </h3>
 
-      <div class="space-y-4 text-gray-300">
+  <div class="divide-y divide-gray-700">
 
-        <div class="flex items-start gap-3">
-          <i class="fas fa-map-marker-alt text-[#C8A437] mt-1"></i>
-          <p>Nairobi, Kenya</p>
-        </div>
+    <!-- Address -->
+    <a href="https://share.google/wzz650o0UhxDtyMke"
+       target="_blank"
+       class="group flex items-start gap-4 py-5 hover:translate-x-1 transition duration-300">
 
-        <div class="flex items-center gap-3">
-          <i class="fas fa-phone-alt text-[#C8A437]"></i>
-          <p>+254 700 000 000</p>
-        </div>
+      <i class="fas fa-map-marker-alt text-[#C8A437] mt-1 text-lg group-hover:scale-110 transition"></i>
 
-        <div class="flex items-center gap-3">
-          <i class="fas fa-envelope text-[#C8A437]"></i>
-          <p>info@missionsanglicanesafrique.org</p>
-        </div>
+      <span class="text-gray-300 group-hover:text-white transition leading-relaxed">
+        P.O BOX 12713 - 0100 Nairobi, GPO Ngong - Kibiko Booster Road, Kenya
+      </span>
+    </a>
 
-      </div>
+    <!-- Phone -->
+    <a href="tel:+254745633976"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
 
-    </div>
+      <i class="fas fa-phone-alt text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        +254 745 633 976
+      </span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@missionsanglicanesafrique.org"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-envelope text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        info@missionsanglicanesafrique.org
+      </span>
+    </a>
+
+  </div>
+</div>
 
   </div>
 
@@ -446,74 +595,114 @@
 
 <!-- ================= JS ================= -->
 <script>
-  // Mobile menu toggle
-  const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-  menuBtn.addEventListener("click", () => mobileMenu.classList.toggle("hidden"));
-
-  // Mobile Resources dropdown
-  const mobileResourcesBtn = document.getElementById("mobileResourcesBtn");
-  const mobileResourcesMenu = document.getElementById("mobileResourcesMenu");
-  const mobileResourcesIcon = document.getElementById("mobileResourcesIcon");
-  mobileResourcesBtn.addEventListener("click", () => {
-    mobileResourcesMenu.classList.toggle("hidden");
-    mobileResourcesIcon.innerText = mobileResourcesMenu.classList.contains("hidden") ? "+" : "−";
-
-    const mobileProgramsBtn = document.getElementById("mobileProgramsBtn");
-    const mobileProgramsMenu = document.getElementById("mobileProgramsMenu");
-    const mobileProgramsIcon = document.getElementById("mobileProgramsIcon");
-    mobileProgramsBtn.addEventListener("click", () => {
-      mobileProgramsMenu.classList.toggle("hidden");
-      mobileProgramsIcon.innerText = mobileProgramsMenu.classList.contains("hidden") ? "+" : "−";
-
-      const mobileAboutBtn = document.getElementById("mobileAboutBtn");
-      const mobileAboutMenu = document.getElementById("mobileAboutMenu");
-      const mobileAboutIcon = document.getElementById("mobileAboutIcon");
-      mobileAboutBtn.addEventListener("click", () => {
-        mobileAboutMenu.classList.toggle("hidden");
-        mobileAboutIcon.innerText = mobileAboutMenu.classList.contains("hidden") ? "+" : "−";
-      });
+  // Toggle main mobile menu
+  document.getElementById("menuBtn")
+    .addEventListener("click", () => {
+      document.getElementById("mobileMenu")
+        .classList.toggle("hidden");
     });
-  });
+
+  // Reusable dropdown toggle function
+  function toggleDropdown(buttonId, menuId, iconId) {
+    const btn = document.getElementById(buttonId);
+    const menu = document.getElementById(menuId);
+    const icon = document.getElementById(iconId);
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      icon.innerText = menu.classList.contains("hidden") ? "+" : "−";
+    });
+  }
+
+  toggleDropdown("mobileAboutBtn", "mobileAboutMenu", "mobileAboutIcon");
+  toggleDropdown("mobileResourcesBtn", "mobileResourcesMenu", "mobileResourcesIcon");
+  toggleDropdown("mobileProgramsBtn", "mobileProgramsMenu", "mobileProgramsIcon");
+  toggleDropdown("mobileWhatBtn", "mobileWhatMenu", "mobileWhatIcon");
 </script>
 
 <!-- ================= COUNTER SCRIPT ================= -->
-<script>
+ <script>
+document.addEventListener("DOMContentLoaded", function() {
+
   const counters = document.querySelectorAll('.counter');
-  const speed = 200;
 
-  const startCounting = (entry) => {
-    const counter = entry.target;
+  const animateCounter = (counter) => {
     const target = +counter.getAttribute('data-target');
-    let count = 0;
-    const increment = target / speed;
+    const duration = 2000; // 2 seconds
+    const startTime = performance.now();
 
-    const updateCount = () => {
-      if (count < target) {
-        count += increment;
-        counter.innerText = Math.floor(count).toLocaleString();
-        requestAnimationFrame(updateCount);
+    const update = (currentTime) => {
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      const value = Math.floor(progress * target);
+      counter.innerText = value.toLocaleString();
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
       } else {
         counter.innerText = target.toLocaleString();
       }
     };
 
-    updateCount();
+    requestAnimationFrame(update);
   };
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        startCounting(entry);
-        observer.unobserve(entry.target);
+        animateCounter(entry.target);
+        obs.unobserve(entry.target);
       }
     });
   }, { threshold: 0.6 });
 
-  counters.forEach(counter => {
-    observer.observe(counter);
+  counters.forEach(counter => observer.observe(counter));
+
+});
+
+
+  // Initialize Swiper
+  
+document.addEventListener("DOMContentLoaded", function() {
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    speed: 1500,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
   });
+});
 </script>
+
+<style>
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 0px rgba(200,164,55,0.6); }
+  50% { box-shadow: 0 0 25px rgba(200,164,55,0.9); }
+  100% { box-shadow: 0 0 0px rgba(200,164,55,0.6); }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.animate-pulseGlow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+</style>
 </body>
 </html>
-
