@@ -9,6 +9,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <style>
 
   /* ===== Clean Ken Burns Zoom ===== */
@@ -36,12 +37,116 @@
   transform: scale(1.12);
 }
 </style>
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+</style>
+
+<style>
+/* Floating Shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite alternate;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background: #C8A951;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 400px;
+  height: 400px;
+  background: #1E3A8A;
+  bottom: -150px;
+  right: -150px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) scale(1); }
+  to { transform: translateY(40px) scale(1.1); }
+}
+</style>
+
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: zoomPattern 30s infinite alternate;
+}
+
+@keyframes zoomPattern {
+  from { background-size: 20px 20px; }
+  to { background-size: 30px 30px; }
+}
+</style>
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+<style>
+.gradient-motion {
+  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+</style>
+
+<style>
+.card-hover:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+</style>
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
 
 <!-- ================= TOP CONTACT BAR ================= -->
-<div class="fixed top-0 w-full z-50 bg-black/80 text-white">
+<div class="fixed top-0 left-0 w-full z-50 bg-[#FFD786] text-white">
   <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 flex justify-end items-center gap-4 md:gap-6 text-sm">
     <a href="https://share.google/04hqO7TyZEFwijACO" target="_blank" class="hover:text-[#C8A437] transition">
       <i class="fas fa-map-marker-alt"></i>
@@ -70,17 +175,20 @@
 
 
 <!-- ================= NAVIGATION ================= -->
-<header class="fixed top-[42px] md:top-[40px] w-full z-40 bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+    <header class="fixed top-0 w-full z-[100] bg-white/90 backdrop-blur-md shadow-md">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
     
-    <!-- Logo -->
-    <a href="#home" class="flex items-center bg-white p-1 rounded">
-      <img src="Images/AMA-EDITED-LOGO.png" alt="Logo" class="h-12 w-auto">
+ <!-- Logo -->
+    <a href="#home" class="h-10 sm:h-12 md:h-14 lg:h-20">
+      <img src="Images/AMA-EDITED-LOGO.png"
+           alt="Missions Anglicanes Afrique Logo"
+           class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
     </a>
 
     <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-8 items-center font-medium text-gray-800">
-      <a href="#home" class="hover:text-blue-500">Home</a>
+     
+       <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-800">
 
       <!-- About Section -->
         <div class="relative group">
@@ -102,10 +210,13 @@
         </div>
       </div>
 
-      <!-- Resources Dropdown -->
-      <div class="relative group">
+
+      
+      <!-- What We Do -->
+
+       <div class="relative group">
         <button class="flex items-center gap-1 hover:text-blue-500">
-          Resources
+          What We Do
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
                viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -115,11 +226,12 @@
         <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
                     opacity-0 invisible group-hover:opacity-100 
                     group-hover:visible transition duration-300">
-          <a href="#newsletter" class="block px-4 py-3 hover:bg-gray-100">Newsletter</a>
-          <a href="#reports" class="block px-4 py-3 hover:bg-gray-100">Reports</a>
-          <a href="#projects" class="block px-4 py-3 hover:bg-gray-100">Projects</a>
+          <a href="#planting" class="block px-4 py-3 hover:bg-gray-100">Church Planting</a>
+          <a href="#training" class="block px-4 py-3 hover:bg-gray-100">Training</a>
+          <a href="#mobilization" class="block px-4 py-3 hover:bg-gray-100">Resource Mobilization</a>
         </div>
       </div>
+      
 
       <!-- Our Programs-->
 
@@ -147,12 +259,10 @@
         </div>
       </div>
 
-
-      <!-- What We Do -->
-
-       <div class="relative group">
+            <!-- Resources Dropdown -->
+      <div class="relative group">
         <button class="flex items-center gap-1 hover:text-blue-500">
-          What We Do
+          Resources
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
                viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -162,151 +272,366 @@
         <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
                     opacity-0 invisible group-hover:opacity-100 
                     group-hover:visible transition duration-300">
-          <a href="#planting" class="block px-4 py-3 hover:bg-gray-100">Church Planting</a>
-          <a href="#training" class="block px-4 py-3 hover:bg-gray-100">Training</a>
-          <a href="#mobilization" class="block px-4 py-3 hover:bg-gray-100">Resource Mobilization</a>
-          <a href="#stories" class="block px-4 py-3 hover:bg-gray-100">Featured Stories & Testimonials</a>
+          <a href="#newsletter" class="block px-4 py-3 hover:bg-gray-100">Newsletter</a>
+          <a href="#reports" class="block px-4 py-3 hover:bg-gray-100">Reports</a>
+          <a href="#projects" class="block px-4 py-3 hover:bg-gray-100">Projects</a>
+          <a href="#stories" class="block px-4 py-3 hover:bg-gray-100">Featured Stories & Testimonials</a>  
         </div>
       </div>
+
+
       <a href="#whatwedo" class="hover:text-blue-500">Harvest Field</a>
 
-      <a href="#partner" class="bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-700">Partner With Us</a>
-      <a href="#apply" class="border border-gray-800 px-4 py-2 rounded hover:bg-gray-800 hover:text-white">Apply For Training
-      </a>
+       <a href="#partner"
+   class="hidden md:inline-flex items-center justify-center
+          bg-[#4B9DA9] text-white
+          px-6 py-3 rounded-full
+          font-semibold shadow-md
+          hover:scale-105 hover:shadow-xl
+          transition duration-300">
+  Partner With Us
+</a>
+
+<a href="#apply"
+   class="hidden md:inline-flex items-center justify-center
+          border-2 border-[#FAB95B] text-[#FAB95B]
+          px-6 py-3 rounded-full
+          font-semibold
+          hover:bg-[#4B9DA9] hover:text-white
+          hover:scale-105
+          transition duration-300">
+  Apply For Training
+</a>
     </nav>
 
     <!-- Mobile Hamburger -->
-    <button class="md:hidden text-3xl" id="menuBtn">☰</button>
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white text-gray-800 px-6 py-6 space-y-4 text-lg shadow-lg">
-    <a href="#home" class="block">Home</a>
-
-    <!--About -->
-    <div>
-      <button id="mobileAboutBtn" class="w-full flex justify-between items-center">
-        About
-        <span id="mobileAboutIcon">+</span>
-      </button>
-      <div id="mobileAboutMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
-        <a href="#stories" class="block">Our Story</a>
-        <a href="#board" class="block">Board of Directors</a>
-        <a href="#team" class="block">Management Team</a>
-        <a href="#partners" class="block">Our Partners</a>
-      </div>
-    </div>
-
-    <!-- Resources Collapsible -->
-    <div>
-      <button id="mobileResourcesBtn" class="w-full flex justify-between items-center">
-        Resources
-        <span id="mobileResourcesIcon">+</span>
-      </button>
-      <div id="mobileResourcesMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
-        <a href="#newsletter" class="block">Newsletter</a>
-        <a href="#reports" class="block">Reports</a>
-        <a href="#projects" class="block">Projects</a>
-      </div>
-    </div>
-
-    <div>
-      <button id="mobileProgramsBtn" class="w-full flex justify-between items-center">
-        Our Programs
-        <span id="mobileProgramsIcon">+</span>
-      </button>
-      <div id="mobileProgramsMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
-        <a href="#healthy" class="block">Healthy Church Training & Capacity Building</a>
-        <a href="#school" class="block">School Outreach & Discipleship</a>
-        <a href="#urban" class="block">Urban Mission Orientation</a>    
-        <a href="#women" class="block">Women Evangelism & Discipleship</a>
-        <a href="#mission" class="block">Africa Missions & Evangelism Caravan</a>
-        <a href="#social" class="block">Social Outreach</a> 
-        <a href="#music" class="block">Church Music Renewal</a>
-        <a href="#media" class="block">Media & Digital Evangelism</a>
-        <a href="#efl" class="block">Education For Life</a>
-      </div>
-    </div>
-
-    <div>
-      <button id="mobileWhatBtn" class="w-full flex justify-between items-center">
-        What We Do
-        <span id="mobileWhatIcon">+</span>
-      </button>
-      <div id="mobileWhatMenu" class="hidden mt-2 ml-4 space-y-2 text-base">
-        <a href="#planting" class="block">Church Planting</a>
-        <a href="#training" class="block">Training</a>  
-        <a href="#mobilization" class="block">Resource Mobilization</a>
-        <a href="#stories" class="block">Featured Stories & Testimonials</a>
-      </div>
-    </div>
-    <a href="#harvest" class="block">Harvest Field</a>
-    <a href="#partner" class="block text-blue-600">Partner With Us</a>
-    <a href="#apply" class="block text-gray-800">Apply For Training Programs</a>
-  </div>
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none">
+      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
+      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
+      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
+    </button>
+</div>
 </header>
 
-<!-- ================= HERO SLIDER SECTION ================= -->
- <section class="relative h-screen pt-20">
-  <!-- Slider Wrapper -->
-  <div class="absolute inset-0">
-    <div class="swiper-container h-full">
-      <div class="swiper-wrapper h-full">
+<!-- Mobile Menu Overlay -->
+<div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[999] hidden transition-opacity duration-300"></div>
 
-        <!-- Slide 1 -->
-        <div class="swiper-slide relative h-full slide-zoom"
-             style="background-image: url('Images/ilwana.JPG');">
-          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        </div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-white z-[999] transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto rounded-r-2xl">
+  <div class="px-6 py-6">
 
-        <!-- Slide 2 -->
-        <div class="swiper-slide relative h-full slide-zoom"
-             style="background-image: url('Images/Nakuru.jpg');">
-          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        </div>
+    <div class="flex justify-end mb-4">
+  <button onclick="toggleMenu()" class="text-2xl font-bold text-gray-700">
+    &times;
+  </button>
+</div>
 
-        <!-- Slide 3 -->
-        <div class="swiper-slide relative h-full slide-zoom"
-             style="background-image: url('Images/Container.jpg');">
-          <div class="absolute inset-0 bg-black bg-opacity-20"></div>
-        </div>
-
+    <!-- About Dropdown -->
+    <div>
+      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
+        About 
+        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileAboutMenu" class="hidden pl-4 mt-1 space-y-1">
+        <a href="#story" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Our Story</a>
+        <a href="#board" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Board of Directors</a>
+        <a href="#team" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Management Team</a>
+        <a href="#partners" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Our Partners</a>
       </div>
-
-      <!-- Pagination -->
-      <div class="swiper-pagination absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"></div>
-
-      <!-- Navigation Arrows -->
-      <div class="swiper-button-next text-white"></div>
-      <div class="swiper-button-prev text-white"></div>
     </div>
+
+    <!-- What We Do Dropdown -->
+<div>
+  <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
+    onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
+    What We Do
+    <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div id="mobileWhatMenu" class="hidden pl-4 mt-1 space-y-1">
+    <a href="#planting" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Planting</a>
+    <a href="#training" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Training</a>
+    <a href="#mobilization" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Resource Mobilization</a>
   </div>
+</div>
 
-  
-  <!-- Hero Content -->
-  <div class="relative z-10 flex items-center justify-center h-full">
-    <div class="backdrop-blur-md rounded-lg w-full max-w-3xl px-4 sm:px-6 md:px-8 py-8 sm:py-12 text-center"
-         style="background: rgba(255,255,255,0.05);">
-      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-black">
-        Equipping, Empowering & Releasing Mission Leaders Across Africa
-      </h1>
-      <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-black">
-        Mobilizing churches. Training leaders. Transforming communities. Partner with us to make a difference today.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#programs" class="bg-[#C8A437] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition">Explore Programs</a>
-        <a href="#partner" class="border border-black text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition">Partner With Us</a>
+
+    <!-- Our Programs Dropdown -->
+    <div>
+      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileProgramsMenu', this)">
+        Our Programs
+        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileProgramsMenu" class="hidden pl-4 mt-1 space-y-1">
+        <a href="#healthy" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Healthy Church Training</a>
+        <a href="#school" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">School Outreach</a>
+        <a href="#urban" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Urban Mission</a>
+        <a href="#women" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Women Evangelism</a>
+        <a href="#mission" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Africa Missions</a>
+        <a href="#social" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Social Outreach</a>
+        <a href="#music" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Music</a>
+        <a href="#media" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Media & Digital Evangelism</a>
+        <a href="#efl" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Education For Life</a>
       </div>
     </div>
+
+     <!-- Resources Dropdown -->
+    <div>
+      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileResourcesMenu', this)">
+        Resources
+        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileResourcesMenu" class="hidden pl-4 mt-1 space-y-1">
+        <a href="#newsletter" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Newsletter</a>
+        <a href="#reports" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Reports</a>
+        <a href="#projects" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Projects</a>
+        <a href="#stories" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Featured Stories & Testimonials</a>
+      </div>
+      </div>
+
+    <a href="harvest.html" 
+   class="block py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition">
+   Harvest Field
+</a>
+
+
+    <!-- Single Buttons -->
+    <a href="#partner" class="block py-3 mt-2 text-center bg-blue-600 text-white rounded-full hover:bg-[#FF6500] transition font-semibold">Partner With Us</a>
+    <a href="#apply" class="block py-3 mt-2 text-center border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition font-semibold">Apply For Training</a>
+  </div>
+</div>
+<!-- ================= HERO SLIDER SECTION ================= -->
+ 
+<section class="relative h-screen pt-20 overflow-hidden">
+  <div class="swiper-container h-full">
+    <div class="swiper-wrapper h-full">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative h-full slide-zoom" style="background-image: url('Images/Nakuru.jpg');">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <!-- Slide Text -->
+        <div class="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 md:px-12 z-10">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white opacity-0 slide-text">
+            Equipping, Empowering & Releasing Mission Leaders Across Africa
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white opacity-0 slide-text">
+            Mobilizing churches. Training leaders. Transforming communities. Partner with us to make a difference today.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 slide-text">
+            <a href="#programs" class="bg-[#C8A437] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition animate-pulseGlow">Explore Programs</a>
+            <a href="#partner" class="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Repeat Slide 2 & 3 in same pattern, changing text -->
+      <!-- Slide 2 -->
+      <div class="swiper-slide relative h-full slide-zoom" style="background-image: url('Images/Nakuru 1.jpg');">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 md:px-12 z-10">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white opacity-0 slide-text">
+            Education for All
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white opacity-0 slide-text">
+            Providing quality education and training opportunities for the youth and communities.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 slide-text">
+            <a href="#programs" class="bg-[#C8A437] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition animate-pulseGlow">Explore Programs</a>
+            <a href="#partner" class="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide relative h-full slide-zoom" style="background-image: url('Images/Nakuru 2.jpg');">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-6 md:px-12 z-10">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white opacity-0 slide-text">
+            Spiritual & Social Outreach
+          </h1>
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 text-white opacity-0 slide-text">
+            Connecting people through church planting, social outreach, and community programs.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 slide-text">
+            <a href="#programs" class="bg-[#C8A437] text-black px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-yellow-400 hover:scale-105 transition animate-pulseGlow">Explore Programs</a>
+            <a href="#partner" class="border border-white text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination & Navigation -->
+    <div class="swiper-pagination absolute bottom-10 left-1/2 -translate-x-1/2 z-20"></div>
+    <div class="swiper-button-next text-white"></div>
+    <div class="swiper-button-prev text-white"></div>
   </div>
 </section>
 
+
+<!-- Identity -->
+
+<section class="relative py-28 pattern-bg overflow-hidden">
+  
+  <div class="floating-shape shape1"></div>
+  <div class="floating-shape shape2"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6">
+
+
+    <div class="text-center mb-20" data-aos="fade-up" data-aos-duration="1200">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#1E3A8A] mb-6">
+        Our Identity
+      </h2>
+      <div class="w-24 h-1 bg-[#C8A951] mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-16">
+
+      <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100"
+           data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-semibold text-[#C8A951] mb-4">Mission</h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          To Equip, Empower and Release Christian leaders as agents of spiritual and social change in the society.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100"
+           data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-semibold text-[#C8A951] mb-4">Vision</h3>
+        <p class="text-gray-700 leading-relaxed text-lg">
+          To nurture a healthy and sustainable church in Africa and beyond.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Core Values -->
+    <div class="mt-24 text-center" data-aos="flip-left"
+data-aos-delay="100">
+      <h3 class="text-3xl font-semibold text-[#1E3A8A] mb-10">Core Values</h3>
+
+      <div class="flex flex-wrap justify-center gap-6 text-lg">
+
+        <span class="px-6 py-3 bg-white shadow-md rounded-full border border-gray-200">Integrity</span>
+        <span class="px-6 py-3 bg-white shadow-md rounded-full border border-gray-200">Discipleship</span>
+        <span class="px-6 py-3 bg-white shadow-md rounded-full border border-gray-200">Respect</span>
+        <span class="px-6 py-3 bg-white shadow-md rounded-full border border-gray-200">Scripture</span>
+        <span class="px-6 py-3 bg-white shadow-md rounded-full border border-gray-200">Partnership</span>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--What we do-->
+<section class="py-28 gradient-motion relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-20" data-aos="fade-up" data-aos-duration="1200">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#1E3A8A] mb-6">
+        What We Do
+      </h2>
+      <div class="w-24 h-1 bg-[#C8A951] mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-12">
+
+      <div class="bg-white p-10 rounded-3xl shadow-xl card-hover
+           data-aos="fade-up">
+        <h3 class="text-2xl font-semibold text-[#C8A951] mb-6">Training</h3>
+        <p class="text-gray-700 mb-8">
+          Equipping church leaders through accelerated church growth and discipleship programs.
+        </p>
+        <h4 class="text-4xl font-bold text-[#1E3A8A]">
+          <span class="counter" data-target="17000">0</span>+
+        </h4>
+        <p class="text-gray-600">Leaders Trained</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl shadow-xl card-hover"
+           data-aos="fade-up" data-aos-delay="150">
+        <h3 class="text-2xl font-semibold text-[#C8A951] mb-6">Church Planting</h3>
+        <p class="text-gray-700 mb-8">
+          Establishing new worship spaces across Africa and mission frontiers.
+        </p>
+        <h4 class="text-4xl font-bold text-[#1E3A8A]">
+          <span class="counter" data-target="1000">0</span>+
+        </h4>
+        <p class="text-gray-600">Churches Planted</p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl shadow-xl card-hover"
+           data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-2xl font-semibold text-[#C8A951] mb-6">Resource Support</h3>
+        <p class="text-gray-700 mb-8">
+          Supporting new churches with tents, roofing and infrastructure.
+        </p>
+        <h4 class="text-4xl font-bold text-[#1E3A8A]">
+          <span class="counter" data-target="130">0</span>+
+        </h4>
+        <p class="text-gray-600">Tents Distributed</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Statement of Faith -->
+ <section class="py-28 lines-bg relative overflow-hidden">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold text-[#1E3A8A] mb-6">
+      Statement of Faith
+    </h2>
+
+    <div class="w-24 h-1 bg-[#C8A951] mx-auto mb-12"></div>
+
+    <div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+
+      <p data-aos="fade-right"
+data-aos-delay="100">God is the Creator of the universe and that beside Him there is none.</p>
+
+      <p data-aos="fade-left"
+data-aos-delay="100">The Bible is the inspired Word of God through which God’s divine art of creation is revealed.</p>
+
+      <p data-aos="fade-right"
+data-aos-delay="100">Humanity sinned against God and therefore in constant need of God’s saving grace.</p>
+
+      <p data-aos="fade-left"
+data-aos-delay="100">Jesus Christ is the only way, life, and truth through whom all humanity must be saved to eternal life.</p>
+
+      <p data-aos="fade-right"
+data-aos-delay="100">The Church is the Christ-founded movement through which the gospel of salvation must be proclaimed to all humanity.</p>
+
+      <p data-aos="fade-left"
+data-aos-delay="100">Church leadership has a divine mandate and responsibility to make disciples of all nations.</p>
+
+      <p data-aos="fade-right"
+data-aos-delay="100">Every believer must come under Church discipline, restraining from worldly pleasure and sinful acts.</p>
+
+    </div>
+
+  </div>
+</section>
+
+
 <!-- ================= HARVEST FIELD MAP SECTION ================= -->
-<section id="harvest-map" class="py-24 bg-white">
+<section id="harvest-map" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
     <!-- Left Content -->
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1200">
       <h2 class="text-4xl font-bold text-blue-900 mb-6">
         The Harvest Field Across Africa
       </h2>
@@ -335,35 +660,31 @@
        class="rounded-3xl shadow-2xl w-full max-w-5xl">
 
   <!-- ANIMATED GLOW BADGE -->
-  <div class="absolute -bottom-6 md:-bottom-10 left-1/2 -translate-x-1/2">
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2
+            bg-gradient-to-br from-[#0B2A4A] to-[#123E6B]
+            text-white
+            px-6 sm:px-8 md:px-12
+            py-3 sm:py-4 md:py-6
+            rounded-full
+            shadow-xl
+            border-2 border-blue-400
+            w-fit
+            text-center
+            transition duration-300
+            hover:bg-[#FF6500]
+            hover:border-[#FF6500]
+            hover:shadow-2xl
+            hover:scale-105">
 
-    <div class="relative bg-gradient-to-br from-[#0B2A4A] to-[#123E6B]
-                text-white px-12 py-6 rounded-full
-                shadow-2xl border border-[#C8A437]
-                animate-fadeUp">
+  <div class="text-xl sm:text-2xl md:text-4xl font-extrabold leading-none">
+    <span id="countryCounter">14</span>
+  </div>
 
-      <!-- Glowing border -->
-      <div class="absolute inset-0 rounded-full border-2 border-[#C8A437]
-                  animate-pulseGlow pointer-events-none"></div>
+  <div class="text-xs sm:text-sm md:text-base uppercase tracking-widest mt-1 opacity-80">
+    Countries Impacted
+  </div>
 
-      <div class="flex items-center gap-4 relative z-10">
-
-        <!-- Counter -->
-        <div class="text-4xl font-extrabold text-[#C8A437]">
-          <span id="countryCounter">14</span>
-        </div>
-
-        <div class="text-left">
-          <p class="font-semibold text-lg tracking-wide">
-            Nations Reached
-          </p>
-          <p class="text-sm text-gray-300">
-            Across Africa
-          </p>
-        </div>
-
-      </div>
-
+</div>
     </div>
 
   </div>
@@ -373,13 +694,14 @@
   </div>
 </section>
 
+
 <!-- ================= HARVEST FIELD ================= -->
 <section id="harvest" class="py-20 max-w-7xl mx-auto px-6">
   <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Harvest Fields Across Africa</h2>
   <div class="grid md:grid-cols-3 gap-8">
 
     <div class="shadow-lg p-6 rounded-lg hover:shadow-2xl transition bg-white text-gray-800 hover:bg-blue-50">
-      <h3 class="font-semibold text-xl mb-2">Province In East Africa</h3>
+      <h3 class="font-semibold text-xl mb-2">Provinces In East Africa</h3>
       <p>Missions empowering local churches in Kenya, Uganda, Tanzania & Rwanda.</p>
     </div>
 
@@ -399,7 +721,7 @@
     </div>
 
     <div class="shadow-lg p-6 rounded-lg hover:shadow-2xl transition bg-white text-gray-800 hover:bg-blue-50">
-      <h3 class="font-semibold text-xl mb-2">District of the Indian Ocean Islands</h3>
+      <h3 class="font-semibold text-xl mb-2">Missionary District of the Indian Ocean Islands</h3>
       <p>Church planting and discipleship in Seychelles, Mauritius & Madagascar.</p>
     </div>
 
@@ -463,7 +785,7 @@
 
     <!-- Column 1: Logo & About -->
     <div>
-      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
+      <img src="images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
       <p class="text-gray-300 leading-relaxed mb-6">
         Equipping, empowering and releasing mission leaders across Africa through evangelism,
         discipleship, leadership development and church partnerships.
@@ -594,33 +916,39 @@
 
 
 <!-- ================= JS ================= -->
-<script>
-  // Toggle main mobile menu
-  document.getElementById("menuBtn")
-    .addEventListener("click", () => {
-      document.getElementById("mobileMenu")
-        .classList.toggle("hidden");
-    });
+ <script>
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('mobileMenuOverlay');
+const bars = document.querySelectorAll('#menuBtn .bar');
 
-  // Reusable dropdown toggle function
-  function toggleDropdown(buttonId, menuId, iconId) {
-    const btn = document.getElementById(buttonId);
-    const menu = document.getElementById(menuId);
-    const icon = document.getElementById(iconId);
+function toggleMobileSubMenu(id, btn) {
+  const menu = document.getElementById(id);
+  menu.classList.toggle('hidden');
+  const arrow = btn.querySelector('svg');
+  arrow.classList.toggle('rotate-180'); // rotate arrow
+}
 
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-      icon.innerText = menu.classList.contains("hidden") ? "+" : "−";
-    });
-  }
+const toggleMenu = () => {
+  mobileMenu.classList.toggle('-translate-x-full');
+  overlay.classList.toggle('hidden');
 
-  toggleDropdown("mobileAboutBtn", "mobileAboutMenu", "mobileAboutIcon");
-  toggleDropdown("mobileResourcesBtn", "mobileResourcesMenu", "mobileResourcesIcon");
-  toggleDropdown("mobileProgramsBtn", "mobileProgramsMenu", "mobileProgramsIcon");
-  toggleDropdown("mobileWhatBtn", "mobileWhatMenu", "mobileWhatIcon");
+  // Animate Hamburger -> X
+  bars[0].classList.toggle('rotate-45');
+  bars[1].classList.toggle('opacity-0');
+  bars[2].classList.toggle('-rotate-45');
+
+ 
+};
+
+menuBtn.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
 </script>
 
+
 <!-- ================= COUNTER SCRIPT ================= -->
+
+
  <script>
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -659,32 +987,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
-
-  // Initialize Swiper
-  
-document.addEventListener("DOMContentLoaded", function() {
-  const swiper = new Swiper('.swiper-container', {
-    loop: true,
-    effect: 'fade',
-    fadeEffect: { crossFade: true },
-    speed: 1500,
-    autoplay: {
-      delay: 6000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
-});
 </script>
 
+
+
+
+
 <style>
+/* ===== Ken Burns zoom ===== */
+.slide-zoom {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+.slide-zoom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform: scale(1);
+  transition: transform 8s ease-in-out;
+  z-index: -1;
+}
+.swiper-slide-active::before {
+  transform: scale(1.1);
+}
+
+/* ===== Text animations ===== */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -704,8 +1033,48 @@ document.addEventListener("DOMContentLoaded", function() {
   animation: pulseGlow 2.5s infinite ease-in-out;
 }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    speed: 1500,
+    autoplay: { delay: 6000, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    on: {
+      init: function() { animateSlideText(this.slides[this.activeIndex]); },
+      slideChangeTransitionStart: function() { resetSlideText(this.slides); },
+      slideChangeTransitionEnd: function() { animateSlideText(this.slides[this.activeIndex]); },
+    }
+  });
+
+  function animateSlideText(slide) {
+    slide.querySelectorAll('.slide-text').forEach((el, i) => {
+      el.style.opacity = 0;
+      setTimeout(() => { el.classList.add('animate-fadeUp'); }, i * 200);
+    });
+  }
+
+  function resetSlideText(slides) {
+    slides.forEach(slide => {
+      slide.querySelectorAll('.slide-text').forEach(el => {
+        el.classList.remove('animate-fadeUp');
+        el.style.opacity = 0;
+      });
+    });
+  }
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
 </html>
-
-
-
