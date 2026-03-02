@@ -308,32 +308,31 @@
     </nav>
 
     <!-- Mobile Hamburger -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none">
-      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
-      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
-      <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300"></span>
-    </button>
+<!-- ===== MOBILE HAMBURGER BUTTON ===== -->
+<button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-50 relative">
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+</button>
+
 </div>
 </header>
 </div>
 
-<!-- Mobile Menu Overlay -->
-<div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[999] hidden transition-opacity duration-300"></div>
 
-<!-- Mobile Menu -->
-<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-white z-[999] transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto rounded-r-2xl">
-  <div class="px-6 py-6">
 
-    <div class="flex justify-end mb-4">
-  <button onclick="toggleMenu()" class="text-2xl font-bold text-gray-700">
-    &times;
-  </button>
-</div>
+<!-- ===== MOBILE MENU OVERLAY ===== -->
+<div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
 
+<!-- ===== MOBILE MENU ===== -->
+<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-white z-[1000] transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto rounded-r-2xl">
+  <div class="px-6 flex flex-col pt-4 space-y-1">
+    
     <!-- About Dropdown -->
     <div>
-      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
-        About 
+      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
+        onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
+        About
         <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
@@ -347,23 +346,20 @@
     </div>
 
     <!-- What We Do Dropdown -->
-<div>
-  <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
-    onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
-    What We Do
-    <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-    </svg>
-  </button>
-
-  <div id="mobileWhatMenu" class="hidden pl-4 mt-1 space-y-1">
-    <a href="#planting" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Planting</a>
-    <a href="#training" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Training</a>
-    <a href="#mobilization" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Resource Mobilization</a>
-  </div>
-</div>
-
-
+    <div>
+      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
+        onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
+        What We Do
+        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div id="mobileWhatMenu" class="hidden pl-4 mt-1 space-y-1">
+        <a href="#planting" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Planting</a>
+        <a href="#training" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Training</a>
+        <a href="#mobilization" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Resource Mobilization</a>
+      </div>
+    </div>
     <!-- Our Programs Dropdown -->
     <div>
       <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileProgramsMenu', this)">
@@ -408,10 +404,12 @@
 
 
     <!-- Single Buttons -->
-    <a href="#partner" class="block py-3 mt-2 text-center bg-blue-600 text-white rounded-full hover:bg-[#FF6500] transition font-semibold">Partner With Us</a>
+    <a href="#partner" class="block py-3 mt-4 text-center bg-blue-600 text-white rounded-full hover:bg-[#FF6500] transition font-semibold">Partner With Us</a>
     <a href="#apply" class="block py-3 mt-2 text-center border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition font-semibold">Apply For Training</a>
   </div>
 </div>
+
+
 <!-- ================= HERO SLIDER SECTION ================= -->
  
 <section class="relative h-screen pt-[105px] overflow-hidden">
@@ -665,69 +663,66 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
 
 
 <!-- ================= HARVEST FIELD MAP SECTION ================= -->
-<section id="harvest-map" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<section id="harvest-map" class="py-24 bg-gradient-to-b from-white to-gray-50">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start md:items-center">
 
     <!-- Left Content -->
     <div data-aos="fade-up" data-aos-duration="1200">
-      <h2 class="text-4xl font-bold text-blue-900 mb-6">
-        The Harvest Field Across Africa
+      <h2 class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6">
+        The <span class="text-gradient bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Harvest Field</span> Across Africa
       </h2>
-      <p class="text-gray-700 mb-6 leading-relaxed">
-        Missions Anglicanes Afrique is actively equipping leaders and proclaiming the Gospel
+      <p class="text-gray-700 mb-8 leading-relaxed text-lg">
+        <strong>Missions Anglicanes Afrique</strong> is actively equipping leaders and proclaiming the Gospel
         across multiple African nations. Through strategic evangelism, discipleship, and
         church partnerships, we are seeing lives transformed across the continent.
       </p>
 
-      <div class="flex gap-4">
-        <a href="#impact" class="bg-blue-800 text-white px-6 py-3 rounded hover:bg-blue-900">
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#impact" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white px-8 py-3 rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300 font-semibold">
           View Our Impact
         </a>
-        <a href="#partner" class="border border-blue-800 text-blue-800 px-6 py-3 rounded hover:bg-blue-800 hover:text-white">
+        <a href="#partner" class="border border-blue-800 text-blue-800 px-8 py-3 rounded-xl hover:bg-blue-800 hover:text-white hover:scale-105 transition transform duration-300 font-semibold">
           Join The Mission
         </a>
       </div>
     </div>
 
     <!-- Right Map Image -->
-<div class="relative mt-16 flex justify-center">
+    <div class="relative flex justify-center" data-aos="fade-left" data-aos-duration="1200">
 
-  <!-- MAP IMAGE -->
-  <img src="Images/MAP.png"
-       alt="Africa Mission Map"
-       class="rounded-3xl shadow-2xl w-full max-w-5xl">
+      <!-- MAP IMAGE -->
+      <img src="Images/MAP.png"
+           alt="Africa Mission Map"
+           class="rounded-3xl shadow-2xl w-full max-w-5xl hover:scale-105 transition-transform duration-500">
 
-  <!-- ANIMATED GLOW BADGE -->
-  <div class="absolute bottom-6 left-1/2 -translate-x-1/2
-            bg-gradient-to-br from-[#0B2A4A] to-[#123E6B]
-            text-white
-            px-6 sm:px-8 md:px-12
-            py-3 sm:py-4 md:py-6
-            rounded-full
-            shadow-xl
-            border-2 border-blue-400
-            w-fit
-            text-center
-            transition duration-300
-            hover:bg-[#FF6500]
-            hover:border-[#FF6500]
-            hover:shadow-2xl
-            hover:scale-105">
+      <!-- ANIMATED GLOW BADGE -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2
+                  bg-gradient-to-br from-[#0B2A4A] to-[#123E6B]
+                  text-white
+                  px-6 sm:px-8 md:px-12
+                  py-3 sm:py-4 md:py-6
+                  rounded-full
+                  shadow-xl
+                  border-2 border-blue-400
+                  w-fit
+                  text-center
+                  transform animate-bounce-slow
+                  transition duration-300
+                  hover:bg-[#FF6500]
+                  hover:border-[#FF6500]
+                  hover:shadow-2xl
+                  hover:scale-110">
 
-  <div class="text-xl sm:text-2xl md:text-4xl font-extrabold leading-none">
-    <span id="countryCounter">14</span>
-  </div>
+        <div class="text-xl sm:text-2xl md:text-4xl font-extrabold leading-none">
+          <span id="countryCounter">14</span>
+        </div>
 
-  <div class="text-xs sm:text-sm md:text-base uppercase tracking-widest mt-1 opacity-80">
-    Countries Impacted
-  </div>
+        <div class="text-xs sm:text-sm md:text-base uppercase tracking-widest mt-1 opacity-80">
+          Countries Impacted
+        </div>
 
-</div>
+      </div>
     </div>
-
-  </div>
-
-</div>
 
   </div>
 </section>
@@ -959,32 +954,45 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
 
 <!-- ================= JS ================= -->
  <script>
-const menuBtn = document.getElementById('menuBtn');
+ const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 const overlay = document.getElementById('mobileMenuOverlay');
-const bars = document.querySelectorAll('#menuBtn .bar');
 
-function toggleMobileSubMenu(id, btn) {
-  const menu = document.getElementById(id);
-  menu.classList.toggle('hidden');
-  const arrow = btn.querySelector('svg');
-  arrow.classList.toggle('rotate-180'); // rotate arrow
-}
-
-const toggleMenu = () => {
+// Hamburger morphing + menu toggle
+menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('-translate-x-full');
   overlay.classList.toggle('hidden');
 
-  // Animate Hamburger -> X
+  const bars = menuBtn.querySelectorAll('.bar');
   bars[0].classList.toggle('rotate-45');
+  bars[0].classList.toggle('translate-y-2');
+
   bars[1].classList.toggle('opacity-0');
+
   bars[2].classList.toggle('-rotate-45');
+  bars[2].classList.toggle('-translate-y-2');
+});
 
- 
-};
+// Close menu when clicking overlay
+overlay.addEventListener('click', () => {
+  mobileMenu.classList.add('-translate-x-full');
+  overlay.classList.add('hidden');
 
-menuBtn.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
+  const bars = menuBtn.querySelectorAll('.bar');
+  bars[0].classList.remove('rotate-45', 'translate-y-2');
+  bars[1].classList.remove('opacity-0');
+  bars[2].classList.remove('-rotate-45', '-translate-y-2');
+});
+
+// Dropdown toggle function
+function toggleMobileSubMenu(id, button) {
+  const submenu = document.getElementById(id);
+  submenu.classList.toggle('hidden');
+
+  // Animate arrow
+  const svg = button.querySelector('svg');
+  svg.classList.toggle('rotate-180');
+}
 </script>
 
 
@@ -1120,7 +1128,6 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </body>
 </html>
-
 
 
 
