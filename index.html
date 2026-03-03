@@ -179,7 +179,7 @@
 
 <!-- ================= NAVIGATION ================= -->
 
-  <header class="w-full bg-white text-white border-b border-white/10">
+  <header class="relative z-[1000] bg-white text-white border-b border-white/10">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
     
  <!-- Logo -->
@@ -190,101 +190,157 @@
     </a>
 
     <!-- Desktop Nav -->
-     
        <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-800">
-
       <!-- About Section -->
-        <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-blue-500">
-          About
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
-                    opacity-0 invisible group-hover:opacity-100 
-                    group-hover:visible transition duration-300">
-          <a href="#story" class="block px-4 py-3 hover:bg-gray-100">Our Story</a>
-          <a href="#board" class="block px-4 py-3 hover:bg-gray-100">The Board Of Directors</a>
-          <a href="#team" class="block px-4 py-3 hover:bg-gray-100">The Management Team</a>
-          <a href="#partners" class="block px-4 py-3 hover:bg-gray-100">Our Partners</a>
-        </div>
-      </div>
+      <div class="relative dropdown">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    About Us
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+    <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="#story" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Story</a>
+    <a href="#board" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Board Of Directors</a>
+    <a href="#team" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Management Team</a>
+    <a href="#partners" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Partners</a>
+  </div>
+</div>
 
 
-      
       <!-- What We Do -->
+     <div class="relative dropdown">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    What We Do
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
 
-       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-blue-500">
-          What We Do
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
-                    opacity-0 invisible group-hover:opacity-100 
-                    group-hover:visible transition duration-300">
-          <a href="#planting" class="block px-4 py-3 hover:bg-gray-100">Church Planting</a>
-          <a href="#training" class="block px-4 py-3 hover:bg-gray-100">Training</a>
-          <a href="#mobilization" class="block px-4 py-3 hover:bg-gray-100">Resource Mobilization</a>
-        </div>
-      </div>
+  <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="#planting" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Church Planting</a>
+    <a href="#training" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Training</a>
+    <a href="#mobilization" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Resource Mobilization</a>
+  </div>
+</div>
       
+   <!-- Our Programs-->
 
-      <!-- Our Programs-->
+      <div class="relative dropdown">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Our Programs
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
 
-       <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-blue-500">
-          Our Programs
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
-                    opacity-0 invisible group-hover:opacity-100 
-                    group-hover:visible transition duration-300">
-          <a href="#healthy" class="block px-4 py-3 hover:bg-gray-100">Healthy Church Training & Capacity Building</a>
-          <a href="#school" class="block px-4 py-3 hover:bg-gray-100">School Outreach & Discipleship</a>
-          <a href="#urban" class="block px-4 py-3 hover:bg-gray-100">Urban Mission Orientation</a>
-          <a href="#women" class="block px-4 py-3 hover:bg-gray-100">Women Evangelism & Discipleship</a>
-          <a href="#mission" class="block px-4 py-3 hover:bg-gray-100">Africa Missions & Evangelism Caravan</a>
-          <a href="#social" class="block px-4 py-3 hover:bg-gray-100">Social Outreach</a>
-          <a href="#music" class="block px-4 py-3 hover:bg-gray-100">Church Music Renewal</a>
-          <a href="#media" class="block px-4 py-3 hover:bg-gray-100">Media & Digital Evangelism</a>
-          <a href="#efl" class="block px-4 py-3 hover:bg-gray-100">Education For Life</a>
-        </div>
-      </div>
-
-            <!-- Resources Dropdown -->
-      <div class="relative group">
-        <button class="flex items-center gap-1 hover:text-blue-500">
-          Resources
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-               viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M19 9l-7 7-7-7"/>
-          </svg>
-        </button>
-        <div class="absolute left-0 mt-3 w-52 bg-white text-gray-800 shadow-xl rounded-lg
-                    opacity-0 invisible group-hover:opacity-100 
-                    group-hover:visible transition duration-300">
-          <a href="#newsletter" class="block px-4 py-3 hover:bg-gray-100">Newsletter</a>
-          <a href="#reports" class="block px-4 py-3 hover:bg-gray-100">Reports</a>
-          <a href="#projects" class="block px-4 py-3 hover:bg-gray-100">Projects</a>
-          <a href="#stories" class="block px-4 py-3 hover:bg-gray-100">Featured Stories & Testimonials</a>  
-        </div>
-      </div>
+ <div class="dropdown-menu absolute left-0 top-full mt-4 w-[480px]
+            bg-white/95 backdrop-blur-lg
+            border border-gray-100
+            shadow-2xl rounded-2xl
+            hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300
+            grid grid-cols-2 gap-2 p-4">
+            <div class="px-6 pt-4 pb-2 text-xs uppercase tracking-wider text-gray-400">
+  Overview
+</div>
+    
+          <a href="#healthy" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Healthy Church Training & Capacity Building</a>
+          <a href="#school" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">School Outreach & Discipleship</a>
+          <a href="#urban" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Urban Mission Orientation</a>
+          <a href="#women" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Women Evangelism & Discipleship</a>
+          <a href="#mission" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Africa Missions & Evangelism Caravan</a>
+          <a href="#social" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Social Outreach</a>
+          <a href="#music" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Church Music Renewal</a>
+          <a href="#media" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Media & Digital Evangelism</a>
+          <a href="#efl" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Education For Life</a>
+  </div>
+</div>
 
 
+
+            <!-- Resources -->
+
+      <div class="relative dropdown">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Resources
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    
+          <a href="#newsletter" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Newsletter</a>
+          <a href="#reports" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Reports</a>
+          <a href="#projects" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Projects</a>
+          <a href="#stories" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Featured Stories & Testimonials</a>  
+  </div>
+</div>
+
+       <!-- Harvest Field -->
       <a href="#whatwedo" class="hover:text-blue-500">Harvest Field</a>
 
+      <!--Buttons-->
        <a href="#partner"
    class="hidden md:inline-flex items-center justify-center
           bg-[#4B9DA9] text-white
@@ -320,92 +376,146 @@
 </div>
 
 
-
-<!-- ===== MOBILE MENU OVERLAY ===== -->
-<div id="mobileMenuOverlay" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
-
 <!-- ===== MOBILE MENU ===== -->
-<div id="mobileMenu" class="fixed top-0 left-0 h-full w-72 bg-white z-[1000] transform -translate-x-full transition-transform duration-300 shadow-2xl overflow-y-auto rounded-r-2xl">
-  <div class="px-6 flex flex-col pt-4 space-y-1">
-    
-    <!-- About Dropdown -->
-    <div>
-      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
+
+<div id="mobileMenuOverlay"
+     class="fixed inset-0 bg-black/50 hidden z-[999]">
+</div>
+
+<div id="mobileMenu"
+  class="fixed top-0 left-0 h-full w-80 bg-white z-[1000]
+  transform -translate-x-full transition-transform duration-500 ease-out
+  shadow-2xl overflow-y-auto">
+
+  
+
+  <div class="px-8 py-8 flex flex-col space-y-6">
+
+    <!-- SECTION DIVIDER STYLE -->
+
+    <!-- About -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
         onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
         About
-        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
-      <div id="mobileAboutMenu" class="hidden pl-4 mt-1 space-y-1">
-        <a href="#story" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Our Story</a>
-        <a href="#board" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Board of Directors</a>
-        <a href="#team" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Management Team</a>
-        <a href="#partners" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Our Partners</a>
+
+      <div id="mobileAboutMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="#story" class="mobile-link pl-4 hover:bg-orange-50">Our Story</a>
+        <a href="#board" class="mobile-link pl-4 hover:bg-orange-50">Board of Directors</a>
+        <a href="#team" class="mobile-link pl-4 hover:bg-orange-50">Management Team</a>
+        <a href="#partners" class="mobile-link pl-4 hover:bg-orange-50">Our Partners</a>
+
       </div>
     </div>
 
-    <!-- What We Do Dropdown -->
-    <div>
-      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition"
+    <!-- What We Do -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
         onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
         What We Do
-        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
-      <div id="mobileWhatMenu" class="hidden pl-4 mt-1 space-y-1">
-        <a href="#planting" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Planting</a>
-        <a href="#training" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Training</a>
-        <a href="#mobilization" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Resource Mobilization</a>
+
+      <div id="mobileWhatMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="#planting" class="mobile-link pl-4 hover:bg-orange-50">Church Planting</a>
+        <a href="#training" class="mobile-link pl-4 hover:bg-orange-50">Training</a>
+        <a href="#mobilization" class="mobile-link pl-4 hover:bg-orange-50">Resource Mobilization</a>
+
       </div>
     </div>
-    <!-- Our Programs Dropdown -->
-    <div>
-      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileProgramsMenu', this)">
+
+      <!-- Our Programs-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileOurProgramsMenu', this)">
         Our Programs
-        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
-      <div id="mobileProgramsMenu" class="hidden pl-4 mt-1 space-y-1">
-        <a href="#healthy" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Healthy Church Training</a>
-        <a href="#school" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">School Outreach</a>
-        <a href="#urban" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Urban Mission</a>
-        <a href="#women" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Women Evangelism</a>
-        <a href="#mission" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Africa Missions</a>
-        <a href="#social" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Social Outreach</a>
-        <a href="#music" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Church Music</a>
-        <a href="#media" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Media & Digital Evangelism</a>
-        <a href="#efl" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Education For Life</a>
+
+      <div id="mobileOurProgramsMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="#healthy" class="mobile-link pl-4 hover:bg-orange-50">Healthy Church Training & Capacity Building</a>
+            <a href="#school" class="mobile-link pl-4 hover:bg-orange-50">School Outreach & Discipleship</a>
+            <a href="#urban" class="mobile-link pl-4 hover:bg-orange-50">Urban Mission Orientation</a>
+            <a href="#women" class="mobile-link pl-4 hover:bg-orange-50">Women Evangelism & Discipleship</a>  
+            <a href="#mission" class="mobile-link pl-4 hover:bg-orange-50">Africa Missions & Evangelism Caravan</a>
+            <a href="#social" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
+            <a href="#music" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
+            <a href="#media" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
+
       </div>
     </div>
 
-     <!-- Resources Dropdown -->
-    <div>
-      <button class="w-full flex justify-between items-center py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition" onclick="toggleMobileSubMenu('mobileResourcesMenu', this)">
-        Resources
-        <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+       <!-- Resources-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileResourcesMenu', this)">
+       Resources
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
         </svg>
       </button>
-      <div id="mobileResourcesMenu" class="hidden pl-4 mt-1 space-y-1">
-        <a href="#newsletter" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Newsletter</a>
-        <a href="#reports" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Reports</a>
-        <a href="#projects" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Projects</a>
-        <a href="#stories" class="block py-2 text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-600 to-blue-400 rounded-full shadow-sm transition">Featured Stories & Testimonials</a>
+
+      <div id="mobileResourcesMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="#newsletter" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
+          <a href="#reports" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
+          <a href="#projects" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
+          <a href="#stories" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
       </div>
-      </div>
+    </div>
 
-    <a href="harvest.html" 
-   class="block py-3 px-3 font-medium text-gray-800 hover:text-blue-600 hover:bg-blue-50 rounded-full transition">
-   Harvest Field
-</a>
+    <!-- HARVEST -->
+    <a href="harvest.html"
+      class="py-3 text-gray-900 font-medium hover:text-gray-600 transition">
+      Harvest Field
+    </a>
 
+    <!-- CTA Buttons -->
+    <div class="pt-6 space-y-4">
 
-    <!-- Single Buttons -->
-    <a href="#partner" class="block py-3 mt-4 text-center bg-blue-600 text-white rounded-full hover:bg-[#FF6500] transition font-semibold">Partner With Us</a>
-    <a href="#apply" class="block py-3 mt-2 text-center border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white transition font-semibold">Apply For Training</a>
+      <a href="#partner"
+        class="block text-center py-3 bg-gray-900 text-white tracking-wide
+        hover:bg-black transition duration-300">
+        Partner With Us
+      </a>
+
+      <a href="#apply"
+        class="block text-center py-3 border border-gray-900 text-gray-900
+        hover:bg-gray-900 hover:text-white transition duration-300">
+        Apply For Training
+      </a>
+
+    </div>
+
   </div>
 </div>
 
@@ -661,10 +771,15 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
   </div>
 </section>
 
-
 <!-- ================= HARVEST FIELD MAP SECTION ================= -->
-<section id="harvest-map" class="py-24 bg-gradient-to-b from-white to-gray-50">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start md:items-center">
+<section id="harvest-map" class="relative py-24 bg-gradient-to-b from-white to-gray-50 overflow-hidden">
+  
+  <!-- Background Logo (washed out) -->
+  <img src="Images/AMA-EDITED-LOGO.png" 
+       alt="AMA Logo Background"
+       class="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none select-none">
+
+  <div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start md:items-center">
 
     <!-- Left Content -->
     <div data-aos="fade-up" data-aos-duration="1200">
@@ -726,7 +841,6 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
 
   </div>
 </section>
-
 <!-- ================= HARVEST FIELD ================= -->
 <section id="harvest" class="py-20 max-w-7xl mx-auto px-6 bg-gradient-to-r from-[#1E3A8A] via-[#C8A951] to-[#3B82F6] rounded-3xl text-white relative overflow-hidden">
   <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Harvest Fields Across Africa</h2>
@@ -802,17 +916,115 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
 
 
 <!-- ================= CTA ================= -->
-<section class="py-20 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold mb-6">Join the Mission</h2>
-  <div class="flex flex-col sm:flex-row justify-center gap-4">
-    <a href="#partner" class="bg-blue-800 text-white px-8 py-4 rounded hover:bg-blue-900">
-      Partner With Us
-    </a>
-    <a href="#apply" class="border border-blue-800 text-blue-800 px-8 py-4 rounded hover:bg-blue-800 hover:text-white">
-      Apply for Training Programmes
-    </a>
+<section class="relative py-20 bg-gray-100 text-center overflow-hidden">
+
+  <!-- Background Logo (washed-out + animated) -->
+  <img src="Images/AMA-EDITED-LOGO.png" 
+       alt="AMA Logo Background"
+       class="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none select-none animate-pulse-slow">
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
+      Join the Mission
+    </h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#partner" class="bg-gradient-to-r from-blue-800 to-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:scale-105 hover:shadow-2xl transition transform duration-300 font-semibold">
+        Partner With Us
+      </a>
+      <a href="#apply" class="border border-blue-800 text-blue-800 px-8 py-4 rounded-xl hover:bg-blue-800 hover:text-white hover:scale-105 transition transform duration-300 font-semibold">
+        Apply for Training Programmes
+      </a>
+    </div>
   </div>
 </section>
+
+
+<!-- Blogs-->
+
+<section id="ama-updates" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <!-- Section Heading -->
+    <h2 class="text-4xl font-extrabold text-blue-900 mb-12 text-center">
+      Latest Updates
+    </h2>
+
+    <!-- Blog Cards Grid -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Blog Card Example -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+        <img src="Images/Patience.jpeg" alt="Blog Post 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-900">Trauma Healing Global Practice Conference</h3>
+          <!-- Date -->
+  <p class="text-sm text-gray-500 mb-2">
+    October 21 -23, 2025
+  </p>
+          <p class="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
+            Strengthening Our Commitment to Healing and Wholeness
+
+Anglican Missions Africa (AMA) participated in the Trauma Healing Global Practice Conference, a transformative
+          </p>
+          <button onclick="openModal('modal1')" class="text-blue-800 font-semibold hover:underline">
+            Read More →
+          </button>
+        </div>
+      </div>
+
+      <!-- Another Card -->
+      <div class="bg-gray-50 rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+        <img src="Images/Clergy-Training.jpg" alt="Blog Post 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2 text-blue-900">Clergy Healthy Church Training – Maseno North Diocese</h3>
+          <p class="text-gray-700 mb-4 text-sm sm:text-base leading-relaxed">
+            Growing the Church Through Discipleship
+
+AMA concluded a three-day Healthy Church Training for Clergy at…
+          </p>
+          <button onclick="openModal('modal2')" class="text-blue-800 font-semibold hover:underline">
+            Read More →
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+<!-- Modal 1 -->
+<div id="modal1" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[1000] hidden p-4">
+  <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-y-auto max-h-[90vh] p-6 relative">
+    <button onclick="closeModal('modal1')" class="absolute top-4 right-4 text-2xl font-bold text-gray-700 hover:text-red-600">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-blue-900">Trauma Healing Global Practice Conference</h3>
+    <p class="text-gray-700 leading-relaxed">
+      Anglican Missions Africa (AMA) participated in the Trauma Healing Global Practice Conference, a transformative two-and-a-half-day gathering organized by the Trauma Healing Institute in collaboration with Bible Societies across the world.
+
+Held at Pamevek Hotel, Nairobi – Westlands, the conference brought together practitioners dedicated to supporting communities affected by trauma.
+
+Our Director of Training and Capacity Building, Rev. Patience S. Wanzala, represented AMA and engaged in sessions centered on learning, relearning, reflection, and re-energizing for ministry.
+
+In Turkana County, AMA continues its work among vulnerable young men and women, journeying with them toward healing and restored hope. This conference strengthened our tools, perspectives, and partnerships for ongoing trauma-responsive ministry.
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div id="modal2" class="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-[1000] hidden p-4">
+  <div class="bg-white rounded-2xl max-w-lg w-full shadow-2xl overflow-y-auto max-h-[90vh] p-6 relative">
+    <button onclick="closeModal('modal2')" class="absolute top-4 right-4 text-2xl font-bold text-gray-700 hover:text-red-600">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-blue-900">Clergy Healthy Church Training – Maseno North Diocese</h3>
+    <p class="text-gray-700 leading-relaxed">
+      Growing the Church Through Discipleship
+
+AMA concluded a three-day Healthy Church Training for Clergy at St. Philips in the ACK Maseno North Diocese.
+
+The training explored the dynamics of Church growth through discipleship, equipping approximately 70 clergy with practical tools for leading thriving and mission-oriented congregations.
+
+We extend heartfelt appreciation to Bishop Charles for hosting and supporting the initiative. Together, we are committed to building healthy, multiplying churches across Kenya.
+</div>
+</div>
 
 <!-- ================= FOOTER ================= -->
 
@@ -953,48 +1165,112 @@ data-aos-delay="100">Every believer MUST come under Church discipline, restraini
 
 
 <!-- ================= JS ================= -->
- <script>
- const menuBtn = document.getElementById('menuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
-const overlay = document.getElementById('mobileMenuOverlay');
 
-// Hamburger morphing + menu toggle
-menuBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('-translate-x-full');
-  overlay.classList.toggle('hidden');
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-  const bars = menuBtn.querySelectorAll('.bar');
-  bars[0].classList.toggle('rotate-45');
-  bars[0].classList.toggle('translate-y-2');
+  const dropdowns = document.querySelectorAll(".dropdown"); // desktop dropdowns
+  const mobileMenu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  const menuBtn = document.getElementById('menuBtn');
 
-  bars[1].classList.toggle('opacity-0');
+  // ===== Mobile submenu toggle =====
+window.toggleMobileSubMenu = function(menuId, button) {
+  const submenu = document.getElementById(menuId);
+  if (!submenu) return;
 
-  bars[2].classList.toggle('-rotate-45');
-  bars[2].classList.toggle('-translate-y-2');
+  if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+    submenu.style.maxHeight = "0px";
+  } else {
+    submenu.style.maxHeight = submenu.scrollHeight + "px";
+  }
+
+  const arrow = button.querySelector("svg");
+  if (arrow) arrow.classList.toggle("rotate-180");
+};
+
+  // ===== Desktop dropdown hover =====
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector(".dropdown-toggle");
+    const menu = dropdown.querySelector(".dropdown-menu");
+    const arrow = toggle ? toggle.querySelector("svg") : null;
+
+    // Desktop hover
+    dropdown.addEventListener("mouseenter", function () {
+      if (window.innerWidth >= 768) {
+        closeAllDropdowns(dropdown);
+        if (menu) menu.classList.remove("hidden");
+setTimeout(() => {
+  menu.classList.remove("opacity-0", "translate-y-2");
+}, 10);
+        if (arrow) arrow.classList.add("rotate-180");
+      }
+    });
+
+    dropdown.addEventListener("mouseleave", function () {
+      if (window.innerWidth >= 768) {
+        if (menu) menu.classList.add("opacity-0", "translate-y-2");
+setTimeout(() => {
+  menu.classList.add("hidden");
+}, 200);
+        if (arrow) arrow.classList.remove("rotate-180");
+      }
+    });
+  });
+
+  // Close desktop dropdowns when clicking outside
+  document.addEventListener("click", function () {
+    closeAllDropdowns();
+  });
+
+  function closeAllDropdowns(except = null) {
+    dropdowns.forEach(dropdown => {
+      if (dropdown !== except) {
+        const menu = dropdown.querySelector(".dropdown-menu");
+        const arrow = dropdown.querySelector(".dropdown-toggle svg");
+        if (menu) menu.classList.add("opacity-0", "translate-y-2");
+setTimeout(() => {
+  menu.classList.add("hidden");
+}, 200);
+        if (arrow) arrow.classList.remove("rotate-180");
+      }
+    });
+  }
+
+  // ===== Mobile menu toggle =====
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('-translate-x-full');
+    overlay.classList.toggle('hidden');
+
+    const bars = menuBtn.querySelectorAll('.bar');
+    bars[0].classList.toggle('rotate-45');
+    bars[0].classList.toggle('translate-y-2');
+    bars[1].classList.toggle('opacity-0');
+    bars[2].classList.toggle('-rotate-45');
+    bars[2].classList.toggle('-translate-y-2');
+  });
+
+  // Close mobile menu when overlay clicked
+  overlay.addEventListener('click', () => {
+    mobileMenu.classList.add('-translate-x-full');
+    overlay.classList.add('hidden');
+
+    const bars = menuBtn.querySelectorAll('.bar');
+    bars[0].classList.remove('rotate-45', 'translate-y-2');
+    bars[1].classList.remove('opacity-0');
+    bars[2].classList.remove('-rotate-45', '-translate-y-2');
+
+    // Close all mobile submenus
+    const mobileSubmenus = mobileMenu.querySelectorAll(".hidden, .dropdown-menu");
+    mobileSubmenus.forEach(sub => sub.classList.add("hidden"));
+
+    // Reset all arrows
+    const arrows = mobileMenu.querySelectorAll("button svg");
+    arrows.forEach(svg => svg.classList.remove("rotate-180"));
+  });
+
 });
-
-// Close menu when clicking overlay
-overlay.addEventListener('click', () => {
-  mobileMenu.classList.add('-translate-x-full');
-  overlay.classList.add('hidden');
-
-  const bars = menuBtn.querySelectorAll('.bar');
-  bars[0].classList.remove('rotate-45', 'translate-y-2');
-  bars[1].classList.remove('opacity-0');
-  bars[2].classList.remove('-rotate-45', '-translate-y-2');
-});
-
-// Dropdown toggle function
-function toggleMobileSubMenu(id, button) {
-  const submenu = document.getElementById(id);
-  submenu.classList.toggle('hidden');
-
-  // Animate arrow
-  const svg = button.querySelector('svg');
-  svg.classList.toggle('rotate-180');
-}
 </script>
-
 
 <!-- ================= COUNTER SCRIPT ================= -->
 
@@ -1116,6 +1392,44 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
+});
+</script>
+
+
+<script>
+  /* ==== Tailwind Custom Animation Extension ==== */
+
+module.exports = {
+  theme: {
+    extend: {
+      keyframes: {
+        'pulse-slow': {
+          '0%, 100%': { transform: 'scale(1)', opacity: '0.08' },
+          '50%': { transform: 'scale(1.05)', opacity: '0.12' },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse-slow 6s ease-in-out infinite',
+      },
+    },
+  },
+}
+</script>
+
+<script>
+  function openModal(id) {
+  document.getElementById(id).classList.remove('hidden');
+}
+
+function closeModal(id) {
+  document.getElementById(id).classList.add('hidden');
+}
+
+// Optional: close modal when clicking outside the content
+document.querySelectorAll('[id^="modal"]').forEach(modal => {
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal(modal.id);
+  });
 });
 </script>
 
