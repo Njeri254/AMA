@@ -192,7 +192,7 @@
     <!-- Desktop Nav -->
        <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-800">
       <!-- About Section -->
-      <div class="relative dropdown">
+      <div class="relative dropdown pb-2">
   <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
     About Us
     <svg class="w-4 h-4 ml-1 transition-transform duration-300"
@@ -203,7 +203,7 @@
     </svg>
   </button>
 
-    <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+    <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
             border border-gray-100 shadow-2xl rounded-2xl hidden z-50
             opacity-0 translate-y-2 transition-all duration-300">
     <a href="#story" class="block px-6 py-3 text-sm font-medium text-gray-700
@@ -223,7 +223,7 @@
 
 
       <!-- What We Do -->
-     <div class="relative dropdown">
+     <div class="relative dropdown pb-2">
   <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
     What We Do
     <svg class="w-4 h-4 ml-1 transition-transform duration-300"
@@ -234,7 +234,7 @@
     </svg>
   </button>
 
-  <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
             border border-gray-100 shadow-2xl rounded-2xl hidden z-50
             opacity-0 translate-y-2 transition-all duration-300">
     <a href="#planting" class="block px-6 py-3 text-sm font-medium text-gray-700
@@ -251,7 +251,7 @@
       
    <!-- Our Programs-->
 
-      <div class="relative dropdown">
+      <div class="relative dropdown pb-2">
   <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
     Our Programs
     <svg class="w-4 h-4 ml-1 transition-transform duration-300"
@@ -262,7 +262,7 @@
     </svg>
   </button>
 
- <div class="dropdown-menu absolute left-0 top-full mt-4 w-[480px]
+ <div class="dropdown-menu absolute left-0 top-full w-[480px]
             bg-white/95 backdrop-blur-lg
             border border-gray-100
             shadow-2xl rounded-2xl
@@ -307,7 +307,7 @@
 
             <!-- Resources -->
 
-      <div class="relative dropdown">
+      <div class="relative dropdown pb-2">
   <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
     Resources
     <svg class="w-4 h-4 ml-1 transition-transform duration-300"
@@ -318,7 +318,7 @@
     </svg>
   </button>
 
-  <div class="dropdown-menu absolute left-0 top-full mt-4 w-72 bg-white/95 backdrop-blur-lg 
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
             border border-gray-100 shadow-2xl rounded-2xl hidden z-50
             opacity-0 translate-y-2 transition-all duration-300">
     
@@ -363,9 +363,8 @@
 </a>
     </nav>
 
-    <!-- Mobile Hamburger -->
 <!-- ===== MOBILE HAMBURGER BUTTON ===== -->
-<button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-50 relative">
+<button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-[1100] relative">
   <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
   <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
   <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
@@ -671,7 +670,7 @@ data-aos-delay="100">
           Equipping church leaders through accelerated church growth and discipleship programs.
         </p>
         <h4 class="text-4xl font-bold text-[#1E3A8A]">
-          <span class="counter" data-target="17000">0</span>+
+          <span class="counter" data-target="17000">0</span>
         </h4>
         <p class="text-gray-600 mb-6">Leaders Trained</p>
         <!-- Animated Learn More Button with Arrow -->
@@ -693,7 +692,7 @@ data-aos-delay="100">
           Establishing new worship spaces across Africa and mission frontiers.
         </p>
         <h4 class="text-4xl font-bold text-[#1E3A8A]">
-          <span class="counter" data-target="1000">0</span>+
+          <span class="counter" data-target="1000">0</span>
         </h4>
         <p class="text-gray-600 mb-6">Churches Planted</p>
         <a href="#church-planting-details" 
@@ -714,7 +713,7 @@ data-aos-delay="100">
           Supporting new churches with tents, roofing and infrastructure.
         </p>
         <h4 class="text-4xl font-bold text-[#1E3A8A]">
-          <span class="counter" data-target="130">0</span>+
+          <span class="counter" data-target="130">0</span>
         </h4>
         <p class="text-gray-600 mb-6">Tents Distributed</p>
         <a href="#resources-details" 
@@ -1169,112 +1168,170 @@ We extend heartfelt appreciation to Bishop Charles for hosting and supporting th
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  const dropdowns = document.querySelectorAll(".dropdown"); // desktop dropdowns
-  const mobileMenu = document.getElementById('mobileMenu');
-  const overlay = document.getElementById('mobileMenuOverlay');
-  const menuBtn = document.getElementById('menuBtn');
+  const dropdowns = document.querySelectorAll(".dropdown");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("mobileMenuOverlay");
+  const menuBtn = document.getElementById("menuBtn");
 
-  // ===== Mobile submenu toggle =====
-window.toggleMobileSubMenu = function(menuId, button) {
-  const submenu = document.getElementById(menuId);
-  if (!submenu) return;
+  /* ==============================
+     MOBILE SUBMENU TOGGLE
+  ============================== */
+  window.toggleMobileSubMenu = function(menuId, button) {
 
-  if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-    submenu.style.maxHeight = "0px";
-  } else {
-    submenu.style.maxHeight = submenu.scrollHeight + "px";
+    const submenu = document.getElementById(menuId);
+    if (!submenu) return;
+
+    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+      submenu.style.maxHeight = "0px";
+    } else {
+      submenu.style.maxHeight = submenu.scrollHeight + "px";
+    }
+
+    const arrow = button.querySelector("svg");
+    if (arrow) arrow.classList.toggle("rotate-180");
+  };
+
+
+  /* ==============================
+     MOBILE MENU TOGGLE
+  ============================== */
+
+  menuBtn.addEventListener("click", toggleMobileMenu);
+  overlay.addEventListener("click", closeMobileMenu);
+
+  function toggleMobileMenu() {
+
+    mobileMenu.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+
+    toggleHamburger();
   }
 
-  const arrow = button.querySelector("svg");
-  if (arrow) arrow.classList.toggle("rotate-180");
-};
+  function closeMobileMenu() {
 
-  // ===== Desktop dropdown hover =====
-  dropdowns.forEach(dropdown => {
-    const toggle = dropdown.querySelector(".dropdown-toggle");
-    const menu = dropdown.querySelector(".dropdown-menu");
-    const arrow = toggle ? toggle.querySelector("svg") : null;
+    mobileMenu.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
 
-    // Desktop hover
-    dropdown.addEventListener("mouseenter", function () {
-      if (window.innerWidth >= 768) {
-        closeAllDropdowns(dropdown);
-        if (menu) menu.classList.remove("hidden");
-setTimeout(() => {
-  menu.classList.remove("opacity-0", "translate-y-2");
-}, 10);
-        if (arrow) arrow.classList.add("rotate-180");
-      }
+    resetHamburger();
+    resetMobileSubmenus();
+  }
+
+
+  /* ==============================
+     HAMBURGER ANIMATION
+  ============================== */
+
+  function toggleHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.toggle("rotate-45");
+    bars[0].classList.toggle("translate-y-2");
+
+    bars[1].classList.toggle("opacity-0");
+
+    bars[2].classList.toggle("-rotate-45");
+    bars[2].classList.toggle("-translate-y-2");
+  }
+
+  function resetHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.remove("rotate-45","translate-y-2");
+    bars[1].classList.remove("opacity-0");
+    bars[2].classList.remove("-rotate-45","-translate-y-2");
+  }
+
+
+  /* ==============================
+     RESET MOBILE SUBMENUS
+  ============================== */
+
+  function resetMobileSubmenus() {
+
+    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
+
+    mobileSubmenus.forEach(sub => {
+      sub.style.maxHeight = "0px";
     });
 
-    dropdown.addEventListener("mouseleave", function () {
-      if (window.innerWidth >= 768) {
-        if (menu) menu.classList.add("opacity-0", "translate-y-2");
-setTimeout(() => {
-  menu.classList.add("hidden");
-}, 200);
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
+    const arrows = mobileMenu.querySelectorAll("button svg");
+
+    arrows.forEach(svg => {
+      svg.classList.remove("rotate-180");
     });
-  });
+  }
 
-  // Close desktop dropdowns when clicking outside
-  document.addEventListener("click", function () {
-    closeAllDropdowns();
-  });
 
-  function closeAllDropdowns(except = null) {
+  /* ==============================
+     DESKTOP DROPDOWN HOVER
+  ============================== */
+
+  if (window.innerWidth >= 768) {
+
     dropdowns.forEach(dropdown => {
-      if (dropdown !== except) {
+
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const arrow = toggle ? toggle.querySelector("svg") : null;
+
+      if (!menu) return;
+
+      dropdown.addEventListener("mouseenter", () => {
+
+        menu.classList.remove("hidden","opacity-0","translate-y-2");
+
+        if (arrow) arrow.classList.add("rotate-180");
+      });
+
+      dropdown.addEventListener("mouseleave", () => {
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
+        if (arrow) arrow.classList.remove("rotate-180");
+      });
+
+    });
+
+  }
+
+
+  /* ==============================
+     CLOSE DROPDOWN WHEN CLICK OUTSIDE
+  ============================== */
+
+  document.addEventListener("click", function (e) {
+
+    dropdowns.forEach(dropdown => {
+
+      if (!dropdown.contains(e.target)) {
+
         const menu = dropdown.querySelector(".dropdown-menu");
         const arrow = dropdown.querySelector(".dropdown-toggle svg");
-        if (menu) menu.classList.add("opacity-0", "translate-y-2");
-setTimeout(() => {
-  menu.classList.add("hidden");
-}, 200);
+
+        if (!menu) return;
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
         if (arrow) arrow.classList.remove("rotate-180");
       }
+
     });
-  }
 
-  // ===== Mobile menu toggle =====
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('-translate-x-full');
-    overlay.classList.toggle('hidden');
-
-    const bars = menuBtn.querySelectorAll('.bar');
-    bars[0].classList.toggle('rotate-45');
-    bars[0].classList.toggle('translate-y-2');
-    bars[1].classList.toggle('opacity-0');
-    bars[2].classList.toggle('-rotate-45');
-    bars[2].classList.toggle('-translate-y-2');
-  });
-
-  // Close mobile menu when overlay clicked
-  overlay.addEventListener('click', () => {
-    mobileMenu.classList.add('-translate-x-full');
-    overlay.classList.add('hidden');
-
-    const bars = menuBtn.querySelectorAll('.bar');
-    bars[0].classList.remove('rotate-45', 'translate-y-2');
-    bars[1].classList.remove('opacity-0');
-    bars[2].classList.remove('-rotate-45', '-translate-y-2');
-
-    // Close all mobile submenus
-    const mobileSubmenus = mobileMenu.querySelectorAll(".hidden, .dropdown-menu");
-    mobileSubmenus.forEach(sub => sub.classList.add("hidden"));
-
-    // Reset all arrows
-    const arrows = mobileMenu.querySelectorAll("button svg");
-    arrows.forEach(svg => svg.classList.remove("rotate-180"));
   });
 
 });
 </script>
-
 <!-- ================= COUNTER SCRIPT ================= -->
-
-
  <script>
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -1314,9 +1371,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
-
-
-
 
 
 <style>
