@@ -1,0 +1,1140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Missions Anglicanes Afrique</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+
+  /* ===== Clean Ken Burns Zoom ===== */
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 6s ease-in-out;
+  z-index: -1;
+}
+
+.swiper-slide-active::before {
+  transform: scale(1.12);
+}
+</style>
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+</style>
+
+<style>
+/* Floating Shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite alternate;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background: #C8A951;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 400px;
+  height: 400px;
+  background: #1E3A8A;
+  bottom: -150px;
+  right: -150px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) scale(1); }
+  to { transform: translateY(40px) scale(1.1); }
+}
+</style>
+
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: zoomPattern 30s infinite alternate;
+}
+
+@keyframes zoomPattern {
+  from { background-size: 20px 20px; }
+  to { background-size: 30px 30px; }
+}
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+</style>
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+<style>
+.gradient-motion {
+  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+</style>
+
+<style>
+.card-hover:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+</style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+  
+<!-- ===== FIXED HEADER WRAPPER ===== -->
+<div class="fixed top-0 left-0 w-full z-[1000]">
+<!-- ================= TOP CONTACT BAR ================= -->
+  <div class="w-full bg-[#000044]/95 backdrop-blur-md text-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 flex justify-end items-center gap-4 md:gap-6 text-sm">
+    <a href="https://share.google/04hqO7TyZEFwijACO" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-map-marker-alt text-[#AACC44]"></i>
+    </a>
+    <a href="tel:+254745633976" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-phone-alt text-[#AACC44]"></i>
+    </a>
+    <a href="mailto:info@missionsanglicanesafrique.org" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-envelope text-[#AACC44]"></i>
+    </a>
+    <a href="https://facebook.com/MissionsAnglicanesAfrique" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-facebook-f text-[#AACC44]"></i>
+    </a>
+    <a href="https://x.com/Anglican_Africa" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-x-twitter text-[#AACC44]"></i>
+    </a>
+    <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-instagram text-[#AACC44]"></i>
+    </a>
+    <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-youtube text-[#AACC44]"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- ================= NAVIGATION ================= -->
+
+  <header class="relative z-[1000] bg-white text-white border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    
+ <!-- Logo -->
+    <a href="#home" class="h-10 sm:h-12 md:h-14 lg:h-20">
+      <img src="Images/AMA-EDITED-LOGO.png"
+           alt="Missions Anglicanes Afrique Logo"
+           class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
+    </a>
+
+    <!-- Desktop Nav -->
+       <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-800">
+      <!-- About Section -->
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    About Us
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+    <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="about.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Story</a>
+    <a href="board.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Board Of Directors</a>
+    <a href="team.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Management Team</a>
+    <a href="partners.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Partners</a>
+  </div>
+</div>
+
+
+      <!-- What We Do -->
+     <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    What We Do
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="#planting" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Church Planting</a>
+    <a href="#training" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Training</a>
+    <a href="#mobilization" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Resource Mobilization</a>
+  </div>
+</div>
+      
+   <!-- Our Programs-->
+
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Our Programs
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+ <div class="dropdown-menu absolute left-0 top-full w-[480px]
+            bg-white/95 backdrop-blur-lg
+            border border-gray-100
+            shadow-2xl rounded-2xl
+            hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300
+            grid grid-cols-2 gap-2 p-4">
+            <div class="px-6 pt-4 pb-2 text-xs uppercase tracking-wider text-gray-400">
+  Overview
+</div>
+    
+          <a href="#healthy" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Healthy Church Training & Capacity Building</a>
+          <a href="#school" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">School Outreach & Discipleship</a>
+          <a href="#urban" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Urban Mission Orientation</a>
+          <a href="#women" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Women Evangelism & Discipleship</a>
+          <a href="#mission" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Africa Missions & Evangelism Caravan</a>
+          <a href="#social" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Social Outreach</a>
+          <a href="#music" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Church Music Renewal</a>
+          <a href="#media" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Media & Digital Evangelism</a>
+          <a href="#efl" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Education For Life</a>
+  </div>
+</div>
+
+
+
+            <!-- Resources -->
+
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Resources
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    
+            <a href="#training" class="block px-6 py-3 text-sm font-medium text-gray-700 
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Training Materials</a>
+            <a href="#newsletter" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Newsletter</a>
+          <a href="#reports" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Reports</a>
+          <a href="#projects" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Projects</a>
+          <a href="#stories" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Featured Stories & Testimonials</a>  
+  </div>
+</div>
+
+       <!-- Harvest Field -->
+      <a href="#whatwedo" class="hover:text-blue-500">Harvest Field</a>
+
+      <!--Buttons-->
+       <a href="#partner"
+   class="hidden md:inline-flex items-center justify-center
+          bg-[#09637E] text-white
+          px-6 py-3 rounded-full
+          font-semibold shadow-md
+          hover:scale-105 hover:shadow-xl
+          transition duration-300">
+  Partner With Us
+</a>
+
+<a href="#apply"
+   class="hidden md:inline-flex items-center justify-center
+          border-2 border-[#FAB95B] text-[#FAB95B]
+          px-6 py-3 rounded-full
+          font-semibold
+          hover:bg-[#09637E] hover:text-white
+          hover:scale-105
+          transition duration-300">
+  Apply For Training
+</a>
+    </nav>
+
+<!-- ===== MOBILE HAMBURGER BUTTON ===== -->
+<button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-[1100] relative">
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+</button>
+
+</div>
+</header>
+</div>
+
+
+<!-- ===== MOBILE MENU ===== -->
+
+<div id="mobileMenuOverlay"
+     class="fixed inset-0 bg-black/50 hidden z-[999]">
+</div>
+
+<div id="mobileMenu"
+  class="fixed top-0 left-0 h-full w-80 bg-white z-[1000]
+  transform -translate-x-full transition-transform duration-500 ease-out
+  shadow-2xl overflow-y-auto">
+
+  
+
+  <div class="px-8 py-8 flex flex-col space-y-6">
+
+    <!-- SECTION DIVIDER STYLE -->
+
+    <!-- About -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
+        About
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileAboutMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="about.html" class="mobile-link pl-4 hover:bg-orange-50">Our Story</a>
+        <a href="board.html" class="mobile-link pl-4 hover:bg-orange-50">Board of Directors</a>
+        <a href="team.html" class="mobile-link pl-4 hover:bg-orange-50">Management Team</a>
+        <a href="partners.html" class="mobile-link pl-4 hover:bg-orange-50">Our Partners</a>
+
+      </div>
+    </div>
+
+    <!-- What We Do -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
+        What We Do
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileWhatMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="#planting" class="mobile-link pl-4 hover:bg-orange-50">Church Planting</a>
+        <a href="#training" class="mobile-link pl-4 hover:bg-orange-50">Training</a>
+        <a href="#mobilization" class="mobile-link pl-4 hover:bg-orange-50">Resource Mobilization</a>
+
+      </div>
+    </div>
+
+      <!-- Our Programs-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileOurProgramsMenu', this)">
+        Our Programs
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileOurProgramsMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="#healthy" class="mobile-link pl-4 hover:bg-orange-50">Healthy Church Training & Capacity Building</a>
+            <a href="#school" class="mobile-link pl-4 hover:bg-orange-50">School Outreach & Discipleship</a>
+            <a href="#urban" class="mobile-link pl-4 hover:bg-orange-50">Urban Mission Orientation</a>
+            <a href="#women" class="mobile-link pl-4 hover:bg-orange-50">Women Evangelism & Discipleship</a>  
+            <a href="#mission" class="mobile-link pl-4 hover:bg-orange-50">Africa Missions & Evangelism Caravan</a>
+            <a href="#social" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
+            <a href="#music" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
+            <a href="#media" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
+
+      </div>
+    </div>
+
+       <!-- Resources-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileResourcesMenu', this)">
+       Resources
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileResourcesMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="#newsletter" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
+          <a href="#reports" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
+          <a href="#projects" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
+          <a href="#stories" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
+      </div>
+    </div>
+
+    <!-- HARVEST -->
+    <a href="harvest.html"
+      class="py-3 text-gray-900 font-medium hover:text-gray-600 transition">
+      Harvest Field
+    </a>
+
+    <!-- CTA Buttons -->
+    <div class="pt-6 space-y-4">
+
+      <a href="#partner"
+        class="block text-center py-3 bg-gray-900 text-white tracking-wide
+        hover:bg-black transition duration-300">
+        Partner With Us
+      </a>
+
+      <a href="#apply"
+        class="block text-center py-3 border border-gray-900 text-gray-900
+        hover:bg-gray-900 hover:text-white transition duration-300">
+        Apply For Training
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="relative h-64 md:h-80 flex items-center justify-center bg-[#000044] text-white text-center pt-20 md:pt-24">
+  <div class="max-w-2xl px-6">
+    <h1 class="text-3xl md:text-4xl font-bold">Our Management Team</h1>
+    <p class="mt-3 text-lg text-gray-200">
+      Leadership driving Anglican Missions Africa’s programs, partnerships, and mission impact across the continent.
+    </p>
+  </div>
+</section>
+
+<!-- MANAGEMENT TEAM GRID -->
+<section class="py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+      <!-- Rev. Canon Capt Richard W. Mayabi -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+        <img src="Images/Team/Canon.jpeg" alt="Rev. Canon Capt. Richard W. Mayabi"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Rev. Canon Capt. Richard W. Mayabi</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Executive Director</p>
+          <button onclick="openProfile('mayabi')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Rev. Capt. Joel Soti -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+        <img src="Images/Team/Soti.jpg" alt="Rev. Capt. Joel Soti"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Rev. Capt. Joel Soti</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Director of Missions & Partnerships</p>
+          <button onclick="openProfile('soti')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Rev. Capt. Patience Santa Mwaggona -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+        <img src="Images/Team/Patience.png" alt="Rev. Capt. Patience Santa Mwaggona"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Rev. Capt. Patience Santa Mwaggona</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Director of Training & Capacity Building</p>
+          <button onclick="openProfile('patience')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+
+      <!-- Rev. Philip Huru -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="400">
+        <img src="Images/Team/Philip.jpeg" alt="Rev. Philip Huru"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Rev. Philip Huru</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Music Renewal & School Outreach Coordinator</p>
+          <button onclick="openProfile('philip')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+        <!-- Ednah Barusei -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+        <img src="Images/Team/Edna.jpeg" alt="Ednah Barusei"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Ednah Barusei</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Finance & Administration Officer</p>
+          <button onclick="openProfile('edna')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Silvia Chepkoech -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="500">
+        <img src="Images/Team/Silvia.jpeg" alt="Silvia Chepkoech"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Silvia Chepkoech</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Communications & IT Officer</p>
+          <button onclick="openProfile('silvia')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Kaindi Joseph -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="600">
+        <img src="Images/Team/Kaindi.jpeg" alt="Kaindi Joseph"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Kaindi Joseph</h3>
+          <p class="text-[#C8A437] text-sm mb-4">Media & Broadcast Manager</p>
+          <button onclick="openProfile('kaindi')"
+            class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
+            See Profile
+          </button>
+        </div>
+      </div>
+
+      <!-- Oscar Kalenga (no profile) -->
+      <div class="bg-white rounded-xl shadow-md text-center overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="700">
+        <img src="Images/Team/Oscar.jpg" alt="Oscar Kalenga"
+          class="w-full h-64 object-cover">
+        <div class="p-6">
+          <h3 class="text-lg font-bold">Oscar Kalenga</h3>
+          <p class="text-[#C8A437] text-sm mb-4">General Worker</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROFILE MODAL -->
+<div id="profileModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <div class="bg-white max-w-2xl w-full mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+    <div class="p-8 relative">
+      <button onclick="closeModal()" class="absolute top-4 right-6 text-3xl text-gray-500 hover:text-gray-700">&times;</button>
+      <div id="modalContent" class="space-y-4 text-gray-800"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+
+    <!-- Column 1: Logo & About -->
+    <div>
+      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Equipping, empowering and releasing mission leaders across Africa through evangelism,
+        discipleship, leadership development and church partnerships.
+      </p>
+      <!-- SOCIAL ICONS -->
+<div class="flex space-x-4 mt-6">
+
+  <a href="https://www.facebook.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://x.com/Anglican_Africa" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+</div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Quick Links</h3>
+      <ul class="space-y-3 text-gray-300">
+        <li><a href="#home" class="hover:text-[#C8A437] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#C8A437] transition">About Us</a></li>
+        <li><a href="#programs" class="hover:text-[#C8A437] transition">Programs</a></li>
+        <li><a href="#impact" class="hover:text-[#C8A437] transition">Impact</a></li>
+        <li><a href="#partner" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
+        <li><a href="#apply" class="hover:text-[#C8A437] transition">Apply</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Programs -->
+    <div>
+      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Our Programs</h3>
+      <ul class="space-y-3 text-gray-300">
+        <li>Healthy Church Training</li>
+        <li>School Outreach</li>
+        <li>Urban Mission Orientation</li>
+        <li>Women Evangelism</li>
+        <li>Africa Missions Caravan</li>
+        <li>Media & Digital Evangelism</li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+<div class="max-w-md">
+  <h3 class="text-2xl font-semibold text-[#C8A437] mb-6">
+    Contact Us
+  </h3>
+
+  <div class="divide-y divide-gray-700">
+
+    <!-- Address -->
+    <a href="https://share.google/wzz650o0UhxDtyMke"
+       target="_blank"
+       class="group flex items-start gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-map-marker-alt text-[#C8A437] mt-1 text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition leading-relaxed">
+        P.O BOX 12713 - 0100 Nairobi, GPO Ngong - Kibiko Booster Road, Kenya
+      </span>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+254745633976"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-phone-alt text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        +254 745 633 976
+      </span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@missionsanglicanesafrique.org"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-envelope text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        info@missionsanglicanesafrique.org
+      </span>
+    </a>
+
+  </div>
+</div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="border-t border-[#C8A437]/30 mt-16 pt-6 text-center text-gray-400 text-sm">
+    <p>
+      © 2026 Missions Anglicanes Afrique. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+
+<!-- ================= JS ================= -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dropdowns = document.querySelectorAll(".dropdown");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("mobileMenuOverlay");
+  const menuBtn = document.getElementById("menuBtn");
+
+  /* ==============================
+     MOBILE SUBMENU TOGGLE
+  ============================== */
+  window.toggleMobileSubMenu = function(menuId, button) {
+
+    const submenu = document.getElementById(menuId);
+    if (!submenu) return;
+
+    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+      submenu.style.maxHeight = "0px";
+    } else {
+      submenu.style.maxHeight = submenu.scrollHeight + "px";
+    }
+
+    const arrow = button.querySelector("svg");
+    if (arrow) arrow.classList.toggle("rotate-180");
+  };
+
+
+  /* ==============================
+     MOBILE MENU TOGGLE
+  ============================== */
+
+  menuBtn.addEventListener("click", toggleMobileMenu);
+  overlay.addEventListener("click", closeMobileMenu);
+
+  function toggleMobileMenu() {
+
+    mobileMenu.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+
+    toggleHamburger();
+  }
+
+  function closeMobileMenu() {
+
+    mobileMenu.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+
+    resetHamburger();
+    resetMobileSubmenus();
+  }
+
+
+  /* ==============================
+     HAMBURGER ANIMATION
+  ============================== */
+
+  function toggleHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.toggle("rotate-45");
+    bars[0].classList.toggle("translate-y-2");
+
+    bars[1].classList.toggle("opacity-0");
+
+    bars[2].classList.toggle("-rotate-45");
+    bars[2].classList.toggle("-translate-y-2");
+  }
+
+  function resetHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.remove("rotate-45","translate-y-2");
+    bars[1].classList.remove("opacity-0");
+    bars[2].classList.remove("-rotate-45","-translate-y-2");
+  }
+
+
+  /* ==============================
+     RESET MOBILE SUBMENUS
+  ============================== */
+
+  function resetMobileSubmenus() {
+
+    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
+
+    mobileSubmenus.forEach(sub => {
+      sub.style.maxHeight = "0px";
+    });
+
+    const arrows = mobileMenu.querySelectorAll("button svg");
+
+    arrows.forEach(svg => {
+      svg.classList.remove("rotate-180");
+    });
+  }
+
+
+  /* ==============================
+     DESKTOP DROPDOWN HOVER
+  ============================== */
+
+  if (window.innerWidth >= 768) {
+
+    dropdowns.forEach(dropdown => {
+
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const arrow = toggle ? toggle.querySelector("svg") : null;
+
+      if (!menu) return;
+
+      dropdown.addEventListener("mouseenter", () => {
+
+        menu.classList.remove("hidden","opacity-0","translate-y-2");
+
+        if (arrow) arrow.classList.add("rotate-180");
+      });
+
+      dropdown.addEventListener("mouseleave", () => {
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
+        if (arrow) arrow.classList.remove("rotate-180");
+      });
+
+    });
+
+  }
+
+
+  /* ==============================
+     CLOSE DROPDOWN WHEN CLICK OUTSIDE
+  ============================== */
+
+  document.addEventListener("click", function (e) {
+
+    dropdowns.forEach(dropdown => {
+
+      if (!dropdown.contains(e.target)) {
+
+        const menu = dropdown.querySelector(".dropdown-menu");
+        const arrow = dropdown.querySelector(".dropdown-toggle svg");
+
+        if (!menu) return;
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
+        if (arrow) arrow.classList.remove("rotate-180");
+      }
+
+    });
+
+  });
+
+});
+</script>
+
+<script>
+// PROFILE CONTENT DATA
+const profiles = {
+
+// Example content — update with real bios
+mayabi: `
+<h2 class="text-2xl font-bold text-center mb-2">Rev. Canon Capt. Richard W. Mayabi</h2>
+<p class="mb-4">Executive Director & Founder of Anglican Missions Africa. Leads strategy, partnerships, and mission expansion.</p>
+<p class="text-gray-700">
+Rev. Canon Capt. Richard W. Mayabi is the founder of Missions Anglicanes Afrique (Anglican Missions Africa - AMA), a mission agency committed to nurturing a healthy and sustainable church in Africa and beyond.<br><br>
+
+<strong>Work Experience:</strong><br>
+2019 – Director in charge of Capacity Building and Leadership Development at the Council for Anglican Provinces of Africa (CAPA).<br>
+2009–2018 – General Secretary of Church Army Africa.<br>
+2004–2008 – Pioneer parish priest for both ACK St. Jerome and St. Thomas parishes in All Saints Cathedral Diocese.<br>
+1995–2003 – Pioneer missionary and church planter in Makueni-Machakos Diocese.<br><br>
+
+<strong>Educational Background:</strong><br>
+Master of Theology (MTh) in Urban World – International Christian College Glasgow / Aberdeen University.<br>
+Master of Arts (MA) in Mission Studies – Africa International University (AIU), Nairobi.<br>
+Post Graduate Diploma (PGD) in Christian Ministries – Africa International University (AIU), Nairobi.<br>
+Higher Diploma (HDP) in Theology Mission Deposit – Carlile College, Church Army Africa.<br>
+Diploma in Theology – Mission Deposit, Exeter University, UK.<br>
+Diploma in Discipleship Training School (DTS) – Youth With A Mission (YWAM) University of the Nations.<br><br>
+
+He is married to Rev. Capt. Patience Wanzala Mayabi, and together they are blessed with three children.
+</p>
+`,
+soti: `
+<h2 class="text-2xl font-bold text-center mb-2">Rev. Capt. Joel Apolo Soti</h2>
+<p class="mb-4">Director of Missions and Partnerships, leading cross‑church partnerships and mission coordination.</p>
+<p class="text-gray-700">
+Rev. Capt. Joel Apolo Soti is a dedicated and accomplished leader in theology and missions, committed to nurturing sustainable church growth and leadership development across Africa.<br><br>
+
+<strong>Educational Background:</strong><br>
+Doctorate in Intercultural Studies (Ongoing) – Fuller Theological Seminary, USA.<br>
+Authentic Leadership (Ongoing) – EQUIP Leadership, Canada.<br>
+Master in Missions Studies (2015–2018) – Africa International University.<br>
+Bachelor of Theology (First Class Honors) (2013–2015) – Africa International University.<br>
+Higher Diploma in Urban Mission Theology (2008–2011) – Carlile College.<br>
+Diploma in Automotive Engineering (2000–2002) – Kisumu Polytechnic.<br><br>
+
+<strong>Work Experience:</strong><br>
+Served as Missions Director at African Evangelistic Enterprise.<br>
+Missions and Ministry Formation Officer & Lecturer at Church Army Africa & Carlile College.<br>
+Held various clergy roles within the ACK parishes in Machakos Diocese.<br><br>
+
+Rev. Soti brings extensive experience in missions, leadership formation, and theological education, equipping the next generation of church leaders.
+</p>
+`,
+patience: `
+<h2 class="text-2xl font-bold text-center mb-2">Rev. Capt. Patience Santa Mwaggona</h2>
+<p class="mb-4">Director of Training & Capacity Building, overseeing leadership and discipleship training programs.</p>
+<p class="text-gray-700">
+Rev. Capt. Patience Santa Mwaggona is a born-again Christian serving as a priest in the Anglican Church of Kenya, currently attached to ACK St Luke’s Kenyatta. She brings decades of experience in ministry, theological education, and leadership development.<br><br>
+
+<strong>Educational Background:</strong><br>
+Higher Diploma in Christian Mission – Carlile College.<br>
+Bachelor and Masters Degrees in Mission Studies – University of South Africa.<br>
+Post Graduate Diploma and Masters in Theological Education – London School of Theology.<br>
+Currently pursuing a PhD with Middlesex University through London School of Theology.<br><br>
+
+<strong>Work Experience:</strong><br>
+2000–2001 – Evangelist in Mombasa Diocese.<br>
+2002–2003 – Priest in Machakos Diocese.<br>
+2004 – Priest in Diocese of Mt Kenya South.<br>
+Jan 2005–May 2006 – Priest in Diocese of All Saints Cathedral.<br>
+2006–July 2023 – Tutor at Carlile College.<br>
+2016–2022 – Principal at Church Army Africa – Carlile College.<br><br>
+
+Rev. Capt. Patience is married to Rev. Canon Capt. Richard W. Mayabi, and together they are blessed with three children. Her passion is equipping church leaders and nurturing disciples for effective ministry.
+</p>
+`,
+philip: `
+<h2 class="text-2xl font-bold text-center mb-2">Rev. Philip Huru</h2>
+<p class="mb-4">Music Renewal & School Outreach Coordinator, advancing worship and education initiatives.</p>
+<p class="text-gray-700">
+Rev. Philip Huru holds a Bachelor of Education from Presbyterian University of East Africa and a Diploma in Education from Mount Kenya University. He has also achieved ABRSM Grade 5 and is currently pursuing a Diploma in Christian Ministries – School Chaplaincy and Music program through UNISA.<br><br>
+
+Ordained into ministry in 2023 in the Anglican Diocese of Nambale, Rev. Huru has served in multiple roles including teacher, school chaplain, music trainer and director for various choirs, as well as cathedral music minister and curate.<br><br>
+
+He is passionate about teaching and school ministry, mentorship, and evangelism. Additionally, he is deeply committed to church music and Anglican worship, focusing on developing choirs and praise teams to enrich congregational worship.
+</p>
+`,
+edna: `
+<h2 class="text-2xl font-bold text-center mb-2">Ednah Barusei</h2>
+<p class="mb-4">Finance & Administration Officer, overseeing budgeting, financial reporting, and operational efficiency.</p>
+<p class="text-gray-700">
+Ednah Barusei is a seasoned finance and administration professional with over 10 years of experience in accounting, financial management, and organizational operations. Based in Nairobi, she has a strong background supporting church and academic institutions with a focus on financial integrity and efficiency.<br><br>
+
+Currently serving as Finance and Administrator at Anglican Missions Africa, she oversees budgeting, financial reporting, payroll, and compliance. She is skilled in accounting systems such as QuickBooks, SAP, Sage, Tally, Zoho, and Excel, and is known for strengthening internal controls and improving financial processes.<br><br>
+
+Ednah holds an MSc in Finance from JKUAT, a Bachelor of Commerce (Finance) from KCA University, and is a Certified Public Accountant of Kenya (CPAK). She is committed to excellence, integrity, and impactful service.
+</p>
+`,
+silvia: `
+<h2 class="text-2xl font-bold text-center mb-2">Silvia Chepkoech</h2>
+<p class="mb-4">Communications & Media Officer, managing AMA’s outreach, social media, and digital content.</p>
+<p class="text-gray-700">
+Silvia holds a bachelor’s degree in Communication and Media from Egerton University. She is an ambitious, God-fearing, and hardworking professional, excelling in photography, videography, graphic design, and social media management.<br><br>
+
+Work Experience:<br>
+2021 – 2023: Cactus Mama Telemental – Communications and Media Manager<br>
+2021 – 2022: Egerton Radio – Radio Presenter<br>
+2020 – 2021: Flicker Productions – Videographer<br>
+2019 – 2020: Jara Media – Script Writer & Voice-over Artist<br><br>
+
+Skills & Expertise include excellent verbal and written communication, strong interpersonal abilities, media production knowledge, social media strategy, graphic design, visual storytelling, and ethical communication practices. She is adept at working both independently and collaboratively, and quickly adapts to new technologies and trends.<br><br>
+
+Silvia joined Missions Anglicanes Afrique in December 2022, where she currently leads communications and media operations.
+</p>
+`,
+kaindi: `
+<h2 class="text-2xl font-bold text-center mb-2">Televangelist Kaindi Joseph</h2>
+<p class="mb-4">Media & Broadcast Manager, leading innovative Gospel outreach through media, events, and technology.</p>
+<p class="text-gray-700">
+Kaindi Joseph is a distinguished journalist, media expert, and evangelist in the Anglican Church of Kenya. Renowned for engaging youth, he blends professional journalism expertise with his evangelical calling to deliver transformative messages.<br><br>
+
+Career Highlights:<br>
+– Journalism Expertise: Skilled in communication, storytelling, and digital citizenship, emphasizing positive social media use and integrity.<br>
+– Evangelical Ministry: Active Diocesan Evangelist since 2020, excelling in pastoral care, community outreach, and spiritual leadership within the Anglican Church of Kenya, Diocese of Makueni.<br>
+– Leadership in Missions: Diocesan Missions General Secretary (2023), coordinating outreach programs, fostering partnerships, and guiding faith-based development projects.<br>
+– Youth Mobilization: Youth Pastor at ACK Emmanuel Pro-Cathedral, mentoring and inspiring revival among young believers.<br><br>
+
+Educational Background:<br>
+BA in Mass Media and Communication, Mount Kenya University (Corporate Communications specialization).<br><br>
+
+Vision and Goals:<br>
+Kaindi aspires to advance faith-based initiatives through technology and innovation, fostering positive transformation across Africa and beyond.
+</p>
+`,
+};
+
+// Open modal with profile
+  function openProfile(profileKey) {
+    const modal = document.getElementById("profileModal");
+    const content = document.getElementById("modalContent");
+
+    if (!profiles[profileKey]) return;
+
+    content.innerHTML = profiles[profileKey];
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  // Close modal
+  function closeModal() {
+    const modal = document.getElementById("profileModal");
+    modal.classList.remove("flex");
+    modal.classList.add("hidden");
+  }
+
+  // Close modal when clicking outside
+  document.getElementById("profileModal").addEventListener("click", function(e) {
+    if (e.target.id === "profileModal") closeModal();
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
+
+</body>
+</html>
