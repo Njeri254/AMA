@@ -1,0 +1,62 @@
+{
+  "programFeatures": [
+    {
+      "title": "Teacher Empowerment",
+      "description": "Equip teachers with spiritual and academic tools to nurture students with Christ-like character and values.",
+      "icon": "fa-chalkboard-teacher"
+    },
+    {
+      "title": "Chaplaincy Training",
+      "description": "Train and support school chaplains in pastoral care and student discipleship.",
+      "icon": "fa-book-reader"
+    },
+    {
+      "title": "Student Discipleship",
+      "description": "Foster intentional discipleship among students through devotional groups, mentorship, and spiritual formation.",
+      "icon": "fa-user-graduate"
+    },
+    {
+      "title": "Christian Values Integration",
+      "description": "Equip educators to integrate biblical principles into curriculum and school life.",
+      "icon": "fa-bible"
+    },
+    {
+      "title": "Youth Ministry Support",
+      "description": "Strengthen youth programs through coaching, retreats, and mobilization events.",
+      "icon": "fa-users"
+    },
+    {
+      "title": "Mentorship & Care",
+      "description": "Provide ongoing pastoral care, mentorship, and spiritual support for school leaders.",
+      "icon": "fa-hands-helping"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "The school outreach ministry helped me integrate faith and learning for my students. Amazing experience!",
+      "author": "Rev. Philip Huru.",
+      "photo": "Images/Team/Philip.jpeg"
+    },
+    {
+      "quote": "I was empowered as a chaplain to mentor students spiritually and academically.",
+      "author": "Ms. Silvia Chep.",
+      "photo": "Images/Team/Silvia.jpeg"
+    },
+    {
+      "quote": "This program transformed our school chaplaincy and student ministry practices.",
+      "author": "General Joseph Kaindi.",
+      "photo": "Images/Team/kaindi.jpeg"
+    }
+  ],
+  "schoolOutreachSummary": [
+    {"diocese":"Bungoma","schools":22,"studentsReached":9859,"studentsSaved":4794},
+    {"diocese":"Makueni","schools":16,"studentsReached":5505,"studentsSaved":2004},
+    {"diocese":"Machakos","schools":8,"studentsReached":984,"studentsSaved":77},
+    {"diocese":"Mombasa","schools":30,"studentsReached":7907,"studentsSaved":1171},
+    {"diocese":"Nambale","schools":20,"studentsReached":10153,"studentsSaved":6733},
+    {"diocese":"Mt. Kenya South","schools":1,"studentsReached":769,"studentsSaved":79},
+    {"diocese":"Nakuru","schools":5,"studentsReached":1000,"studentsSaved":207},
+    {"diocese":"Meru","schools":6,"studentsReached":450,"studentsSaved":250},
+    {"diocese":"Katakwa","schools":15,"studentsReached":6258,"studentsSaved":3903}
+  ]
+}
