@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media & Digital Evangelism | Missions Anglicanes Afrique</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<style>
+
+  /* ===== Clean Ken Burns Zoom ===== */
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 6s ease-in-out;
+  z-index: -1;
+}
+
+.swiper-slide-active::before {
+  transform: scale(1.12);
+}
+</style>
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+</style>
+
+<style>
+/* Floating Shapes */
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite alternate;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background: #C8A951;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 400px;
+  height: 400px;
+  background: #1E3A8A;
+  bottom: -150px;
+  right: -150px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) scale(1); }
+  to { transform: translateY(40px) scale(1.1); }
+}
+</style>
+
+<style>
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: zoomPattern 30s infinite alternate;
+}
+
+@keyframes zoomPattern {
+  from { background-size: 20px 20px; }
+  to { background-size: 30px 30px; }
+}
+</style>
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+
+<style>
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+</style>
+
+<style>
+.gradient-motion {
+  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+</style>
+
+<style>
+.card-hover:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+</style>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+  
+<!-- ===== FIXED HEADER WRAPPER ===== -->
+<div class="fixed top-0 left-0 w-full z-[1000]">
+<!-- ================= TOP CONTACT BAR ================= -->
+  <div class="w-full bg-[#000044]/95 backdrop-blur-md text-white">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 py-2 flex justify-end items-center gap-4 md:gap-6 text-sm">
+    <a href="https://share.google/04hqO7TyZEFwijACO" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-map-marker-alt text-[#AACC44]"></i>
+    </a>
+    <a href="tel:+254745633976" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-phone-alt text-[#AACC44]"></i>
+    </a>
+    <a href="mailto:info@missionsanglicanesafrique.org" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fas fa-envelope text-[#AACC44]"></i>
+    </a>
+    <a href="https://facebook.com/MissionsAnglicanesAfrique" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-facebook-f text-[#AACC44]"></i>
+    </a>
+    <a href="https://x.com/Anglican_Africa" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-x-twitter text-[#AACC44]"></i>
+    </a>
+    <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-instagram text-[#AACC44]"></i>
+    </a>
+    <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank" class="hover:text-[#FFD786] transition duration-300">
+      <i class="fab fa-youtube text-[#AACC44]"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+<!-- ================= NAVIGATION ================= -->
+
+  <header class="relative z-[1000] bg-white text-white border-b border-white/10">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    
+ <!-- Logo -->
+    <a href="index.html" class="h-10 sm:h-12 md:h-14 lg:h-20">
+      <img src="Images/AMA-EDITED-LOGO.png"
+           alt="Missions Anglicanes Afrique Logo"
+           class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
+    </a>
+
+    <!-- Desktop Nav -->
+       <nav class="hidden md:flex items-center space-x-8 font-medium text-gray-800">
+      <!-- About Section -->
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    About Us
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+    <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="about.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Story</a>
+    <a href="board.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Board Of Directors</a>
+    <a href="team.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">The Management Team</a>
+    <a href="partners.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Our Partners</a>
+  </div>
+</div>
+
+
+      <!-- What We Do -->
+     <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    What We Do
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    <a href="church-planting.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Church Planting</a>
+    <a href="training.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Training</a>
+    <a href="resource-mobilization.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          hover:bg-blue-50 hover:text-blue-600
+          transition duration-200 rounded-lg">Resource Mobilization</a>
+  </div>
+</div>
+      
+   <!-- Our Programs-->
+
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Our Programs
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+ <div class="dropdown-menu absolute left-0 top-full w-[480px]
+            bg-white/95 backdrop-blur-lg
+            border border-gray-100
+            shadow-2xl rounded-2xl
+            hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300
+            grid grid-cols-2 gap-2 p-4">
+            <div class="px-6 pt-4 pb-2 text-xs uppercase tracking-wider text-gray-400">
+  Overview
+</div>
+    
+          <a href="healthy-church.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Healthy Church Training & Capacity Building</a>
+          <a href="school-outreach.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">School Outreach & Discipleship</a>
+          <a href="urban-mission.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Urban Mission Orientation</a>
+          <a href="women-evangelism.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Women Evangelism & Discipleship</a>
+          <a href="africa-missions.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Africa Missions & Evangelism Caravan</a>
+          <a href="social-outreach.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Social Outreach</a>
+          <a href="music.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Church Music Renewal</a>
+          <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Media & Digital Evangelism</a>
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Education For Life</a>
+  </div>
+</div>
+
+
+
+            <!-- Resources -->
+
+      <div class="relative dropdown pb-2">
+  <button class="dropdown-toggle flex items-center gap-1 hover:text-blue-500 transition">
+    Resources
+    <svg class="w-4 h-4 ml-1 transition-transform duration-300"
+         fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
+            border border-gray-100 shadow-2xl rounded-2xl hidden z-50
+            opacity-0 translate-y-2 transition-all duration-300">
+    
+            <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Training Materials</a>
+            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Newsletter</a>
+          <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Reports</a>
+          <a href="projects.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Projects</a>
+          <a href="stories.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+                hover:bg-blue-50 hover:text-blue-600
+                transition duration-200 rounded-lg">Featured Stories & Testimonials</a>  
+  </div>
+</div>
+
+       <!-- Harvest Field -->
+      <a href="harvest.html" class="hover:text-blue-500">Harvest Field</a>
+
+      <!--Buttons-->
+       <a href="partners.html"
+   class="hidden md:inline-flex items-center justify-center
+          bg-[#09637E] text-white
+          px-6 py-3 rounded-full
+          font-semibold shadow-md
+          hover:scale-105 hover:shadow-xl
+          transition duration-300">
+  Partner With Us
+</a>
+
+<a href="https://forms.gle/wYtTbGgdBX35FnGU7"
+   class="hidden md:inline-flex items-center justify-center
+          border-2 border-[#FAB95B] text-[#FAB95B]
+          px-6 py-3 rounded-full
+          font-semibold
+          hover:bg-[#09637E] hover:text-white
+          hover:scale-105
+          transition duration-300">
+  Apply For Programs
+</a>
+    </nav>
+
+<!-- ===== MOBILE HAMBURGER BUTTON ===== -->
+<button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-[1100] relative">
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+  <span class="bar block w-8 h-0.5 bg-gray-800 transition-all duration-300 origin-center"></span>
+</button>
+
+</div>
+</header>
+</div>
+
+
+<!-- ===== MOBILE MENU ===== -->
+
+<div id="mobileMenuOverlay"
+     class="fixed inset-0 bg-black/50 hidden z-[999]">
+</div>
+
+<div id="mobileMenu"
+  class="fixed top-0 left-0 h-full w-80 bg-white z-[1000]
+  transform -translate-x-full transition-transform duration-500 ease-out
+  shadow-2xl overflow-y-auto">
+
+  
+
+  <div class="px-8 py-8 flex flex-col space-y-6">
+
+    <!-- SECTION DIVIDER STYLE -->
+
+    <!-- About -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileAboutMenu', this)">
+        About
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileAboutMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="about.html" class="mobile-link pl-4 hover:bg-orange-50">Our Story</a>
+        <a href="board.html" class="mobile-link pl-4 hover:bg-orange-50">Board of Directors</a>
+        <a href="team.html" class="mobile-link pl-4 hover:bg-orange-50">Management Team</a>
+        <a href="partners.html" class="mobile-link pl-4 hover:bg-orange-50">Our Partners</a>
+
+      </div>
+    </div>
+
+    <!-- What We Do -->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileWhatMenu', this)">
+        What We Do
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileWhatMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+
+        <a href="church-planting.html" class="mobile-link pl-4 hover:bg-orange-50">Church Planting</a>
+        <a href="training-materials.html" class="mobile-link pl-4 hover:bg-orange-50">Training</a>
+        <a href="resource-mobilization.html" class="mobile-link pl-4 hover:bg-orange-50">Resource Mobilization</a>
+
+      </div>
+    </div>
+
+      <!-- Our Programs-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileOurProgramsMenu', this)">
+        Our Programs
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileOurProgramsMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="healthy-church.html" class="mobile-link pl-4 hover:bg-orange-50">Healthy Church Training & Capacity Building</a>
+            <a href="school-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">School Outreach & Discipleship</a>
+            <a href="urban-mission.html" class="mobile-link pl-4 hover:bg-orange-50">Urban Mission Orientation</a>
+            <a href="women-evangelism.html" class="mobile-link pl-4 hover:bg-orange-50">Women Evangelism & Discipleship</a>  
+            <a href="africa-missions.html" class="mobile-link pl-4 hover:bg-orange-50">Africa Missions & Evangelism Caravan</a>
+            <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
+            <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
+            <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
+
+      </div>
+    </div>
+
+       <!-- Resources-->
+    <div class="border-b border-gray-100 pb-4">
+      <button
+        class="w-full flex justify-between items-center py-3 text-gray-900 font-medium tracking-wide hover:text-gray-600 transition"
+        onclick="toggleMobileSubMenu('mobileResourcesMenu', this)">
+       Resources
+        <svg class="w-4 h-4 transition-transform duration-300"
+          fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+
+      <div id="mobileResourcesMenu"
+        class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
+style="max-height: 0px;">
+          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
+          <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
+          <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
+          <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
+      </div>
+    </div>
+
+    <!-- HARVEST -->
+    <a href="harvest.html"
+      class="py-3 text-gray-900 font-medium hover:text-gray-600 transition">
+      Harvest Field
+    </a>
+
+    <!-- CTA Buttons -->
+    <div class="pt-6 space-y-4">
+
+      <a href="partners.html"
+        class="block text-center py-3 bg-gray-900 text-white tracking-wide
+        hover:bg-black transition duration-300">
+        Partner With Us
+      </a>
+
+      <a href="https://forms.gle/wYtTbGgdBX35FnGU7"
+        class="block text-center py-3 border border-gray-900 text-gray-900
+        hover:bg-gray-900 hover:text-white transition duration-300">
+        Apply For Training
+      </a>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- HERO -->
+<section class="relative min-h-[80vh] flex items-center justify-center text-center">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0 -z-50">
+    <img src="Images/Media/media5.jpg"
+         class="w-full h-full object-cover">
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/50 -z-10"></div>
+
+  <!-- Content -->
+  <div class="text-white px-6 max-w-3xl" data-aos="fade-up">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">
+      Media & Digital Evangelism
+    </h1>
+    <p class="text-lg text-gray-200" data-aos="fade-up" data-aos-delay="200">
+      Empowering the Church to communicate the Gospel effectively in the digital age.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- INTRO -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">
+        Transforming Mission Through Media
+      </h2>
+
+      <p class="mb-4 text-gray-600" data-aos="fade-right" data-aos-delay="200">
+        Anglican Missions Africa is committed to equipping churches and ministry leaders 
+        with modern communication skills to effectively engage today’s digital world.
+      </p>
+
+      <p class="text-gray-600" data-aos="fade-right" data-aos-delay="400">
+        Through Media & Digital Evangelism, we train clergy, youth, and ministry teams 
+        in storytelling, content creation, and digital outreach strategies that amplify 
+        the message of Christ across online platforms.
+      </p>
+    </div>
+
+    <img src="Images/Media/Lodwar2.jfif" data-aos="fade-left" data-aos-delay="600" class="rounded-2xl shadow-lg" />
+  </div>
+</section>
+
+
+
+<!-- INTRODUCTION WITH IMAGES -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 space-y-20">
+
+    <!-- Topic 1: Overview -->
+    <div class="md:flex md:items-center md:gap-12" data-aos="fade-right">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <img src="Images/Media/Lodwar1.jfif" alt="Digital Culture" data-aos="fade-right" data-aos-delay="200" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4"  data-aos="fade-left" data-aos-delay="400">Embracing the Digital Culture</h2>
+        <p class="text-gray-700 text-lg" data-aos="fade-left" data-aos-delay="600">
+          As digital culture continues to redefine how people connect, communicate, and form communities, 
+          the Church is presented with both a challenge and an opportunity. Anglican Missions Africa (AMA) 
+          is responding boldly—by raising a new generation of digital missionaries equipped to proclaim 
+          the Gospel with creativity, excellence, and purpose across Africa’s fast-evolving digital spaces.
+        </p>
+      </div>
+    </div>
+
+    <!-- Topic 2: Media as Mission Field -->
+    <div class="md:flex md:items-center md:gap-12 md:flex-row-reverse" data-aos="fade-left">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <img src="Images/Media/Lodwar.jfif" alt="Media Mission Field" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Media Is a Mission Field</h2>
+        <p class="text-gray-700 text-lg">
+          Today, faith conversations are happening online as much as they are in physical spaces. Social media platforms, 
+          digital storytelling, and multimedia content have become powerful tools for influence and transformation. 
+          At AMA, media is not viewed merely as a communication tool; it is recognized as a vital mission field.
+        </p>
+      </div>
+    </div>
+
+    <!-- Topic 3: Media & Digital Evangelism Program -->
+    <div class="md:flex md:items-center md:gap-12" data-aos="fade-right">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <img src="Images/Media/mombasa2.jpg" alt="Digital Evangelism" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-4">Our Media & Digital Evangelism Program</h2>
+        <p class="text-gray-700 text-lg">
+          Through its Media and Digital Evangelism Program, AMA is pioneering innovative approaches that merge faith, media, 
+          and youth empowerment. The goal is simple yet profound: to ensure the Gospel remains present, visible, and 
+          impactful in the digital age.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- WHY THIS PROGRAM MATTERS WITH PREMIUM HEADER -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+
+
+        <!-- Heading -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Why This Program Matters
+      </h2>
+      <div class="w-20 h-1 bg-black mx-auto mb-6 rounded-full"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+         Our Media & Digital Evangelism Program responds to key needs within the Church and society; 
+         equipping believers, empowering youth, and transforming communities through impactful storytelling.
+      </p>
+    </div>
+
+    </div>
+
+    <!-- Content -->
+    <div class="md:flex md:items-start md:gap-12">
+
+      <!-- Left: Image -->
+      <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+        <img src="Images/Media/Structure.png" alt="Media & Digital Evangelism" class="rounded-2xl shadow-lg w-full h-auto object-cover">
+      </div>
+
+      <!-- Right: Topics -->
+      <div class="md:w-1/2 space-y-12">
+
+        <div data-aos="fade-up">
+          <h3 class="text-2xl font-bold mb-2">Church Communication</h3>
+          <p class="text-gray-700 text-lg">
+            Equipping ministries with tools to share the Gospel clearly, creatively, and with excellence.
+          </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="150">
+          <h3 class="text-2xl font-bold mb-2">Youth Empowerment</h3>
+          <p class="text-gray-700 text-lg">
+            Helping young people discover purpose, positive influence, and mission-driven identity.
+          </p>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="300">
+          <h3 class="text-2xl font-bold mb-2">Community Impact</h3>
+          <p class="text-gray-700 text-lg">
+            Producing storytelling that uplifts, informs, and transforms communities.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM ANIMATIONS -->
+<style>
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+@keyframes growLine {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 5rem;
+    opacity: 1;
+  }
+}
+
+.animate-growLine {
+  animation: growLine 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+</style>
+
+
+<!-- WHAT WE TRAIN -->
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12">
+      What We Equip You With
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+
+      <div class="bg-white p-6 rounded-2xl shadow" data-aos="zoom-in-left" data-aos-delay="0">
+        <div class="text-3xl mb-3">📸</div>
+        <h3 class="font-semibold mb-2">Photography</h3>
+        <p class="text-sm text-gray-600">
+          Capturing impactful moments for ministry storytelling.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow" data-aos="zoom-in-left" data-aos-delay="150">
+        <div class="text-3xl mb-3">🎥</div>
+        <h3 class="font-semibold mb-2">Videography</h3>
+        <p class="text-sm text-gray-600">
+          Producing engaging gospel-centered video content.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow" data-aos="zoom-in-left" data-aos-delay="300">
+        <div class="text-3xl mb-3">📰</div>
+        <h3 class="font-semibold mb-2">Digital Journalism</h3>
+        <p class="text-sm text-gray-600">
+          Communicating truth through structured storytelling.
+        </p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow" data-aos="zoom-in-left" data-aos-delay="450">
+        <div class="text-3xl mb-3">📱</div>
+        <h3 class="font-semibold mb-2">Social Media</h3>
+        <p class="text-sm text-gray-600">
+          Reaching audiences through strategic online engagement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+      Media Gallery
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <img src="images/Media/Mombasa.jpg" onclick="openLightbox(this.src)" class="rounded-xl cursor-pointer hover:scale-105 transition" data-aos="fade-up">
+      <img src="images/Media/Media.jpg" onclick="openLightbox(this.src)" class="rounded-xl cursor-pointer hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+      <img src="images/Media/media4.jpg" onclick="openLightbox(this.src)" class="rounded-xl cursor-pointer hover:scale-105 transition" data-aos="fade-up" data-aos-delay="400">
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden items-center justify-center z-50">
+  <img id="lightbox-img" class="max-w-4xl w-full rounded-lg">
+</div>
+
+
+
+<section class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+      Media Highlights
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <div class="relative group rounded-2xl overflow-hidden shadow-lg" data-aos="fade-right">
+        <iframe class="w-full h-64"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          allowfullscreen></iframe>
+
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-lg">Watch Training Highlights</p>
+        </div>
+      </div>
+
+      <div class="relative group rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
+        <iframe class="w-full h-64"
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          allowfullscreen></iframe>
+
+        <div class="absolute inset-0 bg-black/50 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+          <p class="text-white text-lg">Digital Evangelism in Action</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- IMPACT -->
+<section class="py-20 bg-gray-900 text-white text-center">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold mb-10" data-aos="fade-up">
+      Our Impact
+    </h2>
+
+    <div class="grid md:grid-cols-4 gap-8">
+
+      <div data-aos="zoom-in" data-aos-delay="0">
+        <h3 class="text-5xl font-bold counter" data-target="96">0</h3>
+        <p class="text-gray-400 mt-2">Leaders Trained</p>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="text-5xl font-bold counter" data-target="2">0</h3>
+        <p class="text-gray-400 mt-2">Dioceses Reached</p>
+      </div>
+
+      <div data-aos="zoom-in" data-aos-delay="400">
+        <h3 class="text-5xl font-bold counter" data-target="71">0</h3>
+        <p class="text-gray-400 mt-2">Lodwar</p>
+      </div>
+
+        <div data-aos="zoom-in" data-aos-delay="600">
+            <h3 class="text-5xl font-bold counter" data-target="25">0</h3>
+            <p class="text-gray-400 mt-2">Mombasa</p>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- FEATURE TRAINING STORY -->
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    <div class="relative group rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left">
+        <iframe class="w-full h-64"
+          src="https://www.youtube.com/embed/TYqyH3-AECE?si=GOismnenWUPKIRBL"
+          allowfullscreen></iframe>
+          </div>
+
+    <div>
+      <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">
+        Real Impact: Mombasa Media Training
+      </h2>
+
+      <p class="text-gray-600 mb-4" data-aos="fade-left" data-aos-delay="200">
+        A transformative one-week Media & Digital Evangelism training was conducted 
+        in ACK Mombasa Diocese, bringing together clergy, media teams, and youth leaders.
+      </p>
+
+      <p class="text-gray-600 mb-4" data-aos="fade-left" data-aos-delay="400">
+        Participants explored modern communication trends, digital storytelling, and 
+        practical media production skills for ministry.
+      </p>
+
+      <p class="text-gray-600" data-aos="fade-left" data-aos-delay="600">
+        A highlight of the training included a hands-on visit to TV studios, where 
+        participants experienced real-world media environments and production workflows.
+      </p>
+    </div>
+</section>
+
+
+
+<!-- VISIONARY LEADER SECTION -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Meet the Visionary Leader
+      </h2>
+      <div class="w-20 h-1 bg-black mx-auto mb-6 rounded-full"></div>
+      <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+        Leading a new wave of digital evangelism across Africa.
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="md:flex md:items-center md:gap-12">
+
+      <!-- Image -->
+      <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+        <img src="Images/Media/Kaindi.jpg" alt="Ev. Joseph Kaindi"
+             class="rounded-2xl shadow-xl w-full object-cover">
+      </div>
+
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-6">
+
+        <p class="text-gray-700 text-lg" data-aos="fade-up">
+          This growing movement is led by <span class="font-semibold">Ev. Joseph Kaindi</span>, 
+          Head of Media at Anglican Missions Africa. With a deep faith foundation and 
+          cutting-edge media expertise, he is championing digital evangelism and empowering 
+          African youth to spread the Gospel in the digital age.
+        </p>
+
+        <!-- Leadership Highlights -->
+        <div class="space-y-4">
+
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+            <span class="text-xl">🎯</span>
+            <p class="text-gray-700">
+              Strategic vision in pioneering digital evangelism
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+            <span class="text-xl">💻</span>
+            <p class="text-gray-700">
+              Media expertise that bridges faith and technology
+            </p>
+          </div>
+
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="300">
+            <span class="text-xl">🔥</span>
+            <p class="text-gray-700">
+              A passion for youth empowerment, catalyzing a new generation of digital missionaries
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+    </section>
+
+
+ <!-- ================= CALL TO ACTION ================= -->
+  <section class="relative py-20 bg-gray-100 text-center overflow-hidden">
+
+  <!-- Background Logo (washed-out + animated) -->
+  <img src="Images/AMA-EDITED-LOGO.png" 
+       alt="AMA Logo Background"
+       class="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none select-none animate-pulse-slow">
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
+      Join the Movement
+    </h2>
+    <p class="text-gray-600 mb-8 max-w-2xl mx-auto mb-6">
+        The future of evangelism is being shaped through stories, skills, and Spirit-empowered influence. 
+        As the demand for digital mission capacity grows, Anglican Missions Africa stands ready to lead, 
+        train, and journey with the Church across Africa.
+      </p>
+
+      <p class="text-lg font-semibold mb-8">
+        The movement is rising. Will you be part of shaping the future of evangelism?
+      </p>
+
+       <a href="#"
+   class="hidden md:inline-flex items-center justify-center
+          bg-[#09637E] text-white
+          px-6 py-3 rounded-full
+          font-semibold shadow-md
+          hover:scale-105 hover:shadow-xl
+          transition duration-300">
+  Get Involved
+</a>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
+
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+
+    <!-- Column 1: Logo & About -->
+    <div>
+      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
+      <p class="text-gray-300 leading-relaxed mb-6">
+        Equipping, empowering and releasing mission leaders across Africa through evangelism,
+        discipleship, leadership development and church partnerships.
+      </p>
+      <!-- SOCIAL ICONS -->
+<div class="flex space-x-4 mt-6">
+
+  <a href="https://www.facebook.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+
+  <a href="https://x.com/Anglican_Africa" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+
+  <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-instagram"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank"
+     class="w-12 h-12 flex items-center justify-center rounded-full
+            bg-gradient-to-br from-[#C8A437] to-yellow-500
+            text-white text-lg
+            shadow-lg hover:scale-110 hover:shadow-2xl
+            transition duration-300">
+    <i class="fab fa-youtube"></i>
+  </a>
+
+</div>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div>
+      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Quick Links</h3>
+      <ul class="space-y-3 text-gray-300">
+        <li><a href="index.html" class="hover:text-[#C8A437] transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#C8A437] transition">About Us</a></li>
+        <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
+        <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
+        <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Programs -->
+    <div>
+      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Our Programs</h3>
+      <ul class="space-y-3 text-gray-300">
+        <li><a href="healthy-church.html" class="hover:text-[#C8A437] transition">Healthy Church Training</a></li>
+        <li><a href="school-outreach.html" class="hover:text-[#C8A437] transition">School Outreach</a></li>
+        <li><a href="educating-for-life.html" class="hover:text-[#C8A437] transition">Educating For Life</a></li>
+        <li><a href="urban-mission.html" class="hover:text-[#C8A437] transition">Urban Mission Orientation</a></li>
+        <li><a href="women-evangelism.html" class="hover:text-[#C8A437] transition">Women Evangelism</a></li>
+        <li><a href="africa-missions.html" class="hover:text-[#C8A437] transition">Africa Missions Caravan</a></li>
+        <li><a href="media.html" class="hover:text-[#C8A437] transition">Media & Digital Evangelism</a></li>
+        <li><a href="church-music.html" class="hover:text-[#C8A437] transition">Church Music Renewal</a></li>
+        <li><a href="social-outreach.html" class="hover:text-[#C8A437] transition">Social Outreach</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Contact Info -->
+<div class="max-w-md">
+  <h3 class="text-2xl font-semibold text-[#C8A437] mb-6">
+    Contact Us
+  </h3>
+
+  <div class="divide-y divide-gray-700">
+
+    <!-- Address -->
+    <a href="https://share.google/wzz650o0UhxDtyMke"
+       target="_blank"
+       class="group flex items-start gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-map-marker-alt text-[#C8A437] mt-1 text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition leading-relaxed">
+        P.O BOX 12713 - 0100 Nairobi, GPO Ngong - Kibiko Booster Road, Kenya
+      </span>
+    </a>
+
+    <!-- Phone -->
+    <a href="tel:+254745633976"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-phone-alt text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        +254 745 633 976
+      </span>
+    </a>
+
+    <!-- Email -->
+    <a href="mailto:info@missionsanglicanesafrique.org"
+       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
+
+      <i class="fas fa-envelope text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
+
+      <span class="text-gray-300 group-hover:text-white transition">
+        info@missionsanglicanesafrique.org
+      </span>
+    </a>
+
+  </div>
+</div>
+
+  </div>
+
+  <!-- Bottom Line -->
+  <div class="border-t border-[#C8A437]/30 mt-16 pt-6 text-center text-gray-400 text-sm">
+    <p>
+      © 2026 Missions Anglicanes Afrique. All Rights Reserved.
+    </p>
+  </div>
+
+</footer>
+
+
+<!-- ================= JS ================= -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const dropdowns = document.querySelectorAll(".dropdown");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const overlay = document.getElementById("mobileMenuOverlay");
+  const menuBtn = document.getElementById("menuBtn");
+
+  /* ==============================
+     MOBILE SUBMENU TOGGLE
+  ============================== */
+  window.toggleMobileSubMenu = function(menuId, button) {
+
+    const submenu = document.getElementById(menuId);
+    if (!submenu) return;
+
+    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
+      submenu.style.maxHeight = "0px";
+    } else {
+      submenu.style.maxHeight = submenu.scrollHeight + "px";
+    }
+
+    const arrow = button.querySelector("svg");
+    if (arrow) arrow.classList.toggle("rotate-180");
+  };
+
+
+  /* ==============================
+     MOBILE MENU TOGGLE
+  ============================== */
+
+  menuBtn.addEventListener("click", toggleMobileMenu);
+  overlay.addEventListener("click", closeMobileMenu);
+
+  function toggleMobileMenu() {
+
+    mobileMenu.classList.toggle("-translate-x-full");
+    overlay.classList.toggle("hidden");
+
+    toggleHamburger();
+  }
+
+  function closeMobileMenu() {
+
+    mobileMenu.classList.add("-translate-x-full");
+    overlay.classList.add("hidden");
+
+    resetHamburger();
+    resetMobileSubmenus();
+  }
+
+
+  /* ==============================
+     HAMBURGER ANIMATION
+  ============================== */
+
+  function toggleHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.toggle("rotate-45");
+    bars[0].classList.toggle("translate-y-2");
+
+    bars[1].classList.toggle("opacity-0");
+
+    bars[2].classList.toggle("-rotate-45");
+    bars[2].classList.toggle("-translate-y-2");
+  }
+
+  function resetHamburger() {
+
+    const bars = menuBtn.querySelectorAll(".bar");
+
+    bars[0].classList.remove("rotate-45","translate-y-2");
+    bars[1].classList.remove("opacity-0");
+    bars[2].classList.remove("-rotate-45","-translate-y-2");
+  }
+
+
+  /* ==============================
+     RESET MOBILE SUBMENUS
+  ============================== */
+
+  function resetMobileSubmenus() {
+
+    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
+
+    mobileSubmenus.forEach(sub => {
+      sub.style.maxHeight = "0px";
+    });
+
+    const arrows = mobileMenu.querySelectorAll("button svg");
+
+    arrows.forEach(svg => {
+      svg.classList.remove("rotate-180");
+    });
+  }
+
+
+  /* ==============================
+     DESKTOP DROPDOWN HOVER
+  ============================== */
+
+  if (window.innerWidth >= 768) {
+
+    dropdowns.forEach(dropdown => {
+
+      const toggle = dropdown.querySelector(".dropdown-toggle");
+      const menu = dropdown.querySelector(".dropdown-menu");
+      const arrow = toggle ? toggle.querySelector("svg") : null;
+
+      if (!menu) return;
+
+      dropdown.addEventListener("mouseenter", () => {
+
+        menu.classList.remove("hidden","opacity-0","translate-y-2");
+
+        if (arrow) arrow.classList.add("rotate-180");
+      });
+
+      dropdown.addEventListener("mouseleave", () => {
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
+        if (arrow) arrow.classList.remove("rotate-180");
+      });
+
+    });
+
+  }
+
+
+  /* ==============================
+     CLOSE DROPDOWN WHEN CLICK OUTSIDE
+  ============================== */
+
+  document.addEventListener("click", function (e) {
+
+    dropdowns.forEach(dropdown => {
+
+      if (!dropdown.contains(e.target)) {
+
+        const menu = dropdown.querySelector(".dropdown-menu");
+        const arrow = dropdown.querySelector(".dropdown-toggle svg");
+
+        if (!menu) return;
+
+        menu.classList.add("opacity-0","translate-y-2");
+
+        setTimeout(() => {
+          menu.classList.add("hidden");
+        },200);
+
+        if (arrow) arrow.classList.remove("rotate-180");
+      }
+
+    });
+
+  });
+
+});
+</script>
+
+<script>
+    // Counter Animation
+const counters = document.querySelectorAll('.counter');
+
+const startCounter = (counter) => {
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+  const speed = target / 100;
+
+  const update = () => {
+    count += speed;
+    if (count < target) {
+      counter.innerText = Math.ceil(count);
+      requestAnimationFrame(update);
+    } else {
+      counter.innerText = target; // Removed the "+" sign
+    }
+  };
+
+  update();
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+counters.forEach(counter => observer.observe(counter));
+</script>
+
+<script>
+
+    // Slider Functionality
+let startX = 0;
+let currentIndex = 0;
+const slider = document.getElementById('slider');
+
+slider.addEventListener('touchstart', e => {
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchend', e => {
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) nextSlide();
+  if (endX - startX > 50) prevSlide();
+});
+</script>
+
+<script>
+
+    // Lightbox Functionality
+function openLightbox(src) {
+  document.getElementById('lightbox').classList.remove('hidden');
+  document.getElementById('lightbox-img').src = src;
+}
+
+document.getElementById('lightbox').addEventListener('click', () => {
+  document.getElementById('lightbox').classList.add('hidden');
+});
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+  duration: 1200,
+  easing: 'ease-in-out',
+  once: true,
+  offset: 80
+});
+</script>
+</body>
+</html>
