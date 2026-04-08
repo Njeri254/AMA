@@ -10,137 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -296,13 +166,11 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Educating For Life</a>
+                transition duration-200 rounded-lg">Education For Life</a>
   </div>
 </div>
-
-
 
             <!-- Resources -->
 
@@ -320,13 +188,9 @@
   <div class="dropdown-menu absolute left-0 top-full w-72 bg-white/95 backdrop-blur-lg 
             border border-gray-100 shadow-2xl rounded-2xl hidden z-50
             opacity-0 translate-y-2 transition-all duration-300">
-    
-            <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
+          <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -388,7 +252,6 @@
   transform -translate-x-full transition-transform duration-500 ease-out
   shadow-2xl overflow-y-auto">
 
-  
 
   <div class="px-8 py-8 flex flex-col space-y-6">
 
@@ -465,9 +328,9 @@ style="max-height: 0px;">
             <a href="women-evangelism.html" class="mobile-link pl-4 hover:bg-orange-50">Women Evangelism & Discipleship</a>  
             <a href="africa-missions.html" class="mobile-link pl-4 hover:bg-orange-50">Africa Missions & Evangelism Caravan</a>
             <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
-            <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
+            <a href="music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
-            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
+            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating for Life</a>
 
       </div>
     </div>
@@ -488,7 +351,7 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
+          <a href="training-materials.html" class="mobile-link pl-4 hover:bg-orange-50">Training Materials</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -521,61 +384,67 @@ style="max-height: 0px;">
   </div>
 </div>
 
+
+<!-- About Section -->
 <main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
 
-<!-- HERO -->
-<section class="bg-gray-900 text-white pt-40 pb-20">
-<div class="max-w-7xl mx-auto px-6 text-center">
 
-<h1 class="text-4xl md:text-5xl font-bold mb-6">
-About Anglican Missions Africa
-</h1>
+<!-- ================= HERO ================= -->
+<section class="relative h-[70vh] flex items-center justify-center text-white overflow-hidden">
 
-<p class="text-lg max-w-3xl mx-auto text-gray-300">
-Anglican Missions Africa (AMA) is committed to equipping and releasing mission
-leaders across Africa through evangelism, discipleship, leadership development
-and church partnerships.
-</p>
+  <!-- Background Image -->
+  <img src="Images/mission-hero.jpg"
+       class="absolute inset-0 w-full h-full object-cover">
 
-</div>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/70"></div>
+
+  <!-- Content -->
+  <div class="relative text-center px-6" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">
+      About Anglican Missions Africa
+    </h1>
+    <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-200">
+      Raising leaders. Transforming communities. Advancing the Gospel across Africa.
+    </p>
+  </div>
+
 </section>
 
-<!-- WHO WE ARE -->
-<section class="py-20 bg-white pattern-bg">
+
+<!-- ================= WHO WE ARE ================= -->
+<section class="py-24 bg-white pattern-bg">
 <div class="max-w-6xl mx-auto px-6">
 
 <div class="grid md:grid-cols-2 gap-12 items-center">
 
-<div>
-<h2 class="text-3xl font-bold mb-6 text-gray-900">
+<div data-aos="fade-right">
+
+<p class="text-sm uppercase tracking-widest text-blue-600 mb-3">
+Our Identity
+</p>
+
+<h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
 Who We Are
 </h2>
 
-<p class="mb-4 text-gray-700">
-Anglican Missions Africa (AMA) is a Christian mission movement dedicated to
-strengthening the Church and advancing the Gospel across Africa and beyond.
-Rooted in the Anglican tradition and guided by Holy Scripture, AMA partners
-with churches, clergy, and Christian leaders to nurture vibrant mission-minded
-communities.
+<p class="mb-4 text-gray-700 text-lg leading-relaxed">
+We are a Christ-centered mission movement committed to raising and releasing
+leaders who carry the Gospel into communities across Africa.
 </p>
 
-<p class="text-gray-700">
-Our ministry focuses on evangelism, discipleship, leadership development,
-and church planting so that communities may experience spiritual
-transformation through the message of Jesus Christ.
+<p class="text-gray-700 leading-relaxed">
+Rooted in the Anglican tradition and guided by Scripture, we partner with churches,
+clergy, and Christian leaders to nurture vibrant, mission-minded communities.
 </p>
 
 </div>
 
-<div class="relative aspect-video rounded-xl overflow-hidden shadow-lg" data-aos="zoom-in">
+<div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl" data-aos="zoom-in">
 
-<iframe
-class="w-full h-full"
-src="https://www.youtube.com/embed/DFqDio06l_w?si=yKfmV1WYB_JoEhNO"
-title="Anglican Missions Africa"
-frameborder="0"
-allowfullscreen>
-</iframe>
+<iframe class="w-full h-full"
+src="https://www.youtube.com/embed/DFqDio06l_w"
+allowfullscreen></iframe>
 
 </div>
 
@@ -583,32 +452,39 @@ allowfullscreen>
 </div>
 </section>
 
-<!-- VISION MISSION MOTTO -->
-<section class="py-20 bg-gray-100">
+
+<!-- ================= VISION / MISSION ================= -->
+<section class="py-24 bg-gray-100">
 <div class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold">Our Foundation</h2>
+<div class="w-20 h-1 bg-[#C8A437] mx-auto mt-4"></div>
+</div>
 
 <div class="grid md:grid-cols-3 gap-10 text-center">
 
-<div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
-<h3 class="text-xl font-semibold mb-4 text-[#C8A437]">Vision</h3>
+<div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition" data-aos="fade-up">
+<i class="fas fa-eye text-3xl text-[#C8A437] mb-4"></i>
+<h3 class="text-xl font-semibold mb-4">Vision</h3>
 <p class="text-gray-700">
 To nurture a healthy and sustainable Church in Africa and beyond.
 </p>
 </div>
 
-<div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
-<h3 class="text-xl font-semibold mb-4 text-[#C8A437]">Mission</h3>
+<div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="150">
+<i class="fas fa-bullseye text-3xl text-[#C8A437] mb-4"></i>
+<h3 class="text-xl font-semibold mb-4">Mission</h3>
 <p class="text-gray-700">
-To equip, empower and release Christian leaders as agents of
-spiritual and social transformation in society.
+To equip, empower and release Christian leaders as agents of Spiritual and Social Change in Society..
 </p>
 </div>
 
-<div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-up">
-<h3 class="text-xl font-semibold mb-4 text-[#C8A437]">Our Motto</h3>
+<div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition" data-aos="fade-up" data-aos-delay="300">
+<i class="fas fa-cross text-3xl text-[#C8A437] mb-4"></i>
+<h3 class="text-xl font-semibold mb-4">Our Motto</h3>
 <p class="text-gray-700">
-Proclaiming the Risen Christ; Establishing and Strengthening
-the Church on the mission frontier.
+Proclaiming Christ. Strengthening the Church on the mission frontier.
 </p>
 </div>
 
@@ -616,102 +492,153 @@ the Church on the mission frontier.
 </div>
 </section>
 
-<!-- CORE VALUES -->
-<section class="py-20 bg-white">
+
+<!-- ================= CORE VALUES ================= -->
+<section class="py-24 bg-white">
 <div class="max-w-6xl mx-auto px-6 text-center">
 
-<h2 class="text-3xl font-bold mb-12">
-Our Core Values
-</h2>
+<h2 class="text-3xl md:text-4xl font-bold mb-12">Our Core Values</h2>
 
 <div class="grid md:grid-cols-5 gap-6">
 
-<div class="p-6 bg-gray-100 rounded-lg">Scripture</div>
-<div class="p-6 bg-gray-100 rounded-lg">Integrity</div>
-<div class="p-6 bg-gray-100 rounded-lg">Respect</div>
-<div class="p-6 bg-gray-100 rounded-lg">Discipleship</div>
-<div class="p-6 bg-gray-100 rounded-lg">Partnership</div>
+<div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+<i class="fas fa-book-bible text-blue-700 text-2xl mb-3"></i>
+<p class="font-semibold">Scripture</p>
+</div>
+
+<div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+<i class="fas fa-shield-alt text-blue-700 text-2xl mb-3"></i>
+<p class="font-semibold">Integrity</p>
+</div>
+
+<div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+<i class="fas fa-handshake text-blue-700 text-2xl mb-3"></i>
+<p class="font-semibold">Respect</p>
+</div>
+
+<div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+<i class="fas fa-users text-blue-700 text-2xl mb-3"></i>
+<p class="font-semibold">Discipleship</p>
+</div>
+
+<div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+<i class="fas fa-globe text-blue-700 text-2xl mb-3"></i>
+<p class="font-semibold">Partnership</p>
+</div>
 
 </div>
 
 </div>
 </section>
 
-<!-- WHAT WE DO -->
-<section class="py-20 bg-gray-100">
+
+<!-- ================= WHAT WE DO ================= -->
+<section class="py-24 bg-gray-100">
 <div class="max-w-7xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-16">
-What We Do
-</h2>
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold">What We Do</h2>
+<div class="w-20 h-1 bg-[#C8A437] mx-auto mt-4"></div>
+</div>
 
 <div class="grid md:grid-cols-3 gap-10">
 
-<div class="bg-white p-8 rounded-xl shadow">
-<h3 class="text-xl font-semibold mb-4 text-yellow-600">
-Leadership Training
-</h3>
-
-<p class="text-gray-700">
-Equipping clergy, evangelists, and lay leaders through practical
-training programs that strengthen discipleship and church growth
-across Africa.
-</p>
-
-</div>
-
-<div class="bg-white p-8 rounded-xl shadow">
-<h3 class="text-xl font-semibold mb-4 text-yellow-600">
-Church Planting
-</h3>
-
-<p class="text-gray-700">
-Establishing new churches in communities where the Gospel
-needs to be proclaimed and discipleship nurtured.
-</p>
+<!-- CARD -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg group">
+<img src="Images/Training/Training.jpg" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 p-6 text-white flex flex-col justify-end">
+<h3 class="text-xl font-semibold mb-2">Leadership Training</h3>
+<p class="text-sm">Equipping leaders for discipleship and mission across Africa.</p>
+<!-- BUTTON -->
+    <a href="training.html"
+       class="inline-block bg-[#C8A437] text-black px-4 py-2 rounded-lg text-sm font-semibold
+              hover:bg-yellow-400 hover:scale-105 transition w-fit">
+      Learn More →
+    </a>
 
 </div>
+</div>
 
-<div class="bg-white p-8 rounded-xl shadow">
-<h3 class="text-xl font-semibold mb-4 text-yellow-600">
-Evangelism & Outreach
-</h3>
+<!-- CARD -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg group">
+<img src="Images/Church Planting/Church-planting-in-Mozambique-6-300x138.jpeg" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 p-6 text-white flex flex-col justify-end">
+<h3 class="text-xl font-semibold mb-2">Church Planting</h3>
+<p class="text-sm">Establishing new churches and strengthening communities.</p>
+<!-- BUTTON -->
+    <a href="church-planting.html"
+       class="inline-block bg-[#C8A437] text-black px-4 py-2 rounded-lg text-sm font-semibold
+              hover:bg-yellow-400 hover:scale-105 transition w-fit">
+      Learn More →
+    </a>
 
-<p class="text-gray-700">
-Through missions, campaigns, and outreach programs,
-AMA reaches communities with the message of salvation
-and hope in Jesus Christ.
-</p>
+</div>
+</div>
 
+<!-- CARD -->
+<div class="relative rounded-2xl overflow-hidden shadow-lg group">
+<img src="Images/Resource/Tentsin-mozambique-300x200.jpg" class="w-full h-64 object-cover group-hover:scale-110 transition duration-500">
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="absolute inset-0 p-6 text-white flex flex-col justify-end">
+<h3 class="text-xl font-semibold mb-2">Resource Mobilization</h3>
+<p class="text-sm">Supporting newly planted churches with the resources they need to grow, 
+  serve their communities, and advance the Gospel.</p>
+  <!-- BUTTON -->
+    <a href="resource-mobilization.html"
+       class="inline-block bg-[#C8A437] text-black px-4 py-2 rounded-lg text-sm font-semibold
+              hover:bg-yellow-400 hover:scale-105 transition w-fit">
+      Learn More →
+    </a>
+
+</div>
 </div>
 
 </div>
-
 </div>
 </section>
 
-<!-- CALL TO ACTION -->
-<section class="bg-gray-900 text-white py-20">
-<div class="max-w-6xl mx-auto px-6 text-center">
 
-<h2 class="text-3xl font-bold mb-6">
-Join the Mission
+<!-- ================= CTA ================= -->
+<section class="relative py-24 text-center overflow-hidden">
+
+<img src="Images/AMA-EDITED-LOGO.png"
+class="absolute inset-0 w-full h-full object-contain opacity-10 animate-pulse-slow">
+
+<div class="relative z-10">
+
+<h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
+Be Part of What God Is Doing in Africa
 </h2>
 
-<p class="text-gray-300 max-w-2xl mx-auto mb-8">
-Partner with Anglican Missions Africa as we proclaim the
-Gospel, equip leaders, and strengthen churches across Africa.
+<p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+Partner with us as we proclaim the Gospel, equip leaders,
+and strengthen churches across the continent.
 </p>
 
-<a href="#"
-class="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-3 rounded-lg font-semibold">
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+
+<a href="partners.html"
+class="bg-[#09637E] text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
 Partner With Us
 </a>
 
+<a href="contact.html"
+class="border border-blue-900 text-blue-900 px-6 py-3 rounded-full hover:bg-blue-900 hover:text-white transition">
+Contact Us
+</a>
+
+</div>
+
 </div>
 </section>
 
+
+
 </main>
+
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -776,7 +703,7 @@ Partner With Us
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -854,177 +781,7 @@ Partner With Us
 </footer>
 
 
-<!-- ================= JS ================= -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
-  });
-
-});
-</script>
-
-
-
+<script src="index.js"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
@@ -1034,10 +791,3 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
