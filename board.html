@@ -3,144 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Board | Missions Anglicanes Afrique</title>
+<title>Missions Anglicanes Afrique</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -297,9 +167,9 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Educating For Life</a>
+                transition duration-200 rounded-lg">Education For Life</a>
   </div>
 </div>
 
@@ -325,9 +195,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -468,7 +335,6 @@ style="max-height: 0px;">
             <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
-            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
 
       </div>
     </div>
@@ -489,7 +355,6 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -522,368 +387,68 @@ style="max-height: 0px;">
   </div>
 </div>
 
-<main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
-<!-- HERO -->
 
-<section class="relative h-[70vh] flex items-center justify-center text-white text-center overflow-hidden mt-24">
+
+
+<main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
+
+
+
+<section class="relative h-[70vh] flex items-center justify-center text-white text-center overflow-hidden pt-32 md:pt-36">
 
 <div class="absolute inset-0 grid grid-cols-2 grid-rows-2">
-
-<img src="Images/hero/mission1.jpg" class="w-full h-full object-cover hero-img">
-
-<img src="Images/hero/mission2.jpg" class="w-full h-full object-cover hero-img">
-
-<img src="Images/hero/mission3.jpg" class="w-full h-full object-cover hero-img">
-
-<img src="Images/hero/mission4.jpg" class="w-full h-full object-cover hero-img">
-
+<img src="Images/hero/mission1.jpg" class="w-full h-full object-cover">
+<img src="Images/hero/mission2.jpg" class="w-full h-full object-cover">
+<img src="Images/hero/mission3.jpg" class="w-full h-full object-cover">
+<img src="Images/hero/mission4.jpg" class="w-full h-full object-cover">
 </div>
 
-<div class="absolute inset-0 bg-[#000044]/80"></div>
-
 <div class="absolute inset-0 bg-black/70"></div>
-<h1 data-aos="fade-up" class="text-4xl md:text-5xl font-bold mb-4">Board of Directors</h1>
-<p data-aos="fade-up" data-aos-delay="200" class="text-lg text-gray-200 max-w-xl mx-auto">
+
+<div class="relative z-10 px-4">
+<h1 class="text-3xl md:text-5xl font-bold mb-4">Board of Directors</h1>
+<p class="text-gray-200 max-w-xl mx-auto">
 The Board of Directors provides leadership and spiritual oversight
 to Anglican Missions Africa, guiding the mission in advancing
 the Gospel and strengthening the Church across Africa.
 </p>
-
 </div>
 
 </section>
 
 
-<!-- BOARD MEMBERS -->
 
+<!-- ================= BOARD ================= -->
 <section class="py-20">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="100">
-
-<img src="Images/Board/Francis.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Rt. Rev. Francis Matui
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Chairman
-</p>
-
-<button onclick="openProfile('francis')"
-class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
-See Profile
-</button>
-
-</div>
-</div>
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Abednego.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Dr. Abednego Alibiri Ongeso
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Vice Chair
-</p>
-
-<button onclick="openProfile('ongeso')"
-class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
-See Profile
-</button>
-
-</div>
-</div>
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Patrick.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Canon Captain Patrick Jehl
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-International Director
-</p>
-
-</div>
-</div>
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="200">
-
-<img src="Images/Board/Canon.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Rev. Canon Capt. Richard W. Mayabi
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Executive Director
-</p>
-
-<button onclick="openProfile('mayabi')"
-class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
-See Profile
-</button>
-
-</div>
-</div>
-
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Dorcas.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Ms. Dorcas Phelesia Atieno
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Treasurer
-</p>
-
-</div>
-</div>
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Jackson.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Rev. Capt. Jackson Wanga
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-MRMC Chair
-</p>
-
-</div>
-</div>
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Naomi.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Dr. Naomi Njuguna
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Human resource committee chair
-</p>
-
-</div>
-</div>
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Sellina.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Dr. Sellina Ayoma Omollo
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-</div>
-</div>
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Grace.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Mrs. Grace Rop
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-</div>
-</div>
-
-
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Ron.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-The Very Rev. Canon Dr. Ron Allen
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-<button onclick="openProfile('allen')"
-class="bg-[#000044] text-white px-4 py-2 rounded hover:bg-blue-900 transition">
-See Profile
-</button>
-
-</div>
-</div>
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Christine.jpeg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Mrs. Christine Kuto
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-</div>
-</div>
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Tom.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Rev. Tom Otieno
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-</div>
-</div>
-
-<!-- MEMBER -->
-
-<div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover"
-data-aos="fade-up" data-aos-delay="300">
-
-<img src="Images/Board/Robinson.jpg" class="w-full h-64 object-cover">
-
-<div class="p-6">
-
-<h3 class="text-lg font-semibold">
-Mr. Robinson Njiru
-</h3>
-
-<p class="text-[#C8A437] text-sm mb-4">
-Member
-</p>
-
-</div>
-</div>
-
-
-</div>
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div id="boardContainer"
+         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10">
+      <!-- Skeleton Loader -->
+<div class="animate-pulse bg-white h-80 rounded-xl"></div>
+<div class="animate-pulse bg-white h-80 rounded-xl"></div>
+<div class="animate-pulse bg-white h-80 rounded-xl"></div>
+<div class="animate-pulse bg-white h-80 rounded-xl"></div>
+
+    </div>
+  </div>
 </section>
 
-
-<!-- MODAL -->
-
+<!-- ================= MODAL ================= -->
 <div id="profileModal"
-class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-[2000]">
 
-<div class="bg-white max-w-2xl w-full mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
-
-<div class="p-8 relative">
-
-<button onclick="closeModal()"
-class="absolute top-4 right-6 text-3xl text-gray-500">
-&times;
-</button>
-
-<div id="modalContent"></div>
+  <div class="bg-white w-full max-w-2xl mx-3 sm:mx-4 rounded-lg shadow-xl max-h-[90vh] overflow-y-auto">
+    <div class="p-5 sm:p-8 relative">
+      <button id="modalCloseBtn"
+              class="absolute top-4 right-5 text-3xl text-gray-500">&times;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 
 </div>
 
-</div>
-
-</div>
 
 </main>
-
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -948,7 +513,7 @@ class="absolute top-4 right-6 text-3xl text-gray-500">
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -1027,469 +592,141 @@ class="absolute top-4 right-6 text-3xl text-gray-500">
 
 <!-- ================= JS ================= -->
 
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
+  let profilesData = [];
 
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
+  /* LOAD JSON */
+  fetch('profiles.json')
+    .then(res => res.json())
+    .then(data => {
 
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
+      const container = document.getElementById("boardContainer");
+      container.innerHTML = ""; // remove skeleton
 
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
+      profilesData = Object.entries(data).map(([id, profile]) => ({
+        id,
+        ...profile
+      }));
 
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
+      profilesData.forEach((profile, index) => {
+        const card = `
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center card-hover opacity-0 translate-y-10 transition duration-700"
+               style="transition-delay:${index * 100}ms">
+
+            <img src="${profile.image}" class="w-full h-64 object-cover">
+
+            <div class="p-6">
+
+              <h3 class="font-semibold">
+                ${profile.name}
+              </h3>
+
+              <p class="text-[#C8A437] text-sm mb-4">
+                ${profile.title}
+              </p>
+
+              <button onclick="openProfile('${profile.id}')"
+              class="inline-flex items-center gap-2 bg-[#000044] text-white px-5 py-2 rounded-full hover:scale-105 transition">
+                See Profile <i class="fas fa-arrow-right text-sm"></i>
+              </button>
+
+            </div>
+
+          </div>
+        `;
+
+        container.innerHTML += card;
+      });
+
+      // Animate cards in
+      setTimeout(() => {
+        document.querySelectorAll('#boardContainer > div').forEach(card => {
+          card.classList.remove('opacity-0', 'translate-y-10');
+        });
+      }, 100);
+
+    });
+
+  /* OPEN MODAL */
+  window.openProfile = function(id){
+    const profile = profilesData.find(p => p.id === id);
+    if(!profile) return;
+
+    const modal = document.getElementById("profileModal");
+    const modalBox = modal.querySelector("div > div");
+
+    let content = `
+      <img src="${profile.image}" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
+
+      <h2 class="text-2xl font-bold text-center mb-2">
+        ${profile.name}
+      </h2>
+
+      <p class="text-center text-[#C8A437] mb-6">
+        ${profile.title}
+      </p>
+    `;
+
+    // Show sections if available, otherwise fallback to content
+    if(profile.sections && profile.sections.length > 0){
+      profile.sections.forEach(section => {
+        content += `<h3 class="font-semibold text-lg mb-2">${section.title}</h3>`;
+        if(section.type === "list"){
+          content += `<ul class="list-disc ml-6 text-gray-700 mb-6">`;
+          section.items.forEach(item => content += `<li>${item}</li>`);
+          content += `</ul>`;
+        }
+        if(section.type === "text"){
+          content += `<p class="text-gray-700 mb-6">${section.content}</p>`;
+        }
+      });
+    } else if(profile.content){
+      content += `<div class="text-gray-700 leading-relaxed">${profile.content}</div>`;
     }
 
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
+    document.getElementById("modalContent").innerHTML = content;
 
+    modal.classList.remove("hidden");
+    setTimeout(() => {
+      modal.classList.add("flex", "opacity-100");
+      modalBox.classList.remove("scale-95");
+    }, 10);
 
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
+    document.body.classList.add("overflow-hidden");
   }
 
-  function closeMobileMenu() {
+  /* CLOSE MODAL */
+  function closeModal(){
+    const modal = document.getElementById("profileModal");
+    const modalBox = modal.querySelector("div > div");
 
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
+    modal.classList.remove("opacity-100");
+    modalBox.classList.add("scale-95");
 
-    resetHamburger();
-    resetMobileSubmenus();
+    setTimeout(() => {
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }, 300);
+
+    document.body.classList.remove("overflow-hidden");
   }
 
+  // Close button
+  const modalCloseBtn = document.getElementById("modalCloseBtn");
+  modalCloseBtn.addEventListener("click", closeModal);
 
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
+  // Clicking outside modal content closes modal
+  const modal = document.getElementById("profileModal");
+  modal.addEventListener("click", (e) => {
+    if(e.target.id === "profileModal"){
+      closeModal();
+    }
   });
-
 });
 </script>
-
-<!-- PROFILE DATA -->
-
-<script>
-
-const profiles = {
-
-francis: `
-
-<img src="Images/Board/Francis.jpeg" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
-
-<h2 class="text-2xl font-bold text-center mb-2">
-Rt. Rev. Francis Mboya Matui
-</h2>
-
-<p class="text-center text-[#C8A437] mb-6">
-Chairman – Anglican Missions Africa
-</p>
-
-<p class="text-gray-700 leading-relaxed mb-6">
-Rt. Rev. Francis Mboya Matui is a dedicated Anglican leader with
-many years of pastoral, administrative, and missionary experience
-within the Anglican Church. Through his leadership, he has contributed
-significantly to church growth, community development, and cross-cultural
-mission work across Africa.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Educational Background</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li><strong>Bachelor of Divinity (BD)</strong> – St. Paul’s University (2007–2010)</li>
-<li><strong>Diploma in Theology</strong> – St. Andrew’s College of Theology & Development, Kabare (1993–1996)</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Ministerial & Pastoral Experience</h3>
-
-<p class="text-gray-700 mb-3">
-Bishop Francis Matui has served the Anglican Church in several
-leadership roles, including:
-</p>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li>Vicar of multiple parishes</li>
-<li>Diocesan Administrative Secretary</li>
-<li>Archdeacon</li>
-<li>Cathedral Canon</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Key Achievements</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li>Spearheaded the construction of several churches and schools</li>
-<li>Played a key role in transforming UCCS/ADSE from a church department into a development-focused organization</li>
-<li>Participated in cross-cultural mission work in Tanzania, Ethiopia, and South Sudan</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Family</h3>
-
-<p class="text-gray-700">
-Bishop Matui is married to <strong>Margaret K. Mboya</strong>, and they
-are blessed with two children. He remains deeply committed to his
-faith, family, and the mission of the Church.
-</p>
-
-`,
-
-mayabi: `
-
-<img src="Images/Board/Canon.jpeg" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
-
-<h2 class="text-2xl font-bold text-center mb-2">
-Rev. Canon Captain Richard W. Mayabi
-</h2>
-
-<p class="text-center text-[#C8A437] mb-6">
-Executive Director (CEO & Founder)
-</p>
-
-<p class="text-gray-700 leading-relaxed mb-6">
-Rev. Canon Captain Richard W. Mayabi is the Founder of Missions Anglicanes Afrique
-(Anglican Missions Africa – AMA). The mission agency seeks to nurture a healthy and
-sustainable Church in Africa and beyond through leadership development, mission
-mobilization, and church strengthening initiatives.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Work Experience</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li><strong>2019:</strong> Director in charge of Capacity Building and Leadership Development at the Council for Anglican Provinces of Africa (CAPA).</li>
-<li><strong>2009 – 2018:</strong> General Secretary of Church Army Africa.</li>
-<li><strong>2004 – 2008:</strong> Pioneer Parish Priest for ACK St. Jerome and St. Thomas parishes in All Saints Cathedral Diocese.</li>
-<li><strong>1995 – 2003:</strong> Pioneer missionary and church planter in Makueni–Machakos Diocese.</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Educational Background</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li><strong>Master of Theology (MTh)</strong> in Urban World – International Christian College Glasgow / Aberdeen University.</li>
-<li><strong>Master of Arts (MA)</strong> in Mission Studies – Africa International University (AIU), Nairobi.</li>
-<li><strong>Post Graduate Diploma (PGD)</strong> in Christian Ministries – Africa International University (AIU), Nairobi.</li>
-<li><strong>Higher Diploma (HDP)</strong> in Theology – Carlile College, Church Army Africa.</li>
-<li><strong>Diploma in Theology</strong> – Mission Studies, Exeter University, UK.</li>
-<li><strong>Diploma in Discipleship Training School (DTS)</strong> – Youth With A Mission (YWAM), University of the Nations.</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Family</h3>
-
-<p class="text-gray-700 mb-6">
-He is married to <strong>The Rev. Captain Patience Wanzala</strong>, and together they
-are blessed with three children.
-</p>
-
-<p class="italic text-gray-600 text-center">
-Committed to raising leaders and strengthening the mission of the Church in Africa.
-</p>
-
-`,
-
-ongeso: `
-
-<img src="Images/Board/Abednego.jpeg" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
-
-<h2 class="text-2xl font-bold text-center mb-2">
-Dr. Abednego Alibiri Ongeso
-</h2>
-
-<p class="text-center text-[#C8A437] mb-6">
-Vice Chair
-</p>
-
-<p class="text-gray-700 leading-relaxed mb-6">
-Dr. Abednego Alibiri Ongeso is a scholar, health specialist, and committed
-Christian leader who brings extensive academic and professional experience
-to the leadership of Anglican Missions Africa. His work in health sciences,
-research, and community service reflects a strong commitment to improving
-lives and strengthening communities.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Educational Background</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li><strong>PhD</strong> – Great Lakes University of Kisumu</li>
-<li><strong>MSc. Nursing (Maternal & Neonatal Health)</strong> – Moi University</li>
-<li><strong>BSc. Nursing</strong> – Moi University</li>
-<li><strong>Diploma in Project Management</strong> – Kenya Institute of Management</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Professional Life</h3>
-
-<p class="text-gray-700 mb-3">
-Dr. Ongeso currently serves as an <strong>Assistant Professor at the School
-of Nursing and Midwifery, Aga Khan University – Nairobi</strong>.
-</p>
-
-<p class="text-gray-700 mb-3">
-He has previously served in several academic and professional roles,
-including:
-</p>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li>Lecturer – University of Nairobi</li>
-<li>Lecturer – Daystar University</li>
-<li>Assistant Lecturer – Masinde Muliro University of Science and Technology</li>
-<li>Project Officer – Kenya Red Cross (North Rift)</li>
-<li>Nursing Officer I – Kakamega County Hospital</li>
-</ul>
-
-<p class="text-gray-700 mb-6">
-He is a specialist in <strong>Reproductive Health</strong>, a consultant
-researcher, and an author contributing to healthcare knowledge and practice.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Church Relationship</h3>
-
-<p class="text-gray-700 mb-6">
-Dr. Ongeso gave his life to Christ in April 1996 at Friends’ School
-Kamusinga. He was baptized as an infant and later confirmed in April 1991
-by the Most Rev. Bishop James Israel Mundia, former Bishop of Maseno North
-Diocese. He is a member of <strong>All Saints Cathedral Nairobi</strong> and
-<strong>St. Clement’s Church Tongaren</strong> in the Diocese of Maseno North.
-He previously served as the Chair of the Trinity Couples Fellowship and is
-also a member of the Kenya Anglican Men Association (KAMA) at All Saints
-Cathedral Nairobi.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Family</h3>
-
-<p class="text-gray-700 mb-6">
-He is married to <strong>Stella Chepleting Kogo</strong> since 2008 and they
-are blessed with three children.
-</p>
-
-<p class="italic text-gray-600 text-center">
-“Now this is eternal life: that they know you, the only true God, and Jesus
-Christ, whom you have sent.” — John 17:3
-</p>
-
-`,
-allen: `
-
-<img src="Images/Board/Ron.jpg" class="w-40 h-40 rounded-full mx-auto mb-6 object-cover">
-
-<h2 class="text-2xl font-bold text-center mb-2">
-The Very Rev. Canon Dr. Ronald D. Allen
-</h2>
-
-<p class="text-center text-[#C8A437] mb-6">
-Board Advisor & Custodian of Vision
-</p>
-
-<p class="text-gray-700 leading-relaxed mb-6">
-The Very Rev. Canon Dr. Ronald D. Allen serves as the Canon for Global
-Missions for the Anglican Diocese of the Great Lakes within the
-Anglican Church in North America (ACNA). Through decades of faithful
-ministry, he has dedicated his life to evangelism, church planting,
-and global mission work.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Ministry and Mission Work</h3>
-
-<p class="text-gray-700 mb-6">
-Since the beginning of his ordained ministry in Advent of 1965,
-Canon Dr. Allen, together with his wife <strong>Carolyn</strong>,
-has been instrumental in the planting of more than
-<strong>120 churches</strong>. One of his most notable achievements
-was establishing the <strong>Heartland Parish in Fort Wayne, Indiana</strong>
-in 1985, which continues to serve as a vibrant center of ministry.
-</p>
-
-<h3 class="font-semibold text-lg mb-2">Global Mission Involvement</h3>
-
-<ul class="list-disc ml-6 text-gray-700 mb-6">
-<li>Canon for Global Missions – Anglican Diocese of the Great Lakes (ACNA)</li>
-<li>Active contributor to the New Wineskins Global Missions movement</li>
-<li>Consultant to numerous ministries and mission agencies</li>
-<li>Advocate for global evangelism and church planting</li>
-</ul>
-
-<h3 class="font-semibold text-lg mb-2">Role in Anglican Missions Africa</h3>
-
-<p class="text-gray-700 mb-6">
-As a member of the Board of Directors of Anglican Missions Africa,
-Canon Dr. Allen serves as an advisor and the <strong>Custodian of
-AMA’s vision</strong>. His experience in global missions provides
-valuable guidance as the organization works to nurture a healthy
-and sustainable Church across Africa and beyond.
-</p>
-
-<p class="italic text-gray-600 text-center">
-Anglican Missions Africa expresses deep gratitude for Canon Dr.
-Allen’s continued dedication and partnership in advancing the
-Gospel and strengthening the Church.
-</p>
-
-`
-};
-
-
-/* OPEN MODAL */
-
-function openProfile(name){
-
-document.getElementById("profileModal").classList.remove("hidden");
-document.getElementById("profileModal").classList.add("flex");
-
-document.getElementById("modalContent").innerHTML = profiles[name];
-
-}
-
-
-/* CLOSE MODAL */
-
-function closeModal(){
-
-document.getElementById("profileModal").classList.add("hidden");
-document.getElementById("profileModal").classList.remove("flex");
-
-}
-
-
-/* CLICK OUTSIDE TO CLOSE */
-
-const modal = document.getElementById("profileModal");
-
-modal.addEventListener("click",function(e){
-
-if(e.target === modal){
-
-closeModal();
-
-}
-
-});
-
-</script>
-
-
+ <script src="index.js"></script>
 <!-- AOS ANIMATIONS -->
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
