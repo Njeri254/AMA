@@ -1,0 +1,221 @@
+{
+  "francis": {
+    "name": "Rt. Rev. Francis Matui",
+    "title": "Chairman",
+    "image": "Images/Board/Francis.jpeg",
+    "sections": [
+      {
+        "title": "Bio",
+        "type": "text",
+        "content": "Rt. Rev. Francis Mboya Matui is a dedicated Anglican leader with many years of pastoral, administrative, and missionary experience."
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "Bachelor of Divinity (BD) – St. Paul’s University (2007–2010)",
+          "Diploma in Theology – St. Andrew’s College of Theology & Development, Kabare (1993–1996)"
+        ]
+      },
+      {
+        "title": "Ministerial & Pastoral Experience",
+        "type": "list",
+        "items": [
+          "Vicar of multiple parishes",
+          "Diocesan Administrative Secretary",
+          "Archdeacon",
+          "Cathedral Canon"
+        ]
+      },
+      {
+        "title": "Key Achievements",
+        "type": "list",
+        "items": [
+          "Spearheaded the construction of several churches and schools",
+          "Participated in cross-cultural mission work in Tanzania, Ethiopia, and South Sudan",
+          "Played a key role in transforming UCCS/ADSE from a church department into a development-focused organization"
+        ]
+      },
+      {
+        "title": "Family",
+        "type": "text",
+        "content": "Bishop Matui is married to Margaret K. Mboya, and they are blessed with two children."
+      }
+    ]
+  },
+  "abednego": {
+    "name": "Dr. Abednego Alibiri Ongeso",
+    "title": "Vice Chairman",
+    "image": "Images/Board/Abednego.jpeg",
+    "sections": [
+      {
+        "title": "Bio",
+        "type": "text",
+        "content": "Dr. Abednego Alibiri Ongeso is a scholar, health specialist, and committed Christian leader who brings extensive academic and professional experience to the leadership of Anglican Missions Africa. His work in health sciences, research, and community service reflects a strong commitment to improving lives and strengthening communities"
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "PhD – Great Lakes University of Kisumu",
+          "MSc Nursing (Maternal & Neonatal Health) – Moi University",
+          "BSc Nursing – Moi University",
+          "Diploma in Project Management – Kenya Institute of Management"
+        ]
+      },
+      {
+        "title": "Professional Life",
+        "type": "text",
+        "content": "Assistant Professor at Aga Khan University – Nairobi."
+      },
+      {
+        "title": "Professional Experience",
+        "type": "list",
+        "items": [
+          "Lecturer at University of Nairobi",
+          "Lecturer at Daystar University",
+          "Assistant Lecturer – Masinde Muliro University of Science and Technology",
+          "Project Officer – Kenya Red Cross (North Rift)",
+          "Nursing Officer I – Kakamega County Hospital."
+        ]
+      },
+
+      {
+        "title": "Family",
+        "type": "text",
+        "content": "Married to Stella Chepleting Kogo since 2008; blessed with three children."
+      }
+    ]
+  },
+  "patrick": {
+    "name": "Canon Captain Patrick Jehl",
+    "title": "International Director",
+    "image": "Images/Board/Patrick.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  
+  "mayabi": {
+    "name": "Rev. Canon Captain Richard W. Mayabi",
+    "title": "Executive Director, Missions Anglicanes Afrique (AMA)",
+    "image": "Images/Board/Canon.jpeg",
+    "sections": [
+        {
+        "title": "Bio",
+        "type": "text",
+        "content": "Rev. Canon Captain Richard W. Mayabi is the Founder of Missions Anglicanes Afrique (Anglican Missions Africa – AMA). The mission agency seeks to nurture a healthy and sustainable Church in Africa and beyond through leadership development, mission mobilization, and church strengthening initiatives."
+        },
+        {
+        "title": "Work Experience",
+        "type": "list",
+        "items": [
+          "2019: Director in charge of Capacity Building and Leadership Development at the Council for Anglican Provinces of Africa (CAPA)",
+          "2009 – 2018: General Secretary of Church Army Africa",
+          "2004 – 2008: Pioneer Parish Priest for ACK St. Jerome and St. Thomas parishes in All Saints Cathedral Diocese",
+          "1995 – 2003: Pioneer missionary and church planter in Makueni–Machakos Diocese"
+        ]
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "Master of Theology (MTh) in Urban World – International Christian College Glasgow / Aberdeen University",
+          "Master of Arts (MA) in Mission Studies – Africa International University (AIU), Nairobi",
+          "Post Graduate Diploma (PGD) in Christian Ministries – Africa International University (AIU), Nairobi",
+          "Higher Diploma (HDP) in Theology – Carlile College, Church Army Africa",
+          "Diploma in Theology – Mission Studies, Exeter University, UK",
+          "Diploma in Discipleship Training School (DTS) – Youth With A Mission (YWAM), University of the Nations"
+        ]
+      },
+      {
+        "title": "Family",
+        "type": "text",
+        "content": "He is married to The Rev. Captain Patience Wanzala, and together they are blessed with three children."
+      },
+      {
+        "title": "Mission Commitment",
+        "type": "text",
+        "content": "Committed to raising leaders and strengthening the mission of the Church in Africa."
+      }
+    ]
+  },
+  "ron": {
+    "name": "The Very Rev. Canon Dr. Ronald D. Allen",
+    "title": "Board Advisor & Custodian of Vision",
+    "image": "Images/Board/Ron.jpg",
+    "sections" :[
+        {
+            "title": "Bio",
+            "type": "text",
+            "content": "The Very Rev. Canon Dr. Ronald D. Allen serves as the Canon for Global Missions for the Anglican Diocese of the Great Lakes within the Anglican Church in North America (ACNA). Through decades of faithful ministry, he has dedicated his life to evangelism, church planting, and global mission work."
+        },
+      {
+        "title": "Ministry and Mission Work",
+        "type": "text",
+        "content": "Since the beginning of his ordained ministry in Advent of 1965, Canon Dr. Allen, together with his wife Carolyn, has been instrumental in the planting of more than 120 churches. One of his most notable achievements was establishing the Heartland Parish in Fort Wayne, Indiana in 1985, which continues to serve as a vibrant center of ministry."
+      },
+      {
+        "title": "Global Mission Involvement",
+        "type": "list",
+        "items": [
+          "Canon for Global Missions – Anglican Diocese of the Great Lakes (ACNA)",
+          "Contributor to the New Wineskins Global Missions movement",
+          "Consultant to numerous ministries and mission agencies",
+          "Advocate for global evangelism and church planting"
+        ]
+      },
+      {
+        "title": "Role in Anglican Missions Africa",
+        "type": "text",
+        "content": "As a member of the Board of Directors of Anglican Missions Africa, Canon Dr. Allen serves as an advisor and Custodian of AMA’s vision, providing valuable guidance to nurture a healthy and sustainable Church across Africa and beyond."
+      }
+    ]
+  },
+  "dorcas": {
+    "name": "Ms. Dorcas Phelesia Atieno",
+    "title": "Treasurer",
+    "image": "Images/Board/Dorcas.jpeg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "jackson": {
+    "name": "Rev. Capt. Jackson Wanga",
+    "title": "MRMC Chair",
+    "image": "Images/Board/Jackson.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "naomi": {
+    "name": "Dr. Naomi Njuguna",
+    "title": "HR Committee Chair",
+    "image": "Images/Board/Naomi.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "sellina": {
+    "name": "Dr. Sellina Ayoma Omollo",
+    "title": "Member",
+    "image": "Images/Board/Sellina.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "grace": {
+    "name": "Mrs. Grace Rop",
+    "title": "Member",
+    "image": "Images/Board/Grace.jpeg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "christine": {
+    "name": "Mrs. Christine Kuto",
+    "title": "Member",
+    "image": "Images/Board/Christine.jpeg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "tom": {
+    "name": "Rev. Tom Otieno",
+    "title": "Member",
+    "image": "Images/Board/Tom.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  },
+  "robinson": {
+    "name": "Mr. Robinson Njiru",
+    "title": "Member",
+    "image": "Images/Board/Robinson.jpg",
+    "content": "<p>Profile coming soon.</p>"
+  }
+}
