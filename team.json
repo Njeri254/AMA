@@ -1,0 +1,281 @@
+{
+      "mayabi": {
+    "name": "Rev. Canon Captain Richard W. Mayabi",
+    "title": "Executive Director, Missions Anglicanes Afrique (AMA)",
+    "image": "Images/Board/Canon.jpeg",
+    "sections": [
+        {
+        "title": "Bio",
+        "type": "text",
+        "content": "Rev. Canon Captain Richard W. Mayabi is the Founder of Missions Anglicanes Afrique (Anglican Missions Africa – AMA). The mission agency seeks to nurture a healthy and sustainable Church in Africa and beyond through leadership development, mission mobilization, and church strengthening initiatives."
+        },
+        {
+        "title": "Work Experience",
+        "type": "list",
+        "items": [
+          "2019: Director in charge of Capacity Building and Leadership Development at the Council for Anglican Provinces of Africa (CAPA)",
+          "2009 – 2018: General Secretary of Church Army Africa",
+          "2004 – 2008: Pioneer Parish Priest for ACK St. Jerome and St. Thomas parishes in All Saints Cathedral Diocese",
+          "1995 – 2003: Pioneer missionary and church planter in Makueni–Machakos Diocese"
+        ]
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "Master of Theology (MTh) in Urban World – International Christian College Glasgow / Aberdeen University",
+          "Master of Arts (MA) in Mission Studies – Africa International University (AIU), Nairobi",
+          "Post Graduate Diploma (PGD) in Christian Ministries – Africa International University (AIU), Nairobi",
+          "Higher Diploma (HDP) in Theology – Carlile College, Church Army Africa",
+          "Diploma in Theology – Mission Studies, Exeter University, UK",
+          "Diploma in Discipleship Training School (DTS) – Youth With A Mission (YWAM), University of the Nations"
+        ]
+      },
+      {
+        "title": "Family",
+        "type": "text",
+        "content": "He is married to The Rev. Captain Patience Wanzala, and together they are blessed with three children."
+      },
+      {
+        "title": "Mission Commitment",
+        "type": "text",
+        "content": "Committed to raising leaders and strengthening the mission of the Church in Africa."
+      }
+    ]
+  },
+"joel": {
+    "name": "Rev. Capt. Joel Apolo Soti",
+    "title": "Director of Missions and Partnerships",
+    "image": "Images/Team/Soti.jpg",
+    "sections": [
+      {
+        "title": "Bio",
+        "type": "text",
+        "content": "Rev. Capt. Joel Apolo Soti is a dedicated and accomplished leader in the field of theology and missions."
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "Doctorate in Intercultural Studies (Ongoing) – Fuller Theological Seminary, USA",
+          "Authentic Leadership (Ongoing) – EQUIP Leadership, Canada",
+          "Master in Missions Studies (2015–2018) – Africa International University",
+          "Bachelor of Theology (First Class Honors) (2013–2015) – Africa International University",
+          "Higher Diploma in Urban Mission Theology (2008–2011) – Carlile College",
+          "Diploma in Automotive Engineering (2000–2002) – Kisumu Polytechnic"
+        ]
+      },
+      {
+        "title": "Ministry & Professional Experience",
+        "type": "text",
+        "content": "Rev. Soti served as the Missions Director at African Evangelistic Enterprise and has extensive experience as a Missions and Ministry Formation Officer & Lecturer at Church Army Africa and Carlile College. He has also served in various clergy roles within ACK parishes in Machakos Diocese."
+      }
+    ]
+  },
+  "patience": {
+    "name": "Rev. Capt. Patience Santa Mwaggona",
+    "title": "Director of Training and Capacity Building",
+    "image": "Images/Team/Patience.png",
+    "sections": [
+      {
+        "title": "Bio",
+        "type": "text",
+        "content": "Rev. Capt. Patience Santa Mwaggona is a born-again Christian serving as a priest in the Anglican Church of Kenya, currently attached at ACK St Luke’s Kenyatta."
+      },
+      {
+        "title": "Educational Background",
+        "type": "list",
+        "items": [
+          "Higher Diploma in Christian Mission – Carlile College",
+          "Bachelor’s Degree in Mission Studies – University of South Africa",
+          "Master’s Degree in Mission Studies – University of South Africa",
+          "Post Graduate Diploma in Theological Education – London School of Theology",
+          "Master’s Degree in Theological Education – London School of Theology",
+          "PhD (Ongoing) – Middlesex University through London School of Theology"
+        ]
+      },
+      {
+        "title": "Ministry & Work Experience",
+        "type": "list",
+        "items": [
+          "2000 – 2001: Evangelist in Mombasa Diocese",
+          "2002 – 2003: Priest in Machakos Diocese",
+          "2004: Priest in the Diocese of Mt Kenya South",
+          "Jan 2005 – May 2006: Priest in the Diocese of All Saints Cathedral",
+          "2006 – July 2023: Tutor at Carlile College",
+          "2016 – 2022: Principal at Church Army Africa – Carlile College"
+        ]
+      },
+      {
+        "title": "Family",
+        "type": "text",
+        "content": "She is married to Rev. Canon Capt. Richard W. Mayabi and they are blessed with three children."
+      }
+    ]
+  },
+  "philip": {
+  "name": "Rev. Philip Huru",
+  "title": "School Outreach & Church Music Renewal Coordinator",
+  "image": "Images/Team/Philip.jpeg",
+  "sections": [
+    {
+      "title": "Bio",
+      "type": "text",
+      "content": "Rev. Philip Huru is a dedicated school ministry and church music leader, passionate about teaching, mentorship, evangelism, and developing choirs and praise teams."
+    },
+    {
+      "title": "Educational Background",
+      "type": "list",
+      "items": [
+        "Bachelor of Education – Presbyterian University of East Africa",
+        "Diploma in Education – Mount Kenya University",
+        "ABRSM Grade 5",
+        "Currently pursuing Diploma in Christian Ministries – School Chaplaincy and Music, UNISA"
+      ]
+    },
+    {
+      "title": "Ministry Experience",
+      "type": "list",
+      "items": [
+        "Ordained into ministry in 2023 – Anglican Diocese of Nambale",
+        "Teaching and school chaplain roles",
+        "Music trainer and director for various choirs",
+        "Cathedral music minister and curate"
+      ]
+    },
+    {
+      "title": "Passion & Mission",
+      "type": "text",
+      "content": "Passionate about teaching and school ministry, mentorship, evangelism, and Anglican worship through church music."
+    }
+  ]
+},
+  "ednah": {
+  "name": "Ednah Barusei",
+  "title": "Finance and Administration Officer",
+  "image": "Images/Team/Edna.jpeg",
+  "sections": [
+    {
+      "title": "Bio",
+      "type": "text",
+      "content": "Ednah Barusei is a seasoned finance and administration professional with over 10 years of experience in accounting, financial management, and organizational operations. Based in Nairobi, she has a strong background supporting church and academic institutions with a focus on financial integrity and efficiency."
+    },
+    {
+      "title": "Current Role",
+      "type": "text",
+      "content": "Currently serving as Finance and Administrator at Anglican Missions Africa, she oversees budgeting, financial reporting, payroll, and compliance. She is known for strengthening internal controls and improving financial processes."
+    },
+    {
+      "title": "Skills & Systems",
+      "type": "list",
+      "items": [
+        "QuickBooks",
+        "SAP",
+        "Sage",
+        "Tally",
+        "Zoho",
+        "Microsoft Excel"
+      ]
+    },
+    {
+      "title": "Educational Background",
+      "type": "list",
+      "items": [
+        "MSc in Finance – JKUAT",
+        "Bachelor of Commerce (Finance) – KCA University",
+        "Certified Public Accountant of Kenya (CPAK)"
+      ]
+    },
+    {
+      "title": "Professional Commitment",
+      "type": "text",
+      "content": "Committed to excellence, integrity, and impactful service in financial management and organizational support."
+    }
+  ]
+},
+"silvia": {
+  "name": "Silvia Chepkoech",
+  "title": "Communications & IT Officer",
+  "image": "Images/Team/Silvia.jpeg",
+  "sections": [
+    {
+      "title": "Bio",
+      "type": "text",
+      "content": "Silvia Chepkoech holds a bachelor's degree in Communication and Media from Egerton University. She is ambitious, God-fearing, hardworking, and passionate about photography, videography, graphic design, and social media management. She joined Missions Anglicanes Afrique (AMA) in December 2022 and currently leads communications."
+    },
+    {
+      "title": "Work Experience",
+      "type": "list",
+      "items": [
+        "2021 – 2023: Communications and Media Manager – Cactus Mama Telemental",
+        "2021 – 2022: Radio Presenter – Egerton Radio",
+        "2020 – 2021: Videographer – Flicker Productions",
+        "2019 – 2020: Script Writer & Voice Over Artist – Jara Media"
+      ]
+    },
+    {
+      "title": "Skills & Expertise",
+      "type": "list",
+      "items": [
+        "Excellent verbal and written communication skills",
+        "Strong interpersonal skills and relationship-building ability",
+        "Knowledge of media production, including audio/video recording and editing",
+        "Familiarity with social media platforms and strategies",
+        "Understanding of mass communication theories and principles",
+        "Ability to analyze and interpret communication/media trends",
+        "Proficiency in creating and executing communication plans and campaigns",
+        "Skills in graphic design and visual storytelling",
+        "Knowledge of ethical considerations in communication and media",
+        "Ability to work independently and in a team",
+        "Adaptability to new technologies and emerging trends in communication"
+      ]
+    }
+  ]
+},
+"joseph": {
+  "name": "Joseph Kaindi",
+  "title": "Media and Broadcast Manager",
+  "image": "Images/Team/Kaindi.jpeg",
+  "sections": [
+    {
+      "title": "Bio",
+      "type": "text",
+      "content": "Televangelist Kaindi Joseph is a distinguished journalist, media expert, and evangelist in the Anglican Church of Kenya. Renowned for his ability to engage youth, he blends professional journalism expertise with his evangelical calling to deliver transformative messages. As Media and Broadcast Manager at Anglican Missions Africa, Kaindi drives innovative Gospel outreach using media, events, and technology, bridging traditional evangelism with the digital era."
+    },
+    {
+      "title": "Career Highlights",
+      "type": "list",
+      "items": [
+        "Journalism Expertise: Skilled in communication, storytelling, and digital citizenship, emphasizing positive social media use and integrity",
+        "Evangelical Ministry: Active Diocesan Evangelist since 2020, excelling in pastoral care, community outreach, and spiritual leadership under the Anglican Church of Kenya, Diocese of Makueni",
+        "Leadership in Missions: As Diocesan Missions General Secretary (2023), coordinates outreach programs, fosters partnerships, and guides faith-based development projects",
+        "Youth Mobilization: Serves as Youth Pastor at ACK Emmanuel Pro-Cathedral, mentoring and inspiring revival among young believers"
+      ]
+    },
+    {
+      "title": "Educational Background",
+      "type": "list",
+      "items": [
+        "BA in Mass Media and Communication – Mount Kenya University, specializing in Corporate Communications"
+      ]
+    },
+    {
+      "title": "Vision and Goals",
+      "type": "text",
+      "content": "Kaindi aspires to advance faith-based initiatives through technology and innovation, fostering positive transformation across Africa and beyond."
+    }
+  ]
+},
+"oscar": {
+  "name": "Oscar Kalenga",
+  "title": "General Worker",
+  "image": "Images/Team/Oscar.jpg",
+  "sections": [
+    {
+      "title": "Bio",
+      "type": "text",
+      "content": "Profile coming soon."
+    }
+  ]
+}
+}
