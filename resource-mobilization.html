@@ -10,137 +10,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -296,9 +167,9 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Educating For Life</a>
+                transition duration-200 rounded-lg">Education For Life</a>
   </div>
 </div>
 
@@ -324,9 +195,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -468,7 +336,6 @@ style="max-height: 0px;">
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
             <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
-
       </div>
     </div>
 
@@ -521,7 +388,7 @@ style="max-height: 0px;">
   </div>
 </div>
 
-<main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
+
 <!-- HERO -->
 <section class="relative bg-cover bg-center h-[60vh] flex items-center"
 style="background-image:url('Images/resource-hero.jpg')">
@@ -576,43 +443,84 @@ serve their communities.
 </div>
 </section>
 
-<!-- RESOURCES PROVIDED -->
-<section class="py-20 bg-gray-50">
+<!-- DRILLING HOPE SECTION -->
+<section class="py-24 bg-[#09637E] text-white relative overflow-hidden">
 
-<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
-Resources We Provide
+<!-- IMAGE -->
+<div data-aos="fade-right" class="relative">
+  <img src="Images/drilling.jpg"
+       alt="Borehole drilling"
+       class="rounded-2xl shadow-2xl w-full object-cover">
+
+  <!-- Overlay badge -->
+  <div class="absolute top-4 left-4 bg-white text-[#09637E] px-4 py-2 rounded-full text-sm font-semibold shadow">
+    💧 Drilling Hope Initiative
+  </div>
+</div>
+
+<!-- TEXT -->
+<div data-aos="fade-left">
+
+<h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+Drilling Hope: Quenching the Thirst of Communities in Need
 </h2>
 
-<div class="grid md:grid-cols-4 gap-8 text-center">
+<p class="mb-6 text-white/90 leading-relaxed">
+At Anglican Missions Africa, our calling is not only to share the Gospel but also to respond
+to the practical needs of the communities we serve. One of the greatest challenges across many
+regions is access to clean and reliable water.
+</p>
 
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-semibold text-lg mb-2">Church Tents</h3>
-<p class="text-gray-600 text-sm">
-Temporary worship spaces for newly planted churches.
+<p class="mb-6 text-white/80">
+Families walk long distances, schools struggle with hygiene, and churches face limitations in outreach.
+We are trusting God for provision of a borehole drilling machine to serve these communities.
+</p>
+
+<!-- HIGHLIGHTS -->
+<div class="space-y-4 mb-8">
+
+<div class="flex items-start gap-3">
+<i class="fas fa-check-circle text-green-300 mt-1"></i>
+<p>Reach remote communities with both spiritual and physical support</p>
+</div>
+
+<div class="flex items-start gap-3">
+<i class="fas fa-check-circle text-green-300 mt-1"></i>
+<p>Increase long-term sustainability of the ministry</p>
+</div>
+
+<div class="flex items-start gap-3">
+<i class="fas fa-check-circle text-green-300 mt-1"></i>
+<p>Provide clean, life-changing water to families, schools, and churches</p>
+</div>
+
+</div>
+
+<!-- FUND TARGET -->
+<div class="bg-white/10 p-6 rounded-xl mb-8">
+<p class="text-lg font-semibold">
+Target: <span class="text-yellow-300">$100,000 USD</span>
+</p>
+<p class="text-sm text-white/80">
+Estimated cost for acquiring a borehole drilling machine in Kenya
 </p>
 </div>
 
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-semibold text-lg mb-2">Building Materials</h3>
-<p class="text-gray-600 text-sm">
-Iron sheets and materials to support church construction.
-</p>
-</div>
+<!-- BUTTONS -->
+<div class="flex flex-wrap gap-4">
 
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-semibold text-lg mb-2">Bibles</h3>
-<p class="text-gray-600 text-sm">
-Scripture distribution for new believers and churches.
-</p>
-</div>
+<a href="donate.html"
+class="bg-white text-[#09637E] px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+Support This Mission
+</a>
 
-<div class="bg-white p-6 rounded-xl shadow">
-<h3 class="font-semibold text-lg mb-2">Audio Equipment</h3>
-<p class="text-gray-600 text-sm">
-Public address systems and musical instruments for worship.
-</p>
+<a href="contact.html"
+class="border border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-[#09637E] transition">
+Partner With Us
+</a>
+
 </div>
 
 </div>
@@ -620,6 +528,113 @@ Public address systems and musical instruments for worship.
 </div>
 
 </section>
+
+<!-- RESOURCES PROVIDED -->
+<section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-4">
+Resources We Provide
+</h2>
+
+<p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+We equip new church plants with essential tools and resources to establish
+strong, Christ-centered communities.
+</p>
+
+<div class="grid md:grid-cols-4 gap-8 text-center">
+
+<!-- ITEM 1 -->
+<div data-aos="fade-up" class="group bg-white p-8 rounded-2xl shadow hover:shadow-2xl transition transform hover:-translate-y-2">
+
+<div class="flex justify-center mb-5">
+<div class="bg-[#09637E]/10 text-[#09637E] p-5 rounded-full group-hover:bg-[#09637E] group-hover:text-white transition">
+<i class="fas fa-campground text-2xl"></i>
+</div>
+</div>
+
+<h3 class="font-semibold text-lg mb-2">Church Tents</h3>
+
+<p class="text-gray-600 text-sm mb-4">
+Temporary worship spaces for newly planted churches.
+</p>
+
+<a href="#"
+class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
+Sponsor
+</a>
+
+</div>
+
+<!-- ITEM 2 -->
+<div data-aos="fade-up" data-aos-delay="100" class="group bg-white p-8 rounded-2xl shadow hover:shadow-2xl transition transform hover:-translate-y-2">
+
+<div class="flex justify-center mb-5">
+<div class="bg-[#09637E]/10 text-[#09637E] p-5 rounded-full group-hover:bg-[#09637E] group-hover:text-white transition">
+<i class="fas fa-hammer text-2xl"></i>
+</div>
+</div>
+
+<h3 class="font-semibold text-lg mb-2">Building Materials</h3>
+
+<p class="text-gray-600 text-sm mb-4">
+Iron sheets and materials to support church construction.
+</p>
+
+<a href="#"
+class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
+Sponsor
+</a>
+</div>
+
+<!-- ITEM 3 -->
+<div data-aos="fade-up" data-aos-delay="200" class="group bg-white p-8 rounded-2xl shadow hover:shadow-2xl transition transform hover:-translate-y-2">
+
+<div class="flex justify-center mb-5">
+<div class="bg-[#09637E]/10 text-[#09637E] p-5 rounded-full group-hover:bg-[#09637E] group-hover:text-white transition">
+<i class="fas fa-bible text-2xl"></i>
+</div>
+</div>
+
+<h3 class="font-semibold text-lg mb-2">Bibles</h3>
+
+<p class="text-gray-600 text-sm mb-4">
+Scripture distribution for new believers and churches.
+</p>
+<a href="#"
+class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
+Sponsor
+</a>
+</div>
+
+<!-- ITEM 4 -->
+<div data-aos="fade-up" data-aos-delay="300" class="group bg-white p-8 rounded-2xl shadow hover:shadow-2xl transition transform hover:-translate-y-2">
+
+<div class="flex justify-center mb-5">
+<div class="bg-[#09637E]/10 text-[#09637E] p-5 rounded-full group-hover:bg-[#09637E] group-hover:text-white transition">
+<i class="fas fa-microphone text-2xl"></i>
+</div>
+</div>
+
+<h3 class="font-semibold text-lg mb-2">Audio Equipment</h3>
+
+<p class="text-gray-600 text-sm mb-4">
+Public address systems and musical instruments for worship.
+</p>
+<a href="#"
+class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
+Sponsor
+</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
 
 <!-- IMPACT -->
 <section class="py-20 bg-white">
@@ -653,6 +668,9 @@ Our Impact
 
 </section>
 
+
+
+
 <!-- GALLERY -->
 <section class="py-20 bg-gray-50">
 
@@ -664,16 +682,16 @@ Resource Distribution in Action
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-<img src="Images/resource1.jpg"
+<img src="Images/Resource/Tentsin-mozambique-300x200.jpg"
 class="rounded-xl shadow hover:scale-105 transition">
 
-<img src="Images/resource2.jpg"
+<img src="Images/Resource/Church-plant-of-Malema-Parish-300x225.jpg"
 class="rounded-xl shadow hover:scale-105 transition">
 
-<img src="Images/resource3.jpg"
+<img src="Images/Training/Training.jpg"
 class="rounded-xl shadow hover:scale-105 transition">
 
-<img src="Images/resource4.jpg"
+<img src="Images/Church Planting/church.jpg"
 class="rounded-xl shadow hover:scale-105 transition">
 
 </div>
@@ -682,117 +700,6 @@ class="rounded-xl shadow hover:scale-105 transition">
 
 </section>
 
-
-<!-- ===== SPONSOR A RESOURCE ===== -->
-<section class="py-20 bg-white">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
-Sponsor a Resource
-</h2>
-
-<p class="text-center text-gray-600 max-w-2xl mx-auto mb-14">
-Your support enables newly planted churches across Africa to receive
-the essential resources they need for worship, evangelism, and
-community ministry.
-</p>
-
-
-<div class="grid md:grid-cols-4 gap-8">
-
-<!-- TENT -->
-<div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition p-6 text-center">
-
-<img src="Images/tent.jpg"
-class="h-40 w-full object-cover rounded-lg mb-4">
-
-<h3 class="font-semibold text-lg mb-2">
-Church Tent
-</h3>
-
-<p class="text-gray-600 text-sm mb-4">
-Provide a temporary worship space for a new church plant.
-</p>
-
-<a href="contact.html"
-class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
-Sponsor
-</a>
-
-</div>
-
-
-<!-- BIBLES -->
-<div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition p-6 text-center">
-
-<img src="Images/bibles.jpg"
-class="h-40 w-full object-cover rounded-lg mb-4">
-
-<h3 class="font-semibold text-lg mb-2">
-Bibles
-</h3>
-
-<p class="text-gray-600 text-sm mb-4">
-Help distribute the Word of God to new believers.
-</p>
-
-<a href="contact.html"
-class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
-Sponsor
-</a>
-
-</div>
-
-
-<!-- ROOFING -->
-<div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition p-6 text-center">
-
-<img src="Images/roofing.jpg"
-class="h-40 w-full object-cover rounded-lg mb-4">
-
-<h3 class="font-semibold text-lg mb-2">
-Roofing Materials
-</h3>
-
-<p class="text-gray-600 text-sm mb-4">
-Support the construction of permanent church buildings.
-</p>
-
-<a href="contact.html"
-class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
-Sponsor
-</a>
-
-</div>
-
-
-<!-- SOUND SYSTEM -->
-<div class="bg-gray-50 rounded-xl shadow hover:shadow-lg transition p-6 text-center">
-
-<img src="Images/soundsystem.jpg"
-class="h-40 w-full object-cover rounded-lg mb-4">
-
-<h3 class="font-semibold text-lg mb-2">
-Sound Equipment
-</h3>
-
-<p class="text-gray-600 text-sm mb-4">
-Equip churches with PA systems and instruments for worship.
-</p>
-
-<a href="contact.html"
-class="inline-block bg-[#09637E] text-white px-5 py-2 rounded-full text-sm hover:bg-[#0b7a9c]">
-Sponsor
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 <!-- CTA -->
 <section class="py-20 bg-[#09637E] text-white">
@@ -827,7 +734,7 @@ Contact Us
 
 </section>
 
-</main>
+
 
 <!-- ================= FOOTER ================= -->
 
@@ -893,7 +800,7 @@ Contact Us
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -972,171 +879,13 @@ Contact Us
 
 <!-- ================= JS ================= -->
 
+<script src="index.js"></script>
+
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
+  AOS.init({
+    duration: 1000,
+    once: true
   });
-
-});
 </script>
 </body>
 </html>
