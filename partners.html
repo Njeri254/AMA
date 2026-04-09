@@ -10,137 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -297,9 +167,9 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Educating For Life</a>
+                transition duration-200 rounded-lg">Education For Life</a>
   </div>
 </div>
 
@@ -325,9 +195,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -468,7 +335,6 @@ style="max-height: 0px;">
             <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
-            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
 
       </div>
     </div>
@@ -489,7 +355,6 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -521,7 +386,6 @@ style="max-height: 0px;">
 
   </div>
 </div>
-<main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
 
  <!-- PARTNERS SECTION -->
 <section class="py-20 bg-gray-100 pt-[150px]">
@@ -723,33 +587,39 @@ University of the Nations - YWAM
   </div>
 </section>
 
+<!-- ================= CALL TO ACTION ================= -->
+  <section class="relative py-20 bg-gray-100 text-center overflow-hidden">
 
+  <!-- Background Logo (washed-out + animated) -->
+  <img src="Images/AMA-EDITED-LOGO.png" 
+       alt="AMA Logo Background"
+       class="absolute inset-0 w-full h-full object-contain opacity-10 pointer-events-none select-none animate-pulse-slow">
 
-<!-- CALL TO PARTNER -->
-<section class="bg-[#000044] text-white py-20">
-
-<div class="max-w-4xl mx-auto text-center px-6">
-
-<h2 class="text-3xl font-bold mb-6">
-Partner With Us
-</h2>
-
-<p class="text-gray-200 mb-8">
-We believe that mission is most effective when churches, ministries,
+  <!-- Content -->
+  <div class="relative z-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-blue-900">
+     Partner with Us
+    </h2>
+    <p class="text-gray-600 mb-6">
+ We believe that mission is most effective when churches, ministries,
+ <br>
 and individuals work together. Join us in strengthening the Church,
+<br>
 discipling believers, and proclaiming the Gospel across Africa.
 </p>
-
-<a href="contact.html"
-class="bg-yellow-500 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">
-Become a Partner
+       <a href="#"
+   class="hidden md:inline-flex items-center justify-center
+          bg-[#09637E] text-white
+          px-6 py-3 rounded-full
+          font-semibold shadow-md
+          hover:scale-105 hover:shadow-xl
+          transition duration-300">
+  Get Involved
 </a>
-
-</div>
-
+  </div>
 </section>
 
-</main>
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -814,7 +684,7 @@ Become a Partner
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -892,192 +762,6 @@ Become a Partner
 
 
 <!-- ================= JS ================= -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
-  });
-
-});
-</script>
-
-
-
-<style>
-
-.partner{
-transition:2s;
-opacity:0.85;
-padding:10px;
-}
-
-.partner:hover{
-transform:scale(1.08);
-opacity:1;
-}
-
-</style>
-
-
 
 <script>
 
