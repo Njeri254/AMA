@@ -10,137 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -296,9 +166,9 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Educating For Life</a>
+                transition duration-200 rounded-lg">Education For Life</a>
   </div>
 </div>
 
@@ -324,9 +194,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -467,7 +334,6 @@ style="max-height: 0px;">
             <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
-            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
 
       </div>
     </div>
@@ -488,7 +354,6 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -521,10 +386,14 @@ style="max-height: 0px;">
   </div>
 </div>
 
+
+
 <main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
+
 <!-- ===== HERO SECTION ===== -->
+
 <section class="relative bg-cover bg-center h-[60vh] flex items-center"
-style="background-image:url('Images/church-planting-hero.jpg')">
+style="background-image:url('Images/Church Planting/Church-planting-in-Mozambique-3-300x135.jpeg')">
 
 <div class="absolute inset-0 bg-black/50"></div>
 
@@ -542,22 +411,21 @@ with the Gospel of Jesus Christ.
 </section>
 
 
-
 <!-- ===== INTRODUCTION ===== -->
 <section class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-duration="1200">
 
 <div>
-<img src="Images/church-planting1.jpg"
-class="rounded-xl shadow-lg w-full">
+<img src="Images/programs/structure.png"
+class="rounded-xl shadow-lg w-full" data-aos="fade-up" data-aos-duration="2000">
 </div>
 
 <div>
-<h2 class="text-3xl font-bold text-gray-800 mb-4">
+<h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-right" data-aos-duration="3000">
 Expanding the Mission of the Church
 </h2>
 
-<p class="text-gray-600 mb-4 leading-relaxed">
+<p class="text-gray-600 mb-4 leading-relaxed" data-aos="fade-up" data-aos-duration="4000">
 Church planting is at the heart of the mission of Missions Anglicanes Afrique. 
 Through partnerships with Anglican dioceses and local leaders, we help establish 
 new congregations where communities can gather for worship, discipleship, 
@@ -588,12 +456,12 @@ Our Impact Across Africa
 <div class="grid md:grid-cols-4 gap-10">
 
 <div>
-<h3 class="text-4xl font-bold text-[#09637E]">1000+</h3>
+<h3 class="text-4xl font-bold text-[#09637E]">1000</h3>
 <p class="text-gray-600 mt-2">Churches Planted</p>
 </div>
 
 <div>
-<h3 class="text-4xl font-bold text-[#09637E]">8+</h3>
+<h3 class="text-4xl font-bold text-[#09637E]">8</h3>
 <p class="text-gray-600 mt-2">African Countries</p>
 </div>
 
@@ -618,17 +486,17 @@ Our Impact Across Africa
 <!-- ===== AFRICA CHURCH PLANTING MAP ===== -->
 <section class="py-20 bg-white">
 
-<div class="max-w-7xl mx-auto px-6">
+<div class="max-w-7xl mx-auto px-6" data-aos="fade-up" data-aos-duration="1500">
 
 <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">
 Church Planting Across Africa
 </h2>
 
-<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="grid md:grid-cols-2 gap-12 items-center" data-aos="fade-up" data-aos-duration="1500">
 
 <!-- MAP -->
 <div>
-<img src="Images/africa-map.png"
+<img src="Images/MAP.png"
 class="w-full rounded-xl shadow-lg">
 </div>
 
@@ -663,7 +531,7 @@ presence and spreading the Gospel.
 </section>
 
 <!-- ===== CHURCH PLANTING STORIES ===== -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-white pattern-bg bg-gray-100/50">
 
 <div class="max-w-7xl mx-auto px-6">
 
@@ -671,13 +539,12 @@ presence and spreading the Gospel.
 Church Planting Stories
 </h2>
 
-
 <!-- STORY 1 -->
 <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
 
-<div class="w-full aspect-video">
+<div class="w-full aspect-video" data-aos="fade-right">
 <iframe class="w-full h-full rounded-xl shadow-lg"
-src="https://www.youtube.com/embed/VIDEO_ID_1"
+src="https://www.youtube.com/embed/crnkCjKBF3M?si=3p_-JS2SCrTOU4xQ"
 title="Church Planting Story"
 frameborder="0"
 allowfullscreen>
@@ -685,15 +552,13 @@ allowfullscreen>
 </div>
 
 <div>
-<h3 class="text-2xl font-semibold text-gray-800 mb-4">
-Planting Churches in East Africa
+<h3 class="text-2xl font-semibold text-gray-800 mb-4" data-aos="fade-left">
+ Bishop Orina of ACK Diocese of Upper Southern Nyanza, Kenya on evagelism and outreach.
 </h3>
 
-<p class="text-gray-600 leading-relaxed">
-Through the ministry of Missions Anglicanes Afrique, new Anglican
-churches are being planted in communities across Africa.
-This work strengthens discipleship, trains leaders, and creates
-vibrant worship communities where people encounter Christ.
+<p class="text-gray-600 leading-relaxed" data-aos="fade-left">
+Suffragan Bishop John Orina of Kisii Area Bishopric narrates how Evangelism 
+and Mission Outreach is growing the Anglican Church of Kenya in the region
 </p>
 
 </div>
@@ -705,20 +570,19 @@ vibrant worship communities where people encounter Christ.
 <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
 
 <div class="order-2 md:order-1">
-<h3 class="text-2xl font-semibold text-gray-800 mb-4">
-Training and Equipping Leaders
+<h3 class="text-2xl font-semibold text-gray-800 mb-4" data-aos="fade-right">
+  Church Planting in Kericho Diocese
 </h3>
 
-<p class="text-gray-600 leading-relaxed">
-Church planting is not only about building congregations but also
-about raising and equipping leaders who will shepherd God's people
-and continue the mission of the Church in their communities.
+<p class="text-gray-600 leading-relaxed" data-aos="fade-right">
+Watch as Rev. Peter Kirui, the Mission Director of Kericho diocese expounds
+on the usefulness of the Tent and Jesus Film in Church Planting
 </p>
 </div>
 
-<div class="order-1 md:order-2 w-full aspect-video">
+<div class="order-1 md:order-2 w-full aspect-video" data-aos="fade-left">
 <iframe class="w-full h-full rounded-xl shadow-lg"
-src="https://www.youtube.com/embed/VIDEO_ID_2"
+src="https://www.youtube.com/embed/0y5fZy-C59I?si=Mev8RMWh5qJjGTsG"
 title="Church Planting Mission"
 frameborder="0"
 allowfullscreen>
@@ -731,9 +595,9 @@ allowfullscreen>
 <!-- STORY 3 -->
 <div class="grid md:grid-cols-2 gap-10 items-center">
 
-<div class="w-full aspect-video">
+<div class="w-full aspect-video" data-aos="fade-right">
 <iframe class="w-full h-full rounded-xl shadow-lg"
-src="https://www.youtube.com/embed/VIDEO_ID_3"
+src="https://www.youtube.com/embed/62wrpuZ_wYM?si=9nZkYV4NJIrJvmj4"
 title="Church Planting Impact"
 frameborder="0"
 allowfullscreen>
@@ -741,17 +605,41 @@ allowfullscreen>
 </div>
 
 <div>
-<h3 class="text-2xl font-semibold text-gray-800 mb-4">
-Impact in Local Communities
+<h3 class="text-2xl font-semibold text-gray-800 mb-4" data-aos="fade-left">
+Church Planting ACK Niassa Diocese – Mozambique
 </h3>
 
-<p class="text-gray-600 leading-relaxed">
-The Gospel is transforming lives through new churches across Africa.
-These congregations serve as centers for worship, discipleship,
-community support, and outreach to those who have never heard the
-message of Christ.
+<p class="text-gray-600 leading-relaxed" data-aos="fade-left">
+This is a short testimonial video of Rev. Carlos Capito of Niassa diocese,
+ Mozambique explaining the different processes they undertake to plant new churches.
 </p>
 
+</div>
+
+</div>
+
+<!-- Story 4-->
+
+<div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+
+<div class="order-2 md:order-1">
+<h3 class="text-2xl font-semibold text-gray-800 mb-4" data-aos="fade-right">
+  Church Planting in Lodwar, Turkana – Kenya
+</h3>
+
+<p class="text-gray-600 leading-relaxed" data-aos="fade-right">
+The video entails the showcasing of the new churches planted in Turkana by evangelists 
+and church leaders as a result of our Healthy Church Training Program.
+</p>
+</div>
+
+<div class="order-1 md:order-2 w-full aspect-video" data-aos="fade-left">
+<iframe class="w-full h-full rounded-xl shadow-lg"
+src="https://www.youtube.com/embed/wMFKwaEp7sc?si=1LUG__zz7zQ20ZX7"
+title="Church Planting Mission"
+frameborder="0"
+allowfullscreen>
+</iframe>
 </div>
 
 </div>
@@ -759,6 +647,8 @@ message of Christ.
 
 </div>
 </section>
+
+
 <!-- ===== VISION SECTION ===== -->
 <section class="py-20 bg-gray-50">
 
@@ -785,7 +675,7 @@ of Africa.
 </div>
 
 <div>
-<img src="Images/church-planting2.jpg"
+<img src="Images/Training/Training.jpg"
 class="rounded-xl shadow-lg w-full">
 </div>
 
@@ -795,7 +685,6 @@ class="rounded-xl shadow-lg w-full">
 
 
 
-<!-- ===== CALL TO ACTION ===== -->
 <!-- ===== SPONSOR A CHURCH PLANT ===== -->
 <section class="py-20 bg-[#09637E] text-white">
 
@@ -839,18 +728,18 @@ Contact Us
 
 
 <!-- IMAGE -->
-<div>
-<img src="Images/church-planting-support.jpg"
-class="rounded-xl shadow-2xl w-full">
+ <div>
+  <img src="Images/Church Planting/church.jpg"
+       alt="Church planting support"
+       class="rounded-xl shadow-2xl w-full object-cover">
 </div>
-
 </div>
 
 </div>
 
 </section>
-</main>
 
+</main>
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -994,172 +883,13 @@ class="rounded-xl shadow-2xl w-full">
 
 
 <!-- ================= JS ================= -->
-
+ <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
+  AOS.init({
+    duration: 1000,
+    once: true
   });
-
-});
 </script>
+<script src="index.js"></script>
 </body>
 </html>
