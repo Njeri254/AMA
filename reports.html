@@ -10,137 +10,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -297,9 +167,9 @@
           <a href="media.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Media & Digital Evangelism</a>
-          <a href="education-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
+          <a href="educating-for-life.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Education For Life</a>
+                transition duration-200 rounded-lg">Educating For Life</a>
   </div>
 </div>
 
@@ -325,9 +195,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -468,7 +335,7 @@ style="max-height: 0px;">
             <a href="social-outreach.html" class="mobile-link pl-4 hover:bg-orange-50">Social Outreach</a>
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
-
+            <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
       </div>
     </div>
 
@@ -488,7 +355,6 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -521,7 +387,10 @@ style="max-height: 0px;">
   </div>
 </div>
 
+
+
 <main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
+
 <section class="max-w-6xl mx-auto px-4 py-12">
 
   <h1 class="text-4xl font-bold text-center mb-2">Reports</h1>
@@ -532,12 +401,12 @@ style="max-height: 0px;">
   <!-- SEARCH -->
   <div class="max-w-md mx-auto mb-6">
     <input id="search" type="text"
-      placeholder="Search reports, newsletters, etc..."
+      placeholder="Search reports..."
       class="w-full px-5 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none">
   </div>
 
   <!-- CATEGORY FILTER -->
-  <div class="flex flex-wrap justify-center gap-3 mb-10" id="category-filters">
+  <div class="flex flex-wrap justify-center gap-3 mb-10">
     <button class="filter-btn bg-black text-white px-4 py-2 rounded" data-category="All">All</button>
     <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-category="Annual Reports">Annual Reports</button>
     <button class="filter-btn bg-gray-200 px-4 py-2 rounded" data-category="Newsletters">Newsletters</button>
@@ -549,18 +418,8 @@ style="max-height: 0px;">
 
 </section>
 
-<!-- PDF MODAL -->
-<div id="pdfModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
-  <div class="bg-white w-[90%] max-w-5xl rounded-lg overflow-hidden relative">
-    
-    <button onclick="closeModal()" 
-      class="absolute top-3 right-3 text-black text-xl font-bold z-50">✕</button>
-
-    <iframe id="pdfFrame" class="w-full h-[80vh]"></iframe>
-  </div>
-</div>
-
 </main>
+
 <!-- ================= FOOTER ================= -->
 
 <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -625,7 +484,7 @@ style="max-height: 0px;">
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -703,298 +562,113 @@ style="max-height: 0px;">
 
 
 <!-- ================= JS ================= -->
-
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
-  });
-
-});
-</script>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({ duration: 800, once: true });
-</script>
-
-<script>
-const STRAPI_URL = "http://localhost:1337"; // 🔥 CHANGE when live
-const API_URL = `${STRAPI_URL}/api/reports?populate=*`;
-
 const container = document.getElementById("reports-container");
 const searchInput = document.getElementById("search");
 
 let allReports = [];
 let currentCategory = "All";
 
-// FETCH DATA
+/* ==============================
+   FETCH JSON DATA
+============================== */
 async function fetchReports() {
   try {
-    const res = await fetch(API_URL);
-    const json = await res.json();
+    const res = await fetch("reports.json");
+    const data = await res.json();
 
-    allReports = json.data.map(item => {
-
-      const pdfObj = item.PDF?.[0];
-      const sizeMB = pdfObj?.size ? (pdfObj.size / 1024).toFixed(1) : null;
-
-      return {
-        id: item.id,
-        title: item.Title,
-        year: item.Year,
-        category: item.Category || "Other",
-        date: item.Published ? new Date(item.Published).toLocaleDateString() : "",
-        description: item.Description?.[0]?.children?.[0]?.text || "",
-        pdf: pdfObj?.url ? STRAPI_URL + pdfObj.url : null,
-        size: sizeMB ? sizeMB + " MB" : "",
-        cover: item.Cover?.url ? STRAPI_URL + item.Cover.url : null,
-        thumb: item.Cover?.formats?.thumbnail?.url
-          ? STRAPI_URL + item.Cover.formats.thumbnail.url
-          : null
-      };
-    });
-
+    allReports = data;
     renderReports();
-  } catch (err) {
-    console.error(err);
+
+  } catch (error) {
+    console.error(error);
     container.innerHTML = "<p class='text-red-500 text-center'>Failed to load reports.</p>";
   }
 }
 
-// RENDER
+/* ==============================
+   RENDER REPORTS
+============================== */
 function renderReports(filter = "") {
+
   container.innerHTML = "";
 
   const grouped = {};
 
-  allReports.forEach(r => {
-    if (currentCategory !== "All" && r.category !== currentCategory) return;
-    if (!r.title.toLowerCase().includes(filter.toLowerCase())) return;
+  allReports.forEach(report => {
 
-    if (!grouped[r.year]) grouped[r.year] = [];
-    grouped[r.year].push(r);
+    if (currentCategory !== "All" && report.category !== currentCategory) return;
+
+    if (!report.title.toLowerCase().includes(filter.toLowerCase())) return;
+
+    if (!grouped[report.year]) grouped[report.year] = [];
+
+    grouped[report.year].push(report);
   });
 
-  Object.keys(grouped).sort((a,b) => b - a).forEach(year => {
+  Object.keys(grouped)
+    .sort((a, b) => b - a)
+    .forEach(year => {
 
-    const section = document.createElement("section");
-    section.setAttribute("data-aos", "fade-up");
+      const section = document.createElement("section");
 
-    section.innerHTML = `<h2 class="text-2xl font-semibold mb-4 border-b pb-2">${year}</h2>`;
+      section.innerHTML = `
+        <h2 class="text-2xl font-semibold mb-4 border-b pb-2">${year}</h2>
+      `;
 
-    const list = document.createElement("div");
-    list.className = "grid md:grid-cols-2 gap-6";
+      const list = document.createElement("div");
+      list.className = "grid md:grid-cols-2 gap-6";
 
-    grouped[year].forEach(report => {
+      grouped[year].forEach(report => {
 
-      const item = document.createElement("div");
-      item.className = "bg-white rounded-xl shadow hover:shadow-lg transition p-4";
+        const item = document.createElement("div");
+        item.className = "bg-white rounded-xl shadow hover:shadow-lg transition p-4";
 
-      item.innerHTML = `
-        <div class="flex gap-4">
+        item.innerHTML = `
+          <div class="flex gap-4">
 
-          <img src="${report.thumb || report.cover || 'https://via.placeholder.com/120'}"
-               class="w-24 h-32 object-cover rounded-lg border"/>
+            <img src="${report.thumb || report.cover || 'https://via.placeholder.com/120'}"
+              class="w-24 h-32 object-cover rounded-lg border"/>
 
-          <div class="flex-1">
-            <h3 class="font-semibold text-lg">${report.title}</h3>
-            <p class="text-sm text-gray-500">${report.description}</p>
+            <div class="flex-1">
+              <h3 class="font-semibold text-lg">${report.title}</h3>
+              <p class="text-sm text-gray-500">${report.description}</p>
 
-            <div class="text-xs text-gray-400 mt-2">
-              ${report.date} ${report.size ? "• " + report.size : ""}
-            </div>
+              <div class="text-xs text-gray-400 mt-2">
+                ${report.date} • ${report.size || ""}
+              </div>
 
-            <div class="flex gap-2 mt-4 flex-wrap">
+              <div class="flex gap-2 mt-4 flex-wrap">
 
-              ${report.pdf ? `
-
-                <a href="${report.pdf}" target="_blank"
+                <button onclick="openModal('${report.pdf}')"
                   class="bg-green-600 text-white px-3 py-2 rounded hover:bg-green-700 text-sm">
-                  Open
-                </a>
+                  Preview
+                </button>
 
-                <a href="${report.pdf}" download onclick="trackDownload('${report.title}')"
+                <a href="${report.pdf}" download
                   class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700 text-sm">
                   Download
                 </a>
-              ` : `<span class="text-red-500 text-sm">No file</span>`}
 
+              </div>
             </div>
 
           </div>
+        `;
 
-        </div>
-      `;
+        list.appendChild(item);
+      });
 
-      list.appendChild(item);
+      section.appendChild(list);
+      container.appendChild(section);
     });
-
-    section.appendChild(list);
-    container.appendChild(section);
-  });
 }
 
-// FILTER BUTTONS
+/* ==============================
+   FILTER BUTTONS
+============================== */
 document.querySelectorAll(".filter-btn").forEach(btn => {
+
   btn.addEventListener("click", () => {
 
     document.querySelectorAll(".filter-btn").forEach(b => {
@@ -1006,18 +680,21 @@ document.querySelectorAll(".filter-btn").forEach(btn => {
     btn.classList.remove("bg-gray-200");
 
     currentCategory = btn.dataset.category;
+
     renderReports(searchInput.value);
   });
 });
 
-// SEARCH
-let debounce;
-searchInput.addEventListener("input", e => {
-  clearTimeout(debounce);
-  debounce = setTimeout(() => renderReports(e.target.value), 200);
+/* ==============================
+   SEARCH
+============================== */
+searchInput.addEventListener("input", (e) => {
+  renderReports(e.target.value);
 });
 
-// PDF MODAL
+/* ==============================
+   PDF MODAL
+============================== */
 function openModal(url) {
   document.getElementById("pdfFrame").src = url;
   document.getElementById("pdfModal").classList.remove("hidden");
@@ -1030,13 +707,15 @@ function closeModal() {
   document.getElementById("pdfFrame").src = "";
 }
 
-// DOWNLOAD TRACKING
-function trackDownload(title) {
-  console.log("Downloaded:", title);
-}
-
-// INIT
+/* ==============================
+   INIT
+============================== */
 fetchReports();
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 800, once: true });
 </script>
 
 </body>
