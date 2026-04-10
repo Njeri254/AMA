@@ -3,144 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Women Evangelism & Discipleship Programme| Missions Anglicanes Afrique</title>
+<title>Women Evangelism | Missions Anglicanes Afrique</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<style>
-
-  /* ===== Clean Ken Burns Zoom ===== */
-
-.swiper-slide {
-  overflow: hidden;
-}
-
-.swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  background: inherit;
-  background-size: cover;
-  background-position: center;
-  transform: scale(1);
-  transition: transform 6s ease-in-out;
-  z-index: -1;
-}
-
-.swiper-slide-active::before {
-  transform: scale(1.12);
-}
-</style>
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-}
-</style>
-
-<style>
-/* Floating Shapes */
-.floating-shape {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(60px);
-  opacity: 0.15;
-  animation: float 12s ease-in-out infinite alternate;
-}
-
-.shape1 {
-  width: 300px;
-  height: 300px;
-  background: #C8A951;
-  top: -100px;
-  left: -100px;
-}
-
-.shape2 {
-  width: 400px;
-  height: 400px;
-  background: #1E3A8A;
-  bottom: -150px;
-  right: -150px;
-  animation-delay: 3s;
-}
-
-@keyframes float {
-  from { transform: translateY(0px) scale(1); }
-  to { transform: translateY(40px) scale(1.1); }
-}
-</style>
-
-<style>
-.pattern-bg {
-  background-color: #f9fafb;
-  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-  background-size: 20px 20px;
-  animation: zoomPattern 30s infinite alternate;
-}
-
-@keyframes zoomPattern {
-  from { background-size: 20px 20px; }
-  to { background-size: 30px 30px; }
-}
-</style>
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-
-<style>
-.lines-bg {
-  background-color: #ffffff;
-  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-  animation: moveLines 20s linear infinite;
-}
-
-@keyframes moveLines {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-</style>
-
-<style>
-.gradient-motion {
-  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
-  background-size: 200% 200%;
-  animation: gradientMove 15s ease infinite;
-}
-
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-</style>
-
-<style>
-.card-hover:hover {
-  transform: translateY(-10px);
-  transition: 0.4s ease;
-  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-}
-</style>
+<link rel="stylesheet" href="main.css">
 </head>
 
 <body class="font-sans text-gray-800 bg-gray-50">
@@ -186,7 +56,7 @@
     <a href="index.html" class="h-10 sm:h-12 md:h-14 lg:h-20">
       <img src="Images/AMA-EDITED-LOGO.png"
            alt="Missions Anglicanes Afrique Logo"
-           class="h-10 sm:h-12 md:h-14 lg:h-16 object-contain">
+           class="h-12 sm:h-16 md:h-20 lg:h-24 object-contain" >
     </a>
 
     <!-- Desktop Nav -->
@@ -325,9 +195,6 @@
             <a href="training-materials.html" class="block px-6 py-3 text-sm font-medium text-gray-700 
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Training Materials</a>
-            <a href="newsletter.html" class="block px-6 py-3 text-sm font-medium text-gray-700
-                hover:bg-blue-50 hover:text-blue-600
-                transition duration-200 rounded-lg">Newsletter</a>
           <a href="reports.html" class="block px-6 py-3 text-sm font-medium text-gray-700
                 hover:bg-blue-50 hover:text-blue-600
                 transition duration-200 rounded-lg">Reports</a>
@@ -469,7 +336,6 @@ style="max-height: 0px;">
             <a href="church-music.html" class="mobile-link pl-4 hover:bg-orange-50">Church Music Renewal</a>
             <a href="media.html" class="mobile-link pl-4 hover:bg-orange-50">Media & Digital Evangelism</a>
             <a href="educating-for-life.html" class="mobile-link pl-4 hover:bg-orange-50">Educating For Life</a>
-
       </div>
     </div>
 
@@ -489,7 +355,6 @@ style="max-height: 0px;">
       <div id="mobileResourcesMenu"
         class="overflow-hidden transition-all duration-500 ease-in-out flex flex-col"
 style="max-height: 0px;">
-          <a href="newsletter.html" class="mobile-link pl-4 hover:bg-orange-50">Newsletter</a>
           <a href="reports.html" class="mobile-link pl-4 hover:bg-orange-50">Reports</a>
           <a href="projects.html" class="mobile-link pl-4 hover:bg-orange-50">Projects</a>
           <a href="stories.html" class="mobile-link pl-4 hover:bg-orange-50">Featured Stories & Testimonials</a>
@@ -521,7 +386,8 @@ style="max-height: 0px;">
 
   </div>
 </div>
-  <main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
+
+<main class="pt-[100px] md:pt-[120px] lg:pt-[130px]">
 
 <!-- ================= HERO ================= -->
 <section class="relative h-[70vh] flex items-center justify-center text-white">
@@ -709,7 +575,7 @@ Join us as we strive to uplift women, promote gender equality, and transform liv
 </a>
   </div>
 </section>
-  </main>
+
 
 <!-- ================= FOOTER ================= -->
  <footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
@@ -718,7 +584,7 @@ Join us as we strive to uplift women, promote gender equality, and transform liv
 
     <!-- Column 1: Logo & About -->
     <div>
-      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
+      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-24 mb-6">
       <p class="text-gray-300 leading-relaxed mb-6">
         Equipping, empowering and releasing mission leaders across Africa through evangelism,
         discipleship, leadership development and church partnerships.
@@ -774,7 +640,7 @@ Join us as we strive to uplift women, promote gender equality, and transform liv
         <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
         <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
         <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
+        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply For Training Programs</a></li>
       </ul>
     </div>
 
@@ -850,483 +716,11 @@ Join us as we strive to uplift women, promote gender equality, and transform liv
 
 </footer>
 
-
-<!-- ================= JS ================= -->
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
-  });
-
-});
-</script>
-
-<footer class="bg-[#2C2C2C] text-white pt-20 pb-8">
-
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
-
-    <!-- Column 1: Logo & About -->
-    <div>
-      <img src="Images/AMA-EDITED-LOGO.png" alt="AMA Logo" class="h-16 mb-6">
-      <p class="text-gray-300 leading-relaxed mb-6">
-        Equipping, empowering and releasing mission leaders across Africa through evangelism,
-        discipleship, leadership development and church partnerships.
-      </p>
-      <!-- SOCIAL ICONS -->
-<div class="flex space-x-4 mt-6">
-
-  <a href="https://www.facebook.com/missionsanglicanesafrique/" target="_blank"
-     class="w-12 h-12 flex items-center justify-center rounded-full
-            bg-gradient-to-br from-[#C8A437] to-yellow-500
-            text-white text-lg
-            shadow-lg hover:scale-110 hover:shadow-2xl
-            transition duration-300">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-
-  <a href="https://x.com/Anglican_Africa" target="_blank"
-     class="w-12 h-12 flex items-center justify-center rounded-full
-            bg-gradient-to-br from-[#C8A437] to-yellow-500
-            text-white text-lg
-            shadow-lg hover:scale-110 hover:shadow-2xl
-            transition duration-300">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-
-  <a href="https://www.instagram.com/missionsanglicanesafrique/" target="_blank"
-     class="w-12 h-12 flex items-center justify-center rounded-full
-            bg-gradient-to-br from-[#C8A437] to-yellow-500
-            text-white text-lg
-            shadow-lg hover:scale-110 hover:shadow-2xl
-            transition duration-300">
-    <i class="fab fa-instagram"></i>
-  </a>
-
-  <a href="https://www.youtube.com/@anglicanmissionsafrica" target="_blank"
-     class="w-12 h-12 flex items-center justify-center rounded-full
-            bg-gradient-to-br from-[#C8A437] to-yellow-500
-            text-white text-lg
-            shadow-lg hover:scale-110 hover:shadow-2xl
-            transition duration-300">
-    <i class="fab fa-youtube"></i>
-  </a>
-
-</div>
-    </div>
-
-    <!-- Column 2: Quick Links -->
-    <div>
-      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Quick Links</h3>
-      <ul class="space-y-3 text-gray-300">
-        <li><a href="index.html" class="hover:text-[#C8A437] transition">Home</a></li>
-        <li><a href="about.html" class="hover:text-[#C8A437] transition">About Us</a></li>
-        <li><a href="reports.html" class="hover:text-[#C8A437] transition">Reports</a></li>
-        <li><a href="training-materials.html" class="hover:text-[#C8A437] transition">Training Materials</a></li>
-        <li><a href="partners.html" class="hover:text-[#C8A437] transition">Partner With Us</a></li>
-        <li><a href="https://forms.gle/wYtTbGgdBX35FnGU7" class="hover:text-[#C8A437] transition">Apply</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 3: Programs -->
-    <div>
-      <h3 class="text-xl font-bold text-[#C8A437] mb-6">Our Programs</h3>
-      <ul class="space-y-3 text-gray-300">
-        <li><a href="healthy-church.html" class="hover:text-[#C8A437] transition">Healthy Church Training</a></li>
-        <li><a href="school-outreach.html" class="hover:text-[#C8A437] transition">School Outreach</a></li>
-        <li><a href="educating-for-life.html" class="hover:text-[#C8A437] transition">Educating For Life</a></li>
-        <li><a href="urban-mission.html" class="hover:text-[#C8A437] transition">Urban Mission Orientation</a></li>
-        <li><a href="women-evangelism.html" class="hover:text-[#C8A437] transition">Women Evangelism</a></li>
-        <li><a href="africa-missions.html" class="hover:text-[#C8A437] transition">Africa Missions Caravan</a></li>
-        <li><a href="media.html" class="hover:text-[#C8A437] transition">Media & Digital Evangelism</a></li>
-        <li><a href="church-music.html" class="hover:text-[#C8A437] transition">Church Music Renewal</a></li>
-        <li><a href="social-outreach.html" class="hover:text-[#C8A437] transition">Social Outreach</a></li>
-      </ul>
-    </div>
-
-    <!-- Column 4: Contact Info -->
-<div class="max-w-md">
-  <h3 class="text-2xl font-semibold text-[#C8A437] mb-6">
-    Contact Us
-  </h3>
-
-  <div class="divide-y divide-gray-700">
-
-    <!-- Address -->
-    <a href="https://share.google/wzz650o0UhxDtyMke"
-       target="_blank"
-       class="group flex items-start gap-4 py-5 hover:translate-x-1 transition duration-300">
-
-      <i class="fas fa-map-marker-alt text-[#C8A437] mt-1 text-lg group-hover:scale-110 transition"></i>
-
-      <span class="text-gray-300 group-hover:text-white transition leading-relaxed">
-        P.O BOX 12713 - 0100 Nairobi, GPO Ngong - Kibiko Booster Road, Kenya
-      </span>
-    </a>
-
-    <!-- Phone -->
-    <a href="tel:+254745633976"
-       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
-
-      <i class="fas fa-phone-alt text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
-
-      <span class="text-gray-300 group-hover:text-white transition">
-        +254 745 633 976
-      </span>
-    </a>
-
-    <!-- Email -->
-    <a href="mailto:info@missionsanglicanesafrique.org"
-       class="group flex items-center gap-4 py-5 hover:translate-x-1 transition duration-300">
-
-      <i class="fas fa-envelope text-[#C8A437] text-lg group-hover:scale-110 transition"></i>
-
-      <span class="text-gray-300 group-hover:text-white transition">
-        info@missionsanglicanesafrique.org
-      </span>
-    </a>
-
-  </div>
-</div>
-
-  </div>
-
-  <!-- Bottom Line -->
-  <div class="border-t border-[#C8A437]/30 mt-16 pt-6 text-center text-gray-400 text-sm">
-    <p>
-      © 2026 Missions Anglicanes Afrique. All Rights Reserved.
-    </p>
-  </div>
-
-</footer>
+</main>
 
 
 <!-- ================= JS ================= -->
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const overlay = document.getElementById("mobileMenuOverlay");
-  const menuBtn = document.getElementById("menuBtn");
-
-  /* ==============================
-     MOBILE SUBMENU TOGGLE
-  ============================== */
-  window.toggleMobileSubMenu = function(menuId, button) {
-
-    const submenu = document.getElementById(menuId);
-    if (!submenu) return;
-
-    if (submenu.style.maxHeight && submenu.style.maxHeight !== "0px") {
-      submenu.style.maxHeight = "0px";
-    } else {
-      submenu.style.maxHeight = submenu.scrollHeight + "px";
-    }
-
-    const arrow = button.querySelector("svg");
-    if (arrow) arrow.classList.toggle("rotate-180");
-  };
-
-
-  /* ==============================
-     MOBILE MENU TOGGLE
-  ============================== */
-
-  menuBtn.addEventListener("click", toggleMobileMenu);
-  overlay.addEventListener("click", closeMobileMenu);
-
-  function toggleMobileMenu() {
-
-    mobileMenu.classList.toggle("-translate-x-full");
-    overlay.classList.toggle("hidden");
-
-    toggleHamburger();
-  }
-
-  function closeMobileMenu() {
-
-    mobileMenu.classList.add("-translate-x-full");
-    overlay.classList.add("hidden");
-
-    resetHamburger();
-    resetMobileSubmenus();
-  }
-
-
-  /* ==============================
-     HAMBURGER ANIMATION
-  ============================== */
-
-  function toggleHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.toggle("rotate-45");
-    bars[0].classList.toggle("translate-y-2");
-
-    bars[1].classList.toggle("opacity-0");
-
-    bars[2].classList.toggle("-rotate-45");
-    bars[2].classList.toggle("-translate-y-2");
-  }
-
-  function resetHamburger() {
-
-    const bars = menuBtn.querySelectorAll(".bar");
-
-    bars[0].classList.remove("rotate-45","translate-y-2");
-    bars[1].classList.remove("opacity-0");
-    bars[2].classList.remove("-rotate-45","-translate-y-2");
-  }
-
-
-  /* ==============================
-     RESET MOBILE SUBMENUS
-  ============================== */
-
-  function resetMobileSubmenus() {
-
-    const mobileSubmenus = mobileMenu.querySelectorAll("[id^='mobile']");
-
-    mobileSubmenus.forEach(sub => {
-      sub.style.maxHeight = "0px";
-    });
-
-    const arrows = mobileMenu.querySelectorAll("button svg");
-
-    arrows.forEach(svg => {
-      svg.classList.remove("rotate-180");
-    });
-  }
-
-
-  /* ==============================
-     DESKTOP DROPDOWN HOVER
-  ============================== */
-
-  if (window.innerWidth >= 768) {
-
-    dropdowns.forEach(dropdown => {
-
-      const toggle = dropdown.querySelector(".dropdown-toggle");
-      const menu = dropdown.querySelector(".dropdown-menu");
-      const arrow = toggle ? toggle.querySelector("svg") : null;
-
-      if (!menu) return;
-
-      dropdown.addEventListener("mouseenter", () => {
-
-        menu.classList.remove("hidden","opacity-0","translate-y-2");
-
-        if (arrow) arrow.classList.add("rotate-180");
-      });
-
-      dropdown.addEventListener("mouseleave", () => {
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      });
-
-    });
-
-  }
-
-
-  /* ==============================
-     CLOSE DROPDOWN WHEN CLICK OUTSIDE
-  ============================== */
-
-  document.addEventListener("click", function (e) {
-
-    dropdowns.forEach(dropdown => {
-
-      if (!dropdown.contains(e.target)) {
-
-        const menu = dropdown.querySelector(".dropdown-menu");
-        const arrow = dropdown.querySelector(".dropdown-toggle svg");
-
-        if (!menu) return;
-
-        menu.classList.add("opacity-0","translate-y-2");
-
-        setTimeout(() => {
-          menu.classList.add("hidden");
-        },200);
-
-        if (arrow) arrow.classList.remove("rotate-180");
-      }
-
-    });
-
-  });
-
-});
-</script>
 <!-- ================= COUNTER SCRIPT ================= -->
  <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -1367,6 +761,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
+
+<script>
+  window.addEventListener("scroll", () => {
+  const header = document.querySelector("header");
+  if (window.scrollY > 20) {
+    header.classList.add("shadow-md", "bg-white/90", "backdrop-blur-md");
+  } else {
+    header.classList.remove("shadow-md", "bg-white/90", "backdrop-blur-md");
+  }
+});
+</script>
+
+
+<script src="index.js"></script>
 
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
