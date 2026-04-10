@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Annual Report 2024",
+    "year": 2024,
+    "category": "Annual Reports",
+    "date": "2024",
+    "description": "A full report of ministry impact across Africa.",
+    "pdf": "Reports/AMA-ANNUAL-REPORT-2024.pdf",
+    "size": "2.3 MB",
+    "cover": "Reports/Cover 2024.jpg",
+    "thumb": "Reports/Cover 2024.jpg"
+  },
+    {
+    "id": 2,
+    "title": "Annual Report 2023",
+    "year": 2023,
+    "category": "Annual Reports",
+    "date": "2023",
+    "description": "A full report of ministry impact across Africa.",
+    "pdf": "Reports/AMA-ANNUAL-REPORT-2023.pdf",
+    "size": "2.3 MB",
+    "cover": "Reports/Cover 2023.jpg",
+    "thumb": "Reports/Cover 2023.jpg"
+  },
+    {
+    "id": 3,
+    "title": "Annual Report 2022",
+    "year": 2022,
+    "category": "Annual Reports",
+    "date": "2022",
+    "description": "A full report of ministry impact across Africa.",
+    "pdf": "Reports/AMA-ANNUAL-REPORT-2022.pdf",
+    "size": "2.3 MB",
+    "cover": "Reports/Cover 2022.jpg",
+    "thumb": "Reports/Cover 2022.jpg"
+  },
+    {
+    "id": 4,
+    "title": "Annual Report 2021",
+    "year": 2021,
+    "category": "Annual Reports",
+    "date": "2021",
+    "description": "A full report of ministry impact across Africa.",
+    "pdf": "Reports/AMA-ANNUAL-REPORT-2021.pdf",
+    "size": "2.3 MB",
+    "cover": "Reports/Cover 2021.jpg",
+    "thumb": "Reports/Cover-2021.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Newsletter - January 2026",
+    "year": 2026,
+    "category": "Newsletters",
+    "date": "January 2026",
+    "description": "Updates, testimonies and outreach highlights.",
+    "pdf": "Reports/ANGLICAN MISSIONS AFRICA JANUARY NEWSLETTER.pdf",
+    "size": "1.1 MB",
+    "cover": "Reports/Newsletter - January.jpg",
+    "thumb": "Reports/Newsletter - January.jpg"
+  },
+    {
+    "id": 6,
+    "title": "Newsletter - February 2026",
+    "year": 2026,
+    "category": "Newsletters",
+    "date": "February 2026",
+    "description": "Updates, testimonies and outreach highlights.",
+    "pdf": "Reports/ANGLICAN MISSIONS AFRICA FEBRUARY NEWSLETTER.pdf",
+    "size": "1.1 MB",
+    "cover": "Reports/Newsletter - February.jpg",
+    "thumb": "Reports/Newsletter - February.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Strategic Plan 2022–2027",
+    "year": 2022,
+    "category": "Strategic Plans",
+    "date": "2022–2027",
+    "description": "Vision, goals and long-term mission strategy.",
+    "pdf": "Reports/STRATEGIC-PLAN-2022-2027.pdf",
+    "size": "3.5 MB",
+    "cover": "Reports/report3.jpg",
+    "thumb": "Reports/report3-thumb.jpg"
+  }
+]
