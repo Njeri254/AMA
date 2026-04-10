@@ -1,5 +1,11 @@
 
 /* ===== Zoom Function For Swiper ===== */
+  :root {
+  --nav-height: 120px;
+}
+main {
+  padding-top: var(--nav-height);
+}
 
 .slide-zoom {
   overflow: hidden;
@@ -39,3 +45,178 @@
   animation: pulseGlow 2.5s infinite ease-in-out;
 }
 
+
+/* Additional Background and Hover Effects */
+
+.swiper-slide {
+  overflow: hidden;
+}
+
+.swiper-slide::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  width: 110%;
+  height: 110%;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1);
+  transition: transform 6s ease-in-out;
+  z-index: -1;
+}
+
+.swiper-slide-active::before {
+  transform: scale(1.12);
+}
+
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+
+/* Floating Shapes */
+
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite alternate;
+}
+
+.shape1 {
+  width: 300px;
+  height: 300px;
+  background: #C8A951;
+  top: -100px;
+  left: -100px;
+}
+
+.shape2 {
+  width: 400px;
+  height: 400px;
+  background: #1E3A8A;
+  bottom: -150px;
+  right: -150px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  from { transform: translateY(0px) scale(1); }
+  to { transform: translateY(40px) scale(1.1); }
+}
+
+.pattern-bg {
+  background-color: #f9fafb;
+  background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: zoomPattern 30s infinite alternate;
+}
+
+@keyframes zoomPattern {
+  from { background-size: 20px 20px; }
+  to { background-size: 30px 30px; }
+}
+
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+
+.lines-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(90deg, rgba(30,58,138,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: moveLines 20s linear infinite;
+}
+
+@keyframes moveLines {
+  from { background-position: 0 0; }
+  to { background-position: 200px 0; }
+}
+
+
+
+.gradient-motion {
+  background: linear-gradient(120deg, #ffffff, #f3f4f6, #ffffff);
+  background-size: 200% 200%;
+  animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+}
+
+
+/* Partner Logo Hover Effect */
+.partner{
+transition:2s;
+opacity:0.85;
+padding:10px;
+}
+
+.partner:hover{
+transform:scale(1.08);
+opacity:1;
+}
+
+
+/* partner box */
+
+.partner{
+min-width:180px;
+text-align:center;
+opacity:0.8;
+transition:0.3s;
+}
+
+.partner:hover{
+opacity:1;
+transform:scale(1.08);
+}
+
+
+/* marquee animation */
+
+.marquee{
+animation:scroll 28s linear infinite;
+}
+
+.marquee:hover{
+animation-play-state:paused;
+}
+
+
+/* scrolling effect */
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
